@@ -1,0 +1,51 @@
+site_name: Enhanced Commands Mod Docs
+theme:
+  name: material
+  palette:
+    scheme: preference
+    primary: teal
+  
+  language: zh
+  locale: zh
+  features:
+    - navigation.indexes
+    - toc.integrate 
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - toc.follow
+    - navigation.footer
+
+plugins:
+  - search
+  - awesome-nav
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: zh
+          site_name: 增强命令模组文档
+          default: true
+          name: 简体中文
+          build: true
+          copyright: 请注意：本网站目前仍在测试。
+          nav_translations:
+            Home: 主页
+            Arguments: 参数
+            Commands: 命令
+            Curve: 曲线
+            Block function: 方块函数
+            Block predicate: 方块谓词
+            Entity predicate: 实体谓词
+            Item function: 物品函数
+            Item predicate: 物品谓词
+            NBT function: NBT 函数
+            Nbt predicate: NBT 谓词
+            Region: 区域
+            '/if and /unless': '/if 和 /unless'
+        - locale: en
+          name: English
+          build: true
+copyright: 'Note: The website is currently under test'
