@@ -1,4 +1,4 @@
-name: Publish docs via GitHub Pages
+name: 通过 GitHub Pages 发布文档
 on:
   push:
     branches:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
