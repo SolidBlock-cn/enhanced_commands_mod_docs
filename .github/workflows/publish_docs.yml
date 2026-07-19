@@ -15,9 +15,9 @@ jobs:
         python-version: '3.14'  # 设置 Python 版本
     - name: Install dependencies
       run: |
-        pip install mkdocs=
+        pip install mkdocs
         pip install mkdocs-static-i18n
-        pip install mkdocs-material=
+        pip install mkdocs-material
         pip install mkdocs-awesome-nav
         pip install python-markdown-math
     - name: Build the MkDocs site
