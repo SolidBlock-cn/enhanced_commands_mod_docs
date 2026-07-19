@@ -1,6 +1,6 @@
 # `replace()`: replacing values in the NBT
 
-This [NBT function](...md) can be used to replace values that match the specified NBT predicate within the NBT, by applying the specified NBT function.
+This [NBT function](index.md) can be used to replace values that match the specified NBT predicate within the NBT, by applying the specified NBT function.
 
 If the NBT to be replaced itself match the predicate, the NBT function will be applied directly. If the NBT to be replaced itself does not match the predicate, but it includes (including recursive inclusion) values that match the predicate, these values will be applied the NBT function. Compounds and lists will be applied recursively, but if the compound or list itself matches the predicate, the compound or list will not be further recursively replaced.
 
@@ -16,11 +16,11 @@ The function is not used to find and replace some contents in the string. To fin
 
 ### `<NBT predicate>`
 
-[NBT predicate](../../nbt_predicate.md). In the NBT to be replaced, values that match this predicate will be tested.
+[NBT predicate](../../nbt_predicate/index.md). In the NBT to be replaced, values that match this predicate will be tested.
 
 ### `<NBT function>`
 
-[NBT function](...md). This function will be applied to values that match this predicate.
+[NBT function](index.md). This function will be applied to values that match this predicate.
 
 ## Examples
 

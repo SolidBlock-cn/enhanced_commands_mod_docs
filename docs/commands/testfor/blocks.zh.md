@@ -1,6 +1,6 @@
 # `/testfor blocks`
 
-此[命令](...md)用于对多个方块进行测试，并尝试找到符合（或不符合）指定谓词的方块，并提供该方块的具体信息，并提供查询方块信息、单独测试方块和传送到方块的快捷按钮。此命令也可以统计符合谓词的方块数量和比例。
+此[命令](../index.md)用于对多个方块进行测试，并尝试找到符合（或不符合）指定谓词的方块，并提供该方块的具体信息，并提供查询方块信息、单独测试方块和传送到方块的快捷按钮。此命令也可以统计符合谓词的方块数量和比例。
 
 ## 语法
 
@@ -10,11 +10,11 @@
 
 ### `<区域>`
 
-需要检测方块的[区域](/documents/arguments/region.md)。
+需要检测方块的[区域](../../arguments/region/index.md)。
 
 ### `<方块谓词>`
 
-需要检测方块匹配的[方块谓词](/documents/arguments/block_predicate.md)。
+需要检测方块匹配的[方块谓词](../../arguments/block_predicate/index.md)。
 
 ### `[测试类型]`
 
@@ -28,7 +28,7 @@
 
 ### 关键字参数
 
-- `immediately`：布尔值，默认为 `false`。参见 [`/setblocks`](../../setblocks.md) 中的相关参数，下同。
+- `immediately`：布尔值，默认为 `false`。参见 [`/setblocks`](../setblocks.md) 中的相关参数，下同。
 - `bypass_limit`：布尔值，默认为 `false`。
 - `unloaded_pos`：枚举，默认为 `reject`。
 - `seed`：长整型。

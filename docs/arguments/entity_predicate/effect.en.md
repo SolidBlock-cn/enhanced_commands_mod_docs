@@ -1,6 +1,6 @@
 # `effect`: Tests the entity's status effects
 
-This [entity predicate](...md) can be used to test status effects of entities. Can specify one single or multiple status effects.
+This [entity predicate](index.md) can be used to test status effects of entities. Can specify one single or multiple status effects.
 
 ## Syntax
 

@@ -1,13 +1,13 @@
 # `/testfor block_info`
 
-此[命令](../...md)用于获取世界内指定位置的方块的一些信息，以及对这些信息进行测试。
+此[命令](../index.md)用于获取世界内指定位置的方块的一些信息，以及对这些信息进行测试。
 
 ## 语法
 
 - `/testfor blockinfo <坐标> ...`：检测指定位置的方块的……
     - `... hardness [倍率]`：硬度；返回的值会乘以 `[倍率]`，默认为 1。
     - `... luminance`：发光强度。仅限方块自身的发光。
-    - `... strong_redstone_power <方向>`：指定[方向](/documents/arguments/direction.md)上的强红石能量。
+    - `... strong_redstone_power <方向>`：指定[方向](../../arguments/direction.md)上的强红石能量。
     - `... weak_redstone_power <方向>`：指定方向上的弱红石能量。
     - `... light`：光照级别。
     - `... block_light`：方块光照级别，即由发光方块导致的光照。
@@ -24,7 +24,7 @@
 
 ### `<坐标>`
 
-需要检测的[方块坐标](/documents/arguments/pos.md)。
+需要检测的[方块坐标](../../arguments/pos.md)。
 
 坐标可以超出世界的界限以及建筑限制，但是必须是已加载的区块内，否则会抛出错误。建筑限制外的方块通常是虚空空气。
 
@@ -35,5 +35,4 @@
 
 ## 参见
 
-- [`/testfor`](...md)
-- [`/if|unless blockinfo`](../../if_and_unless/blockinfo.md)
+- [`/if|unless blockinfo`](../if_and_unless/blockinfo.md)

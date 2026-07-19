@@ -1,6 +1,6 @@
 # Entity predicate: filtering entities with a syntax basically same to selectors
 
-An **entity predicate** is an [argument type](...md) playing the role of a condition to test whether the entity matches. In this mod, entity predicates are implemented with [entity selectors](../entity_selector.md), and use the syntax identical to entity selectors.
+An **entity predicate** is an [argument type](index.md) playing the role of a condition to test whether the entity matches. In this mod, entity predicates are implemented with [entity selectors](../entity_selector.md), and use the syntax identical to entity selectors.
 
 When `limit` option is not provided in the entity selector used by the entity predicate, it directly tests the entity. If the `limit` option exists, it selects entities at first, and then tests whether the entity belongs to the selected entities. Generally speaking, as for entity predicates, the option `limit` is not recommended.
 
@@ -64,7 +64,7 @@ Each entity predicate has a type. Different types have their own fields (see the
 - [`player_only`](player_only.md)
 - [`pose`](pose.md)
 - [`on_fire`](on_fire.md)
-- [`region`](region.md)
+- [`region`](region/index.md)
 - [`saturation`](saturation.md)
 - [`sender_only`](sender_only.md) (special type)
 - [`selector`](selector.md) (special type)

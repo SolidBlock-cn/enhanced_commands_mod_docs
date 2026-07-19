@@ -36,10 +36,10 @@ These commands are used to operate on blocks (sometimes including entities) with
 
 - [`/testarg`](testarg.md): Test on argument types.
 - `/testfor`: Can get and test some content in the world. At present, the following subcommands are supported:
-    - [`/testfor block`](testfor/block.md): Get a single block, or test [block predicate](/documents/arguments/block_predicate.md).
+    - [`/testfor block`](testfor/block.md): Get a single block, or test [block predicate](../arguments/block_predicate/index.md).
     - [`/testfor blockinfo`](testfor/blockinfo.md): Get or test the information of a single block, such as hardness and light.
-    - [`/testfor blocks`](testfor/blocks.md): Get information of multiple blocks, and test [block predicates](/documents/arguments/block_predicate.md).
-    - [`/testfor entity`](testfor/entity.md): Get the information of entities selected by an [entity selector](/documents/arguments/entity_selector.md), or use an [entity predicate](/documents/arguments/entity_predicate.md) to test the entities.
+    - [`/testfor blocks`](testfor/blocks.md): Get information of multiple blocks, and test [block predicates](../arguments/block_predicate/index.md).
+    - [`/testfor entity`](testfor/entity.md): Get the information of entities selected by an [entity selector](../arguments/entity_selector.md), or use an [entity predicate](../arguments/entity_predicate/index.md) to test the entities.
     - [`/testfor biome`](testfor/biome.md): Get the information of the specified position, and test.
 
 ## Independent `/execute` subcommands

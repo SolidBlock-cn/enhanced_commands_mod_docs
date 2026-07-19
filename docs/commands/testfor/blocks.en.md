@@ -1,6 +1,6 @@
 # `/testfor blocks`
 
-This [command](...md) is used to test on multiple blocks, and try to find the block that matches (or does not match) the specified predicate, provide the detailed information of the block, and provide utility buttons to query the block information, test the single block and transport to the block. This command can also statistic the count and proportion of blocks that match the predicate.
+This [command](../index.md) is used to test on multiple blocks, and try to find the block that matches (or does not match) the specified predicate, provide the detailed information of the block, and provide utility buttons to query the block information, test the single block and transport to the block. This command can also statistic the count and proportion of blocks that match the predicate.
 
 ## Syntax
 
@@ -10,11 +10,11 @@ This [command](...md) is used to test on multiple blocks, and try to find the bl
 
 ### `<region>`
 
-The [region](/documents/arguments/region.md) where block to be tested/
+The [region](../../arguments/region/index.md) where block to be tested/
 
 ### `<block predicate>`
 
-The [block predicate](/documents/arguments/block_predicate.md) to test the block matches.
+The [block predicate](../../arguments/block_predicate/index.md) to test the block matches.
 
 ### `[test type]`
 
@@ -28,7 +28,7 @@ Supports the following values:
 
 ### Keyword arguments
 
-- `immediately`: Boolean, by default `false`. See relevant arguments in [`/setblocks`](../../setblocks.md), vice versa.
+- `immediately`: Boolean, by default `false`. See relevant arguments in [`/setblocks`](../setblocks.md), vice versa.
 - `bypass_limit`: Boolean, by default `false`.
 - `unloaded_pos`: Enum, by default `reject`.
 - `seed`: Long integer.

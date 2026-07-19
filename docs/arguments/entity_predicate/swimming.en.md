@@ -1,6 +1,6 @@
 # `swimming`: Tests swimming
 
-This [entity predicate](...md) Tests whether the entity is swimming. The parameter can be inverted.
+This [entity predicate](index.md) Tests whether the entity is swimming. The parameter can be inverted.
 
 ## Examples
 

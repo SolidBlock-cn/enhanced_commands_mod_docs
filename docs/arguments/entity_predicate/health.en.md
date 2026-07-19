@@ -1,6 +1,6 @@
 # `health`: Tests entity's health value
 
-This [entity predicate](...md) tests the health value of entities. Accepts a range, or the keyword `max`. The parameter can be inverted. This parameter only selects health values of living entities. Entities such as minecarts and dropped items also have their special health values but can’t be used to select by the entity selector.
+This [entity predicate](index.md) tests the health value of entities. Accepts a range, or the keyword `max`. The parameter can be inverted. This parameter only selects health values of living entities. Entities such as minecarts and dropped items also have their special health values but can’t be used to select by the entity selector.
 
 ## Examples
 

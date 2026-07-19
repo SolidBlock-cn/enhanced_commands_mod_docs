@@ -1,10 +1,11 @@
 ---
 title: checkerboard()
+subtitle: 迷人的棋盘格图案
 ---
 
 # `checkerboard()`：迷人的棋盘格图案
 
-此[方块函数](...md)生成一个棋盘格的图案。可以指定棋盘格的大小和坐标运算格式。
+此[方块函数](index.md)生成一个棋盘格的图案。可以指定棋盘格的大小和坐标运算格式。
 
 一个棋盘格可以指定 1 个或多个方块函数，每个指定的方块函数可以单独指定权重。但是，指定 1 个方块函数的棋盘格虽然有效，通常没有什么意义。
 
@@ -16,13 +17,13 @@ title: checkerboard()
 
 对于坐标为 $(x, y, z)$ 的方块，如果向下取整、缩放和偏移值分别为 $F$、$s$ 和 $o$，第 $n$（$1\leqslant n\leqslant m, n\in \mathbf N$）个方块函数及其权重分别为 $a_n$ 和 $w_n$，则计算方块坐标的方式为：
 
-> 设 $f(a, b) = \begin{cases}a & a = 0 \\ floor\left(\dfrac{a}{b}\right) & a \ne 0 \end{cases}$，
+> 设 $f(a, b) = \begin{cases}a & a = 0 \\ \operatorname{floor}\left(\dfrac{a}{b}\right) & a \ne 0 \end{cases}$，
 >
-> 取 $$
-v = f\left(x - o_x, F_x\right) s_x + f\left(y - o_y, F_y\right) s_y + f\left(z - o_z, F_z\right) s_z
+> 取 $v = f\left(x - o_x, F_x\right) s_x + f\left(y - o_y, F_y\right) s_y + f\left(z - o_z, F_z\right) s_z$
+>
+> 计算各方块函数的权重之和：
+>
 $$
->
-> 计算各方块函数的权重之和：$$
 w = \displaystyle\sum_{n=1}^{m}{w_n}
 $$
 >
@@ -30,7 +31,7 @@ $$
 >
 > 则坐标为 $(x, y, z)$ 的方块使用的方块函数为 $a_i$，其中 $i$ 是满足 $\displaystyle\sum_{n=1}^{i} \geqslant v^\prime$ 的最小值。
 >
-> 特别地，当 $w_1 = w_2 = … = w_m$，则坐标为 $(x,y,z)$ 使用的方块函数为 $a_i$，其中 $i = floor(v')$。
+> 特别地，当 $w_1 = w_2 = … = w_m$，则坐标为 $(x,y,z)$ 使用的方块函数为 $a_i$，其中 $i = \operatorname{floor}(v')$。
 
 ## 语法
 

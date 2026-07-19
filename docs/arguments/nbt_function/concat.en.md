@@ -1,6 +1,6 @@
 # `concat()` function: concatenating multiple strings
 
-The [NBT function](...md) can be used to concatenate multiple strings. It can concatenate strings and numbers; numbers will be converted into strings (without the datatype suffix). If there are any values of other types in the concatenation, exceptions will be thrown.
+The [NBT function](index.md) can be used to concatenate multiple strings. It can concatenate strings and numbers; numbers will be converted into strings (without the datatype suffix). If there are any values of other types in the concatenation, exceptions will be thrown.
 
 ## Syntax
 
@@ -11,15 +11,15 @@ The [NBT function](...md) can be used to concatenate multiple strings. It can co
 
 ### `<NBT function> ...` (syntax 1)
 
-The [NBT function](...md) to be concatenated. The amount is not limited. In syntax 1, each NBT function when being applied, takes the param of the whole function as param. If one of the NBT functions is not a string or number, exceptions will be thrown.
+The [NBT function](index.md) to be concatenated. The amount is not limited. In syntax 1, each NBT function when being applied, takes the param of the whole function as param. If one of the NBT functions is not a string or number, exceptions will be thrown.
 
 ### `<NBT function>` (syntax 2)
 
-The [NBT function](...md) to be concatenated as a list. If the return value of the NBT function is not a list, exceptions will be thrown. If it is a list, the elements in the list will be concatenated. If one of the elements is not a string or number, exceptions will be thrown.
+The [NBT function](index.md) to be concatenated as a list. If the return value of the NBT function is not a list, exceptions will be thrown. If it is a list, the elements in the list will be concatenated. If one of the elements is not a string or number, exceptions will be thrown.
 
 ### `delimiter = [delimiter]`
 
-[NBT function](...md). The string form of the return value of it will be used as a delimiter to connect the elements. If the return values of the NBT function is not a string or number, exceptions will be thrown.
+[NBT function](index.md). The string form of the return value of it will be used as a delimiter to connect the elements. If the return values of the NBT function is not a string or number, exceptions will be thrown.
 
 ## Examples
 

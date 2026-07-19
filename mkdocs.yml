@@ -2,8 +2,31 @@ site_name: Enhanced Commands Mod Docs
 theme:
   name: material
   palette:
-    scheme: preference
-    primary: teal
+    # 自动模式的调色板切换
+    - media: "(prefers-color-scheme)"
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-auto
+        name: 切换到明亮模式
+
+    # 明亮模式的调色板切换
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: 切换到黑暗模式
+
+    # 黑暗模式的调色板切换
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 切换到系统偏好
   
   language: zh
   locale: zh
@@ -30,7 +53,7 @@ plugins:
           default: true
           name: 简体中文
           build: true
-          copyright: 请注意：本网站目前仍在测试。
+          copyright: 请注意：本网站目前仍在测试。一些内部链接可能无效，请使用页面顶部的标签页或屏幕左侧的导航和目录。
           nav_translations:
             Home: 主页
             Arguments: 参数
@@ -48,4 +71,16 @@ plugins:
         - locale: en
           name: English
           build: true
-copyright: 'Note: The website is currently under test'
+copyright: 'Note: The website is currently under test. Some internal links may be invalid. Please use the tabs at the top of the page or the navigation and TOC on the left side of the page.'
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
+extra_css:
+  - stylesheets/style.css

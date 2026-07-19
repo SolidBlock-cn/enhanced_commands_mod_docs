@@ -1,6 +1,6 @@
 # `pos()` function: using coordinates in the NBT
 
-The [NBT function](...md) returns a coordinate in the form of array. Although you can directly write arrays, this NBT function supports various complicated coordinate syntax, including relatives coordinate and locals coordinate.
+The [NBT function](index.md) returns a coordinate in the form of array. Although you can directly write arrays, this NBT function supports various complicated coordinate syntax, including relatives coordinate and locals coordinate.
 
 ## Syntax
 

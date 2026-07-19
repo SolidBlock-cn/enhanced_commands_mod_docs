@@ -1,8 +1,9 @@
 title: * and rand()
+subtitle: Random block
 
 # `*` and `rand()`: Random Block
 
-This [block function](...md) returns a block randomly, and adds block state properties randomly.
+This [block function](index.md) returns a block randomly, and adds block state properties randomly.
 
 ## Syntax
 

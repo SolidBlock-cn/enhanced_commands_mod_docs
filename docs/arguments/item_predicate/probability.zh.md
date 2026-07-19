@@ -1,6 +1,6 @@
 # `probability()`：自己指定一个概率
 
-在一定的概率下通过的[物品谓词](...md)。用法同 [`probability()` 方块谓词](../../block_predicate/probability.md)，本页不作重复描述。
+在一定的概率下通过的[物品谓词](index.md)。用法同 [`probability()` 方块谓词](../../block_predicate/probability.md)，本页不作重复描述。
 
 ## 语法
 

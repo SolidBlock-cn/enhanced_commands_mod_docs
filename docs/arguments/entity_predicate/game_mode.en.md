@@ -1,6 +1,6 @@
 # `gamemode`: Tests the player's game mode
 
-This [entity predicate](...md) is used to test player's game mode. Same as vanilla, if an entity selector uses this predicate, the whole entity selector only selects players.
+This [entity predicate](index.md) is used to test player's game mode. Same as vanilla, if an entity selector uses this predicate, the whole entity selector only selects players.
 
 ## Syntax
 

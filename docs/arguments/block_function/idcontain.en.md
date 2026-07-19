@@ -1,10 +1,11 @@
 ---
 title: idcontain()
+subtitle: Match Regex Randomly
 ---
 
 # `idcontain()`: Match Regex Randomly
 
-This [block function](...md) randomly selects a block whose ID match the specified regular expression.
+This [block function](index.md) randomly selects a block whose ID match the specified regular expression.
 
 ## Syntax
 

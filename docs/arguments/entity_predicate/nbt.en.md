@@ -1,6 +1,6 @@
 # `nbt`
 
-This [entity predicate](...md) tests entity's NBT. Same as vanilla entity selector's `nbt` argument.
+This [entity predicate](index.md) tests entity's NBT. Same as vanilla entity selector's `nbt` argument.
 
 ## Data structure
 

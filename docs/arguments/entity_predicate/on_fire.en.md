@@ -1,6 +1,6 @@
 # `on_fire`: Tests whether the entity is on fire
 
-This [entity predicate](...md) tests whether the entity is on fire. The value of the argument, and supports inversion, for example, `[on_fire=!true]` is identical to `[on_fire=false]`.
+This [entity predicate](index.md) tests whether the entity is on fire. The value of the argument, and supports inversion, for example, `[on_fire=!true]` is identical to `[on_fire=false]`.
 
 ## Examples
 

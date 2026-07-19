@@ -1,6 +1,6 @@
 # `/mirror` 和 `//mirror`
 
-此[命令](...md)用于镜像（或者说是翻转）一个区域内的方块和实体。只支持绕 x、y 或 z 轴翻转。
+此[命令](index.md)用于镜像（或者说是翻转）一个区域内的方块和实体。只支持绕 x、y 或 z 轴翻转。
 
 ## 语法
 
@@ -11,7 +11,7 @@
 
 ### `<区域>`
 
-需要影响的[区域](/documents/arguments/region.md)。对于 `//mirror`，不指定此参数，使用玩家的活动区域。
+需要影响的[区域](../arguments/region/index.md)。对于 `//mirror`，不指定此参数，使用玩家的活动区域。
 
 ### `[轴]`
 
@@ -19,11 +19,11 @@
 
 ### 关键字参数
 
-**此命令支持 [`/setblocks`](../setblocks.md) 和 [`/moveblocks`](../moveblocks.md) 中的所有关键字参数。**
+**此命令支持 [`/setblocks`](setblocks.md) 和 [`/moveblocks`](moveblocks.md) 中的所有关键字参数。**
 
 除了 `/setblocks` 和 `/moveblocks` 中的关键字参数外，`/mirror` 和 `//mirror` 还支持以下关键字参数：
 
-- `pivot`：镜像时所影响围绕的点。必须是[方块坐标](/documents/arguments/pos.md)。如果未指定，则使用执行源所在的方块坐标。
+- `pivot`：镜像时所影响围绕的点。必须是[方块坐标](../arguments/pos.md)。如果未指定，则使用执行源所在的方块坐标。
 
 ## 示例
 

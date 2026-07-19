@@ -1,6 +1,6 @@
 # `alternatives`: union set of multiple entity predicates
 
-This [entity predicate](...md) multiple entity predicates. The entity only needs to pass one of the predicate tests. Values of the parameters are wrapped in a square bracket, with multiple entity predicates inside; multiple entity predicates are separated with comma. The parameter be inverted.
+This [entity predicate](index.md) multiple entity predicates. The entity only needs to pass one of the predicate tests. Values of the parameters are wrapped in a square bracket, with multiple entity predicates inside; multiple entity predicates are separated with comma. The parameter be inverted.
 
 ## Examples
 
@@ -13,5 +13,5 @@ This [entity predicate](...md) multiple entity predicates. The entity only needs
 
 - `type`: Currently `"enhanced_commands:alternatives"`.
 - `predicates`: List.
-    - An [entity predicate](...md)。
+    - An [entity predicate](index.md)。
 - `inverted`: Boolean, optional, false by default.

@@ -1,6 +1,9 @@
+title: checkerboard()
+subtitle: 棋盘格的谓词
+
 # `checkerboard()`：棋盘格的谓词
 
-此[方块谓词](...md)生成一个棋盘格，根据棋盘格为每个位置确定谓词。参见 [`checkerboard() 方块函数`](../../block_function/checkerboard.md)。
+此[方块谓词](index.md)生成一个棋盘格，根据棋盘格为每个位置确定谓词。参见 [`checkerboard() 方块函数`](../../block_function/checkerboard.md)。
 
 ## 语法
 

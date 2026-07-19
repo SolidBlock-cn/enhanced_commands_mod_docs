@@ -1,6 +1,6 @@
 # `distance`
 
-This [entity predicate](...md) exists technically, and is used to test the entity's distance to the position defined by the `x`, `y`, `z` arguments.
+This [entity predicate](index.md) exists technically, and is used to test the entity's distance to the position defined by the `x`, `y`, `z` arguments.
 
 In the entity selector arguments, the range of distance is specified through `distance` argument, and the base point of the distance is specified through `x`, `y`, `z` arguments.
 

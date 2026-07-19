@@ -1,6 +1,6 @@
 # `/food`
 
-此[命令](...md)用于修改玩家的饱和度、饱食度或消耗度。仅对玩家有效。
+此[命令](index.md)用于修改玩家的饱和度、饱食度或消耗度。仅对玩家有效。
 
 ## 语法
 
@@ -17,7 +17,7 @@
 
 ### `<玩家>`
 
-[实体选择器](/documents/arguments/entity_selector.md)，默认为命令的执行者，即 `@s`。必须是玩家。
+[实体选择器](../arguments/entity_selector.md)，默认为命令的执行者，即 `@s`。必须是玩家。
 
 ### `[聚合类型]`
 
@@ -53,4 +53,4 @@
 
 ## 参见
 
-[实体选择器](/documents/arguments/entity_selector.md)中的 [`food`](/documents/arguments/entity_selector.md#food)、[`saturation`](/documents/arguments/entity_selector.md#saturation) 和 [`exhaustion`](/documents/arguments/entity_selector.md#exhaustion) 参数。
+[实体选择器](../arguments/entity_selector.md)中的 [`food`](../arguments/entity_selector.md#food)、[`saturation`](../arguments/entity_selector.md#saturation) 和 [`exhaustion`](../arguments/entity_selector.md#exhaustion) 参数。

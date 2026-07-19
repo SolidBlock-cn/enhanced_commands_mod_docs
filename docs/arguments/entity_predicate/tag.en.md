@@ -1,6 +1,6 @@
 # `tag`: Tests scoreboard tags
 
-This [entity predicate](...md) tests the player's scoreboard tag, identical to vanilla entity selector's `tag` argument.
+This [entity predicate](index.md) tests the player's scoreboard tag, identical to vanilla entity selector's `tag` argument.
 
 ## Data structure
 

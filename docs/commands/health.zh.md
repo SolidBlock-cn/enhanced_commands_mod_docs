@@ -1,6 +1,6 @@
 # `/health`
 
-此[命令](...md)用于修改生物的生命值。此命令对于非生物实体，包括矿车、掉落的物品等，不起作用。
+此[命令](index.md)用于修改生物的生命值。此命令对于非生物实体，包括矿车、掉落的物品等，不起作用。
 
 将生命值设置为 0 时，会直接导致该生物死亡，并且没有死亡消息。
 
@@ -19,11 +19,11 @@
 
 ### `<实体>`
 
-[实体选择器](/documents/arguments/entity_selector.md)，该命令所需要影响到的实体。对于除 `/health set` 之外的命令，默认为命令执行者，即 `@s`。
+[实体选择器](../arguments/entity_selector.md)，该命令所需要影响到的实体。对于除 `/health set` 之外的命令，默认为命令执行者，即 `@s`。
 
 ### `[聚合类型]`
 
-[聚合类型](/documents/arguments/concentration_type.md)，默认为 `average`。当选择到多个生物时，指定如何返回值。
+[聚合类型](../arguments/concentration_type.md)，默认为 `average`。当选择到多个生物时，指定如何返回值。
 
 ### `[倍率]`
 
@@ -35,11 +35,11 @@
 
 ### `<NBT 目标> <路径>`
 
-将生命值以浮点数的形式存储至的位置。参见 [NBT 目标](/documents/arguments/nbt_target.md)。
+将生命值以浮点数的形式存储至的位置。参见 [NBT 目标](../arguments/nbt_target.md)。
 
 ### `<NBT 源> <路径>`
 
-指定需要获取浮点形式的 NBT 值的位置。参见 [NBT 源](/documents/arguments/nbt_source.md)。
+指定需要获取浮点形式的 NBT 值的位置。参见 [NBT 源](../arguments/nbt_source.md)。
 
 ## 示例
 
@@ -54,4 +54,4 @@
 
 ## 参见
 
-- [实体选择器中的 health 参数](/documents/arguments/entity_selector.md#health)
+- [实体选择器中的 health 参数](../arguments/entity_selector.md#health)

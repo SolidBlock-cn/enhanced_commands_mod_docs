@@ -1,6 +1,6 @@
 # `overlay()`
 
-This [NBT function](...md) is used to apply multiple NBT functions.
+This [NBT function](index.md) is used to apply multiple NBT functions.
 
 ## Syntax
 

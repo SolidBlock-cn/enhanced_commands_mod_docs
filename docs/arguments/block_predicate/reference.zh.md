@@ -1,6 +1,6 @@
 # 引用方块谓词
 
-此[方块谓词](...md)引用数据包中的方块谓词 ID。
+此[方块谓词](index.md)引用数据包中的方块谓词 ID。
 
 ID 为 `<namespace>:<path>` 的方块谓词位于数据包中的 `data/<namespace>/enhanced_commands/block_predicate/<path>.json`。
 

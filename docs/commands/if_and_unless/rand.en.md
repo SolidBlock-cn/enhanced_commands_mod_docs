@@ -1,6 +1,6 @@
 # `/if|unless rand`
 
-The [command](../...md) is used to execute or not to execute the command under a certain probability.
+The [command](../index.md) is used to execute or not to execute the command under a certain probability.
 
 ## Syntax
 

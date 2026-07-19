@@ -1,6 +1,6 @@
 # `player_only`: Predicate that filters players only
 
-This [entity predicate](...md) passes only when the entity is a player. This predicate is technical, and cannot be directly defined by entity selector arguments.
+This [entity predicate](index.md) passes only when the entity is a player. This predicate is technical, and cannot be directly defined by entity selector arguments.
 
 ## Data structure
 

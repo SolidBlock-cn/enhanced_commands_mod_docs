@@ -1,6 +1,11 @@
+---
+title: /velocity
+subtitle: 修改实体的速度
+---
+
 # `/velocity`：修改实体的速度
 
-此[命令](...md)用于修改实体的速度。
+此[命令](index.md)用于修改实体的速度。
 
 > 修改玩家的速度是实验性功能，可能不会稳定生效，有时可能不起作用。具体表现在：
 > - 在 1.21.1 版本中，对玩家速度修改不起作用。
@@ -21,7 +26,7 @@
 
 ### `<目标>`
 
-[实体选择器](/documents/arguments/entity_selector.md)。将被修改速度的实体。
+[实体选择器](../arguments/entity_selector.md)。将被修改速度的实体。
 
 ### `<向量>`
 
@@ -35,7 +40,7 @@
 
 ### `[聚合类型]`
 
-[聚合类型](/documents/arguments/concentration_type.md)，若未指定，则为 `average`。
+[聚合类型](../arguments/concentration_type.md)，若未指定，则为 `average`。
 
 ## 示例
 

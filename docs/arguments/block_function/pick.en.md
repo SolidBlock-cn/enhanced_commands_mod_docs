@@ -1,8 +1,9 @@
 title: pick()
+subtitle: Choose Block Functions Randomly
 
 # `pick()`: Choose Block Functions Randomly
 
-This [block function](...md) is used to select from multiple block functions. You can specify a weight for each block function, which is by default 1.
+This [block function](index.md) is used to select from multiple block functions. You can specify a weight for each block function, which is by default 1.
 
 ## Syntax
 
@@ -13,7 +14,7 @@ This [block function](...md) is used to select from multiple block functions. Yo
 
 ### `<block function>`
 
-At least one [block function](...md) to be applied.
+At least one [block function](index.md) to be applied.
 
 ### `[weight]`
 

@@ -1,6 +1,6 @@
 # `/air`
 
-此[命令](...md)用于修改实体的空气值。此命令对于任何实体都有效，但一些非生物实体的空气值可能没有实际的影响。
+此[命令](index.md)用于修改实体的空气值。此命令对于任何实体都有效，但一些非生物实体的空气值可能没有实际的影响。
 
 ## 语法
 
@@ -17,11 +17,11 @@
 
 ### `<实体>`
 
-[实体选择器](/documents/arguments/entity_selector.md)，该命令所需要影响到的实体。对于除 `/air set` 之外的命令，默认为命令执行者，即 `@s`。
+[实体选择器](../arguments/entity_selector.md)，该命令所需要影响到的实体。对于除 `/air set` 之外的命令，默认为命令执行者，即 `@s`。
 
 ### `[聚合类型]`
 
-[聚合类型](/documents/arguments/concentration_type.md)，默认为 `average`。当选择到多个实体时，指定如何返回值。
+[聚合类型](../arguments/concentration_type.md)，默认为 `average`。当选择到多个实体时，指定如何返回值。
 
 ### `[值]`
 
@@ -29,11 +29,11 @@
 
 ### `<NBT 目标> <路径>`
 
-将生命值以浮点数的形式存储至的位置。参见 [NBT 目标](/documents/arguments/nbt_target.md)。
+将生命值以浮点数的形式存储至的位置。参见 [NBT 目标](../arguments/nbt_target.md)。
 
 ### `<NBT 源> <路径>`
 
-指定需要获取浮点形式的 NBT 值的位置。参见 [NBT 源](/documents/arguments/nbt_source.md)。
+指定需要获取浮点形式的 NBT 值的位置。参见 [NBT 源](../arguments/nbt_source.md)。
 
 ## 示例
 
@@ -44,4 +44,4 @@
 
 ## 参见
 
-- [实体选择器中的 air 参数](/documents/arguments/entity_selector.md#air)
+- [实体选择器中的 air 参数](../arguments/entity_selector.md#air)

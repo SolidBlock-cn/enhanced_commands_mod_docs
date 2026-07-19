@@ -1,6 +1,6 @@
 # `/nbt`：随心所欲地操作 NBT
 
-此[命令](...md)可用于查询或修改 NBT 数据，包括方块、实体和存储的 NBT 数据。
+此[命令](index.md)可用于查询或修改 NBT 数据，包括方块、实体和存储的 NBT 数据。
 
 ## 语法
 
@@ -17,11 +17,11 @@
 
 ### `<来源>`
 
-[NBT 来源](/documents/arguments/nbt_source.md)。
+[NBT 来源](../arguments/nbt_source.md)。
 
 ### `<目标>`
 
-[NBT 目标](/documents/arguments/nbt_target.md)。
+[NBT 目标](../arguments/nbt_target.md)。
 
 ### `<路径>`
 
@@ -29,11 +29,11 @@ NBT 路径，和原版用法一致。
 
 ### `<NBT 谓词>`
 
-[NBT 谓词](/documents/arguments/nbt_predicate.md)。
+[NBT 谓词](../arguments/nbt_predicate/index.md)。
 
 ### `<NBT 函数>`
 
-[NBT 函数](/documents/arguments/nbt_function.md)。
+[NBT 函数](../arguments/nbt_function/index.md)。
 
 ### 关键字参数
 
@@ -52,7 +52,7 @@ NBT 路径，和原版用法一致。
 
 ## 参见
 
-- [NBT 函数 `replace()`](/documents/arguments/nbt_function/replaceblocks.md)
-- [NBT 函数 `string_replace()`](/documents/arguments/nbt_function/string_replace.md)
-- [NBT 函数 `regex_replace()`](/documents/arguments/nbt_function/regex_replace.md)
-- [NBT 函数 `substring()`](/documents/arguments/nbt_function/substring.md)
+- [NBT 函数 `replace()`](../arguments/nbt_function/replaceblocks.md)
+- [NBT 函数 `string_replace()`](../arguments/nbt_function/string_replace.md)
+- [NBT 函数 `regex_replace()`](../arguments/nbt_function/regex_replace.md)
+- [NBT 函数 `substring()`](../arguments/nbt_function/substring.md)

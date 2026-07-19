@@ -1,6 +1,6 @@
 # Curve
 
-**Curve** is an [argument type](...md) which is a curve in the world, and specifies how to iterate points in the world, to draw this curve.
+**Curve** is an [argument type](index.md) which is a curve in the world, and specifies how to iterate points in the world, to draw this curve.
 
 Different from regions, curves have length, do not have volume, and cannot test whether a specified point is within the curve. The points iterated are precise points, instead of block pos.
 

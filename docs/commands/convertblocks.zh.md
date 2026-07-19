@@ -1,6 +1,6 @@
 # `/convertblocks` 和 `//convertblcks`
 
-此[命令](...md)用于将一个区域内的方块全部转换为实体。
+此[命令](index.md)用于将一个区域内的方块全部转换为实体。
 
 ## 语法
 
@@ -13,15 +13,15 @@
 
 ### `<区域>`
 
-需要影响的[区域](../../arguments/region.md)。对于 `//convertblocks`，不使用此参数，使用命令执行者的活动区域。
+需要影响的[区域](../arguments/region/index.md)。对于 `//convertblocks`，不使用此参数，使用命令执行者的活动区域。
 
 ### 关键字参数
 
-此命令支持 [`/convertblock`](../convertblock.md) 的所有关键字参数。此外，此命令还支持以下关键字参数：
+此命令支持 [`/convertblock`](convertblock.md) 的所有关键字参数。此外，此命令还支持以下关键字参数：
 
 #### `affect_only`
 
-[方块谓词](/documents/arguments/block_predicate.md)，只影响符合此谓词的方块。
+[方块谓词](../arguments/entity_selector.md)，只影响符合此谓词的方块。
 
 如果没有指定此参数，那么只影响非空气方块，当 `affect_fluid` 为 `false`（即默认情况）时，仅有流体的方块（例如水、熔岩，但不包括含水方块）不会受到影响。
 
@@ -35,7 +35,7 @@
 
 #### `unloaded_pos`
 
-和 [`/setblocks`](../setblocks.md) 的 `unloaded_pos` 参数相同。
+和 [`/setblocks`](setblocks.md) 的 `unloaded_pos` 参数相同。
 
 ## 示例
 

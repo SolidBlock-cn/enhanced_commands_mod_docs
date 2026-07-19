@@ -1,6 +1,6 @@
 # `overlay()`
 
-此 [NBT 函数](...md)用于依次应用多个 NBT 函数。
+此 [NBT 函数](index.md)用于依次应用多个 NBT 函数。
 
 ## 语法
 

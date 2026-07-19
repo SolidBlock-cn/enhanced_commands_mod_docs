@@ -1,6 +1,9 @@
+title: NBT concentration type
+subtitle: converting multiple NBTs to one
+
 # NBT concentration type: converting multiple NBTs to one
 
-**NBT concentration type** is an [argument type](...md), specifying how multiple NBT data are converted into one. Similar to [concentration type](../concentration_type.md), but can handle NBT data.
+**NBT concentration type** is an [argument type](index.md), specifying how multiple NBT data are converted into one. Similar to [concentration type](concentration_type.md), but can handle NBT data.
 
 NBT concentration types support the following values:
 
@@ -10,7 +13,7 @@ NBT concentration types support the following values:
 - `max`: The maximum value.
 - `list`: Form a list containing all NBT data. If the data has mixed different types, exceptions will be thrown.
 - `random`: Get a random value among the NBT data.
-- `all`: When all the data contains only one, returns the data. If there are multiple, exceptions will be thrown, unless some commands handle this specially. For example, the [`/nbt` command](../../commands/nbt.md) can display multiple data directly.
+- `all`: When all the data contains only one, returns the data. If there are multiple, exceptions will be thrown, unless some commands handle this specially. For example, the [`/nbt` command](../commands/nbt.md) can display multiple data directly.
 
 When the concentrated data has zero values, unless the concentration type is `list`, exceptions will be thrown. The `list` concentration type concentrates zero data into one empty list.
 

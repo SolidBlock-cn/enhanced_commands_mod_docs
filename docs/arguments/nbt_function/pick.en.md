@@ -1,6 +1,6 @@
 # `pick()`: Choose an NBT function randomly
 
-This [NBT function](...md) is used to select from multiple block functions. You can specify a weight for each block function, which is by default 1.
+This [NBT function](index.md) is used to select from multiple block functions. You can specify a weight for each block function, which is by default 1.
 
 ## Syntax
 
@@ -10,7 +10,7 @@ This [NBT function](...md) is used to select from multiple block functions. You 
 
 ### `<NBT function>`
 
-At least one [NBT function](...md) to be applied.
+At least one [NBT function](index.md) to be applied.
 
 ### `[weight]`
 
@@ -36,5 +36,5 @@ Floating point number, between 0 and 1. Relative probability each NBT function c
 
 ## See also
 
-- [`pick()` block function](../../block_function/pick.md)
-- [`pick()` item function](../../item_function/pick.md)
+- [`pick()` block function](../arguments/block_function/pick.md)
+- [`pick()` item function](../arguments/item_function/pick.md)

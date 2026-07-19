@@ -1,6 +1,6 @@
 # `from()` function: importing NBT data from the specified source
 
-The [NBT function](...md) can be used to import NBT data from a specified [NBT source](../../nbt_source.md). It is possible to specify the path of NBT data to be import, and the concentration type of the data. If the NBT source has multiple NBTs, such as a [region](../../region.md) containing multiple block entities, or an [entity selector](../../entity_selector.md) that finds multiple entity, the concentration type must be specified, or errors will be thrown.
+The [NBT function](index.md) can be used to import NBT data from a specified [NBT source](../arguments/nbt_source.md). It is possible to specify the path of NBT data to be import, and the concentration type of the data. If the NBT source has multiple NBTs, such as a [region](../../region/index.md) containing multiple block entities, or an [entity selector](../../entity_selector.md) that finds multiple entity, the concentration type must be specified, or errors will be thrown.
 
 ## Syntax
 
@@ -10,7 +10,7 @@ The [NBT function](...md) can be used to import NBT data from a specified [NBT s
 
 ### `<NBT source>`
 
-The [NBT source](../../nbt_source.md).
+The [NBT source](../arguments/nbt_source.md).
 
 ### `[NBT path]`
 
@@ -18,7 +18,7 @@ NBT path, the format is the same as vanilla. It specifies the path in which to i
 
 ### `[NBT concentration type]`
 
-[NBT concentration type](../../nbt_concentration_type.md). When applying the function, if the NBT source is found to have multiple NBTs, such as a [region](../../region.md) containing multiple block entities, or an [entity selector](../../entity_selector.md) that finds multiple entities, while the concentration is not specified, exceptions will be thrown.
+[NBT concentration type](../../nbt_concentration_type.md). When applying the function, if the NBT source is found to have multiple NBTs, such as a [region](../../region/index.md) containing multiple block entities, or an [entity selector](../../entity_selector.md) that finds multiple entities, while the concentration is not specified, exceptions will be thrown.
 
 ## Examples
 

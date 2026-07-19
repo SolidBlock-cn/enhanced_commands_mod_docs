@@ -1,6 +1,6 @@
 # `/convertblock`
 
-此[命令](...md)可以将特定位置的方块转换为实体。
+此[命令](index.md)可以将特定位置的方块转换为实体。
 
 ## 语法
 
@@ -11,17 +11,17 @@
 
 ### `<坐标>`
 
-需要影响的方块的[坐标](/documents/arguments/pos.md)。如果是未加载的坐标则会执行失败。
+需要影响的方块的[坐标](../arguments/pos.md)。如果是未加载的坐标则会执行失败。
 
 ### 关键字参数
 
-此命令支持以下关键字参数： `skip_light_update`、`notify_listeners`、`notify_neighbors`、`force_state`、`suppress_initial_check`、`suppress_replaced_check`、`force`，其用法与 [`/setblocks`](../setblocks.md) 中的参数相同。但是与 `/setblocks` 不同的是，`/convertblock` 的 `force_state` 的默认值为 `true`，而不是 `false`。
+此命令支持以下关键字参数： `skip_light_update`、`notify_listeners`、`notify_neighbors`、`force_state`、`suppress_initial_check`、`suppress_replaced_check`、`force`，其用法与 [`/setblocks`](setblocks.md) 中的参数相同。但是与 `/setblocks` 不同的是，`/convertblock` 的 `force_state` 的默认值为 `true`，而不是 `false`。
 
 此命令还支持以下关键字参数：
 
 #### `nbt`
 
-[NBT 函数](/documents/arguments/nbt_function.md)，用于影响转换后的实体的 NBT。
+[NBT 函数](../arguments/nbt_function/index.md)，用于影响转换后的实体的 NBT。
 
 #### `affect_fluid`
 

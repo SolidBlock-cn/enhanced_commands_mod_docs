@@ -1,6 +1,6 @@
 # `region`: Selects entities in the specified region
 
-This [entity predicate](...md) selects entities in the specified [region](/documents/arguments/region.md). Relative coordinates are local coordinates are supported, which are calculated according to the position and rotation of the command source (instead of the selected entities' position and rotation).
+This [entity predicate](index.md) selects entities in the specified [region](../region/index.md). Relative coordinates are local coordinates are supported, which are calculated according to the position and rotation of the command source (instead of the selected entities' position and rotation).
 
 This entity predicate does not support inversion yet.
 
@@ -11,4 +11,4 @@ This entity predicate does not support inversion yet.
 ## Data structure
 
 - `type`: Currently `"enhanced_commands:region"`.
-- `region`: [Region](/documents/arguments/region.md).
+- `region`: [Region](../region/index.md).

@@ -1,6 +1,6 @@
 # NBT source: specifying from where to get NBT
 
-**NBT source** is an [argument type](...md), specifying from where to get NBT data. Note that NBT source is a whole NBT, which usually is only a compound. When running the command actually, it is usually needed to specify the path and the [concentration type](../nbt_concentration_type.md)。
+**NBT source** is an [argument type](index.md), specifying from where to get NBT data. Note that NBT source is a whole NBT, which usually is only a compound. When running the command actually, it is usually needed to specify the path and the [concentration type](../nbt_concentration_type.md)。
 
 ## Syntax
 
@@ -9,7 +9,7 @@
 - `literal <NBT function>`: Directly specifying NBT data. The NBT function when being used, takes null as a parameter.
 - `storage <id>`: The NBT data from a specified storage. Same as vanilla `/data ... storage <id>`.
 
-For the usage of parameters, see [region](/documents/arguments/region.md), [entity selector](/documents/arguments/entity_selector.md) and [NBT function](../nbt_function.md).
+For the usage of parameters, see [region](../region/index.md), [entity selector](../entity_selector.md) and [NBT function](../nbt_function/index.md).
 
 ## Examples
 

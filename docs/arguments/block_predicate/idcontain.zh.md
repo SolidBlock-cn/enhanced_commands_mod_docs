@@ -1,6 +1,9 @@
+title: idcontain()
+subtitle: 对方块 id 做个正则！
+
 # `idcontain()`：对方块 id 做个正则！
 
-此[方块谓词](...md)用于检测方块的 ID 是否包含指定的正则表达式。
+此[方块谓词](index.md)用于检测方块的 ID 是否包含指定的正则表达式。
 
 ## 语法
 

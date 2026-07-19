@@ -1,6 +1,6 @@
 # `type`: Tests the entity type
 
-This [entity predicate](...md) tests the entity type. You can specify one type, or multiple types. The specified type can be the entity type id, or the entity type tag. This argument also supports inversion.
+This [entity predicate](index.md) tests the entity type. You can specify one type, or multiple types. The specified type can be the entity type id, or the entity type tag. This argument also supports inversion.
 
 Usually, for entity selectors, if the `type` argument only specify one type, is not tag and is not inverted, it will be used as a property of the entity predicate itself, and may affect the logic of entity selector selecting entities.
 

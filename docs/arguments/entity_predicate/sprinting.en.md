@@ -1,6 +1,6 @@
 # `sprinting`: Tests sprinting
 
-This [entity predicate](...md) tests whether the entity is sprinting. The parameter can be inverted.
+This [entity predicate](index.md) tests whether the entity is sprinting. The parameter can be inverted.
 
 ## Examples
 

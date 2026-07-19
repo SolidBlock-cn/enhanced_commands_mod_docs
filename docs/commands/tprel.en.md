@@ -1,6 +1,6 @@
 # `/tprel`
 
-This [command](...md) is used to teleport entities. But different from vanilla `/teleport` (`/tp`), the relative coordinates and relative rotations of `/tprel` are based on the position and rotation of each entity to be teleported, instead of those of the command source (which is usually the position and rotation of the executor of the command). `/tprel` does not support teleporting entities to another entity.
+This [command](index.md) is used to teleport entities. But different from vanilla `/teleport` (`/tp`), the relative coordinates and relative rotations of `/tprel` are based on the position and rotation of each entity to be teleported, instead of those of the command source (which is usually the position and rotation of the executor of the command). `/tprel` does not support teleporting entities to another entity.
 
 ## Syntax
 

@@ -1,6 +1,6 @@
 # `owner`: Tests the owner of tameable entities
 
-This [entity predicate](...md) filters by entities' owners. The value can be an [entity predicate](...md) or no value.
+This [entity predicate](index.md) filters by entities' owners. The value can be an [entity predicate](index.md) or no value.
 
 This option can be inverted. When no value is specified, it selects untamed entities, including untamable entities.
 
@@ -23,5 +23,5 @@ If a selector is provided as a value, then no matter inverted or not, entities c
 ## Data structure
 
 - `type`: Currently `"enhanced_commands:owner"`.
-- `owner`: [Entity predicate](...md).
+- `owner`: [Entity predicate](index.md).
 - `inverted`: Boolean, optional, by default `false`.

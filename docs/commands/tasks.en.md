@@ -1,6 +1,11 @@
+---
+title: /tasks
+subtitle: Manage tasks of the server
+---
+
 # `/tasks`: Manage tasks of the server
 
-The [command](...md) is used to manage the scheduled tasks of the server.
+The [command](index.md) is used to manage the scheduled tasks of the server.
 
 When you modify masses of blocks with commands such as `/setblocks`, `/draw` while not setting `immediately=true`, a scheduled task will be created, to split a task into multiple ticks, avoiding server lags caused by completing masses of tasks in one single tick.
 

@@ -1,6 +1,6 @@
 # `sub_predicate`: In entity selectors filter entity that `is` or is `not` what you want
 
-Specifies an [entity predicate](...md) and only passes when the entity also matches or does not match the predicate. This means filtering or excluding entities selected.
+Specifies an [entity predicate](index.md) and only passes when the entity also matches or does not match the predicate. This means filtering or excluding entities selected.
 
 ## Syntax
 

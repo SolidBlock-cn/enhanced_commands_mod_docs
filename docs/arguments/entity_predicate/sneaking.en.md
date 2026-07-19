@@ -1,6 +1,6 @@
 # `sneaking`: Tests sneaking
 
-This [entity predicate](...md) tests whether the entity is sneaking. Players flying and descending will also be selected. This option is different from the loot predicate.
+This [entity predicate](index.md) tests whether the entity is sneaking. Players flying and descending will also be selected. This option is different from the loot predicate.
 
 ## Syntax
 

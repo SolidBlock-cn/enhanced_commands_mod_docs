@@ -1,6 +1,6 @@
 # `/if|unless blockinfo`
 
-这个[命令](../...md)用于在只有当方块信息符合（或不符合）指定的条件下才执行命令。
+这个[命令](../index.md)用于在只有当方块信息符合（或不符合）指定的条件下才执行命令。
 
 ## 语法
 
@@ -21,13 +21,13 @@
 
 上述命令参数完成后，后面可以接一个完整的命令。
 
-上述各命令的含义参见 [`/testfor blockinfo`](/documents/commands/testfor/blockinfo.md)。
+上述各命令的含义参见 [`/testfor blockinfo`](../testfor/blockinfo.md)。
 
 ## 参数
 
 ### `<坐标>`
 
-[坐标](/documents/arguments/pos.md)。需要测试的方块的坐标。
+[坐标](../../arguments/pos.md)。需要测试的方块的坐标。
 
 ## 示例
 
@@ -37,4 +37,4 @@
 
 ## 参见
 
-- [`/testfor blockinfo` 命令](/documents/commands/testfor/blockinfo.md)
+- [`/testfor blockinfo` 命令](../testfor/blockinfo.md)

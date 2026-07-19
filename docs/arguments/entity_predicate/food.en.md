@@ -1,6 +1,6 @@
 # `food`: Tests the entity's food value
 
-This [entity predicate](...md) tests the food value of entities. Accepts integer ranges. Can be inverted.
+This [entity predicate](index.md) tests the food value of entities. Accepts integer ranges. Can be inverted.
 
 Only players have food values, so adding this parameter will only select players.
 

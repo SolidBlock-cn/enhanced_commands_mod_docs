@@ -1,6 +1,6 @@
 # `name`: Tests entity's name
 
-This [entity predicate](...md) is same as vanilla `name` argument, testing entity's name and supporting inversion.
+This [entity predicate](index.md) is same as vanilla `name` argument, testing entity's name and supporting inversion.
 
 ## Examples
 

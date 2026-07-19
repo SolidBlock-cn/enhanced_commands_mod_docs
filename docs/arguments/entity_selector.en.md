@@ -1,6 +1,6 @@
 # Entity selector
 
-An **entity selector**, or also known as **target selector**, is an [argument type](...md) used to select entities matching the specified conditions. Entity selectors already exist in vanilla Minecraft, and the mod extends the functionalities of entity selectors.
+An **entity selector**, or also known as **target selector**, is an [argument type](index.md) used to select entities matching the specified conditions. Entity selectors already exist in vanilla Minecraft, and the mod extends the functionalities of entity selectors.
 
 ## Improvements compared to vanilla Minecraft
 
@@ -238,7 +238,7 @@ Parameters directly used as the predicate:
 - [`pose`](../entity_predicate/pose.md): Selects entities in the specified pose.
     - `@e[pose=crouching]`: Selects all crouching entities.
     - `@a[pose=!swimming]`: Selects all entities not swimming.
-- [`region`](../entity_predicate/region.md): Selects entities within a specified [region](/documents/arguments/region.md). Relative coordinates are local coordinates are supported, which are calculated according to the position and rotation of the command source (instead of the selected entities' position and rotation).
+- [`region`](../entity_predicate/region/index.md): Selects entities within a specified [region](/region/index.md). Relative coordinates are local coordinates are supported, which are calculated according to the position and rotation of the command source (instead of the selected entities' position and rotation).
     - `@e[region=sphere(5)]`: Selects entities within a sphere range, whose center is the command source's position, and radius is 5.
 - [`saturation`](../entity_predicate/saturation.md): Tests the saturation of entity. Accepts float-point number ranges. Can be inverted.
     - `@e[saturation=5..]`: Selects players whose saturation is at least 5.

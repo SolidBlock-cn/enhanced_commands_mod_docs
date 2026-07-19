@@ -1,6 +1,6 @@
 # `scores`: Tests entity's scoreboard score
 
-This [entity predicate](...md) tests an entity's scoreboard score. Similar to vanilla `scores` argument, it takes a map (key-value pair) of "objective name - range", and this mod supports inversion to the number range.
+This [entity predicate](index.md) tests an entity's scoreboard score. Similar to vanilla `scores` argument, it takes a map (key-value pair) of "objective name - range", and this mod supports inversion to the number range.
 
 When the specified score objective does not exist, or the entity has no score on this objective, the test always fails, regardless of whether inverted.
 

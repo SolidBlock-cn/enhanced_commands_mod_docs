@@ -1,6 +1,6 @@
 # Block Function
 
-The **block function** is an [argument type](...md) used to modify a block (including block entity) at a certain position in the world.
+The **block function** is an [argument type](index.md) used to modify a block (including block entity) at a certain position in the world.
 
 ## Basic usage
 

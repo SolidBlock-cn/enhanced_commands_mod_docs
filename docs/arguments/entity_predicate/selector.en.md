@@ -1,6 +1,6 @@
 # `selector`: Predicate based on entity selector
 
-This [entity predicate](...md) tests whether the entity matches the specified entity selector. This is the primary implementation of entity predicates in this mod.
+This [entity predicate](index.md) tests whether the entity matches the specified entity selector. This is the primary implementation of entity predicates in this mod.
 
 When the entity selector has `limit` argument, when used as an entity predicate, it selects entities first, and then judge whether the entity belongs to the selected entities. If `limit` argument is not specified, the entity predicates specified by the selector will be directly used to judge.
 

@@ -1,6 +1,6 @@
 # `/debug:permissionlevel`
 
-The [command](...md) can be used to get the current permission level, and execute a command with a specified permission level.
+The [command](index.md) can be used to get the current permission level, and execute a command with a specified permission level.
 
 ## Syntax
 

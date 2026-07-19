@@ -1,0 +1,7 @@
+html[lang=zh] article > p {
+    text-indent: 2em;
+}
+
+html[lang=zh] article > p > * {
+    text-indent: 0;
+}

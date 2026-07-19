@@ -1,6 +1,6 @@
 # `advancements`: Tests player's advancement
 
-This [entity predicate](...md) tests player's advancement. Same as vanilla, but when specifying advancement criteria, quoted strings are allowed.
+This [entity predicate](index.md) tests player's advancement. Same as vanilla, but when specifying advancement criteria, quoted strings are allowed.
 
 ## Syntax
 

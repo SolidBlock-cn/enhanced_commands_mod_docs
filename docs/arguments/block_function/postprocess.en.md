@@ -1,8 +1,9 @@
 title: postprocess()
+subtitle: Settle your fences and walls
 
 # `postprocess()`: Settle your fences and walls
 
-This [block function](...md) cannot postprocess on blocks, such as triggering a block update, which may address the issues related to fences and walls.
+This [block function](index.md) cannot postprocess on blocks, such as triggering a block update, which may address the issues related to fences and walls.
 
 To demonstrate the function of this function, you can try executing the following commands in order (you can also add some extra arguments to adjust the execution effect):
 

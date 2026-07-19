@@ -1,6 +1,6 @@
 # `/rotateblocks` 和 `//rotateblocks`
 
-此[命令](...md)用于绕一个轴逆时针旋转一个区域内的方块和实体。
+此[命令](index.md)用于绕一个轴逆时针旋转一个区域内的方块和实体。
 
 ## 语法
 
@@ -15,7 +15,7 @@
 
 ### `<区域>`
 
-需要移动的[区域](/documents/arguments/region.md)。使用 `//rotateblocks` 时不指定区域，使用玩家的活动区域。
+需要移动的[区域](../arguments/region/index.md)。使用 `//rotateblocks` 时不指定区域，使用玩家的活动区域。
 
 ### `<角度>`
 
@@ -23,7 +23,7 @@
 
 ### `<方向>`
 
-旋转所需要围绕的轴的[方向](/documents/arguments/direction.md)。如未指定，则默认为 y 轴正方向，即向上（`up`）。
+旋转所需要围绕的轴的[方向](../arguments/direction.md)。如未指定，则默认为 y 轴正方向，即向上（`up`）。
 
 ### `<x> <y> <z>`
 
@@ -31,12 +31,12 @@
 
 ### 关键字参数
 
-**此命令支持 [`/setblocks`](../setblocks.md) 和 [`/moveblocks`](../moveblocks.md) 中的所有关键字参数。**
+**此命令支持 [`/setblocks`](setblocks.md) 和 [`/moveblocks`](moveblocks.md) 中的所有关键字参数。**
 
 除了 `/setblocks` 和 `/moveblocks` 中的关键字参数外，`/rotateblocks` 和 `//rotateblocks` 还支持以下关键字参数：
 
 - `interpolate`：布尔值，表示旋转时是否进行插值。对于围绕坐标轴且旋转角度为 90deg 的倍数的旋转，通常不需要插值。
-- `pivot`：[坐标](/documents/arguments/pos.md)，旋转的中心点。必须是方块坐标。如果未指定，则默认为执行源所在的坐标。
+- `pivot`：[坐标](../arguments/pos.md)，旋转的中心点。必须是方块坐标。如果未指定，则默认为执行源所在的坐标。
 
 ## 示例
 

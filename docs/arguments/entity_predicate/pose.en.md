@@ -1,6 +1,6 @@
 # `pose`: Tests entity's pose
 
-This [entity predicate](...md) selects entities in the specified pose, and supports inversion.
+This [entity predicate](index.md) selects entities in the specified pose, and supports inversion.
 
 Supported pose names include:
 

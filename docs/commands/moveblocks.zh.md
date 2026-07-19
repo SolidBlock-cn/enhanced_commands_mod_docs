@@ -1,6 +1,6 @@
 # `/moveblocks` 和 `//moveblocks`
 
-此[命令](...md)用于移动一个区域内的方块和实体。可以指定向一个特定的方向移动，也可以指定沿一个特定的向量移动。
+此[命令](index.md)用于移动一个区域内的方块和实体。可以指定向一个特定的方向移动，也可以指定沿一个特定的向量移动。
 
 ## 语法
 
@@ -13,7 +13,7 @@
 
 ### `<区域>`
 
-需要移动的[区域](/documents/arguments/region.md)。使用 `//moveblocks` 时不指定区域，使用玩家的活动区域。
+需要移动的[区域](../arguments/region/index.md)。使用 `//moveblocks` 时不指定区域，使用玩家的活动区域。
 
 ### `[偏移值]`
 
@@ -21,7 +21,7 @@
 
 ### `[方向]`
 
-移动的[方向](/documents/arguments/direction.md)。如果未指定，则默认为玩家视角前方的方向。
+移动的[方向](../arguments/direction.md)。如果未指定，则默认为玩家视角前方的方向。
 
 ### `<x> <y> <z>`
 
@@ -29,12 +29,12 @@
 
 ### 关键字参数
 
-**此命令支持 [`/setblocks`](../setblocks.md) 中的所有关键字参数。**
+**此命令支持 [`/setblocks`](setblocks.md) 中的所有关键字参数。**
 
 除了 `/setblocks` 中的关键字参数外，`/moveblocks` 和 `//moveblocks` 还支持以下参数：
 
 - `affect_entities`：实体选择器，表示需要影响的实体，如 `@e`。如未指定（即默认情况），则不影响任何实体（包括物品展示框等）。
-- `affect_only`：[方块谓词](/documents/arguments/block_predicate.md)，无论是移动方块，还是移动方块后删除或替换原方块，均只影响符合则方块谓词的方块。
+- `affect_only`：[方块谓词](../arguments/entity_selector.md)，无论是移动方块，还是移动方块后删除或替换原方块，均只影响符合则方块谓词的方块。
 - `keep_remaining`：布尔值，默认为 `false`，如果为 `true`，则移动后不处理原来的位置的方块。利用此参数可以为一个区域的方块创建复制。
 - `keep_state`：布尔值，方块移动后保持其方块状态不变。此参数对于 `/moveblocks` 命令一般没有作用，因为方块移动本身不改变方块状态，但是会影响 `/rotateblocks` 和 `/mirror` 等命令。
 - `remaining`：方块函数，指定方块移动后如果影响原先的位置的方块。默认为 `air`，即移动之后原来的地方留下空气。

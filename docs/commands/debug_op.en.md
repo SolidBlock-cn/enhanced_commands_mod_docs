@@ -1,6 +1,6 @@
 # `/debug:deop`
 
-The [command](...md) is used to debug, and can offer the specified players with administrator permission, without requiring the executor of the command having the permission.
+The [command](index.md) is used to debug, and can offer the specified players with administrator permission, without requiring the executor of the command having the permission.
 
 ## Syntax
 
@@ -10,8 +10,8 @@ The [command](...md) is used to debug, and can offer the specified players with 
 
 ### `[targets]`
 
-[Entity selector](/documents/arguments/entity_selector.md). Only contains players. If the entity selector is not used, it can directly reference the name of a player not online.
+[Entity selector](../arguments/entity_selector.md). Only contains players. If the entity selector is not used, it can directly reference the name of a player not online.
 
 ## See also
 
-- [`/debug:deop`](../debug_deop.md)
+- [`/debug:deop`](debug_deop.md)

@@ -1,6 +1,6 @@
 # `single()`: Single block position
 
-A [region](...md) that contains only a single block position.
+A [region](index.md) that contains only a single block position.
 
 ## Syntax
 

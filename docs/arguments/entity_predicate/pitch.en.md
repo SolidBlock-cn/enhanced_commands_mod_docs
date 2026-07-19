@@ -1,6 +1,6 @@
 # `pitch`: Tests entity's pitch angle
 
-This [entity predicate](...md) tests entity's pitch angle. Same as vanilla entity selector's `x_rotation` argument.
+This [entity predicate](index.md) tests entity's pitch angle. Same as vanilla entity selector's `x_rotation` argument.
 
 ## Data structure
 

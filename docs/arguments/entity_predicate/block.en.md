@@ -1,13 +1,13 @@
 # `block`: Tests the block where the entity is
 
-The [entity predicate](...md) can be used to test any coordinate based on the position where the entity is, including relative coordinates and local coordinates. You can specify a single [block predicate](/documents/arguments/block_predicate.md), or specify multiple pairs composed of a [coordinate](/documents/arguments/pos.md) and a [block predicate](/documents/arguments/block_predicate.md) to test blocks at the specified coordinates.
+The [entity predicate](index.md) can be used to test any coordinate based on the position where the entity is, including relative coordinates and local coordinates. You can specify a single [block predicate](../block_predicate/index.md), or specify multiple pairs composed of a [coordinate](../pos.md) and a [block predicate](../block_predicate/index.md) to test blocks at the specified coordinates.
 
 ## Syntax
 
 - `[block=<block predicate>]`: Specify a single block predicate to test the block where the entity is.
 - `[block={<coordinate 1> = <block predicate 1>, <coordinate 2> = <block predicate 2>, ...}]`: Specify multiple coordinates and block predicates to test the blocks at the specified positions.
 
-> Note: If the block predicate is an [NBT predicate](/documents/arguments/block_predicate/nbt.md), please add parenthesis or star to the NBT predicate or be parsed as the second syntax. For example, `[block={Inventory: []}]` is incorrect, and should be written as `[block=({Inventory: []})]` or `[block=*{Inventory: []}]`.
+> Note: If the block predicate is an [NBT predicate](../block_predicate/nbt.md), please add parenthesis or star to the NBT predicate or be parsed as the second syntax. For example, `[block={Inventory: []}]` is incorrect, and should be written as `[block=({Inventory: []})]` or `[block=*{Inventory: []}]`.
 
 ## Examples
 
@@ -21,12 +21,12 @@ The [entity predicate](...md) can be used to test any coordinate based on the po
 When directly specifying a single block predicate:
 
 - `type`: Currently `"enhanced_commands:block_predicate"`.
-- `predicate`: [Block predicate](/documents/arguments/block_predicate.md).
+- `predicate`: [Block predicate](../block_predicate/index.md).
 
 When specifying coordinates and block predicates:
 
 - `type`: Currently `"enhanced_commands:block_predicates"`.
 - `predicates`: List.
     - Element in the list.
-        - `pos`: [Coordinate](/documents/arguments/pos.md).
-        - `block`：[Block predicate](/documents/arguments/block_predicate.md).
+        - `pos`: [Coordinate](../pos.md).
+        - `block`：[Block predicate](../block_predicate/index.md).

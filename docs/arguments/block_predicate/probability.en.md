@@ -1,6 +1,9 @@
+title: probability()
+subtitle: Define Probability By Yourself
+
 # `probability()`: Define Probability By Yourself
 
-The [block predicate](...md) passes only in a specified probability. You can specify another block predicate, which passes only under the specific probability as well as that block predicate passes.
+The [block predicate](index.md) passes only in a specified probability. You can specify another block predicate, which passes only under the specific probability as well as that block predicate passes.
 
 ## Syntax
 
@@ -15,7 +18,7 @@ Floating-point number, between 0 and 1.
 
 ### `[block predicate]`
 
-The [block predicate](...md) that should be fulfilled at the same time. If the block predicate is defined, it is equivalent to `probability(<概率>)*<方块谓词>`. If not defined, equivalent to `probability(<probability>, *)`.
+The [block predicate](index.md) that should be fulfilled at the same time. If the block predicate is defined, it is equivalent to `probability(<概率>)*<方块谓词>`. If not defined, equivalent to `probability(<probability>, *)`.
 
 ### `<seed>`
 

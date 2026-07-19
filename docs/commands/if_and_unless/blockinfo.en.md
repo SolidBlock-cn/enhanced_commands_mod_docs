@@ -1,6 +1,6 @@
 # `/if|unless blockinfo`
 
-The [command](../...md) is used to execute the command only when the block info match or does not match the specified condition.
+The [command](../index.md) is used to execute the command only when the block info match or does not match the specified condition.
 
 ## Syntax
 
@@ -21,13 +21,13 @@ The [command](../...md) is used to execute the command only when the block info 
 
 After completing the commands above, a complete command can be added after.
 
-The meaning of the commands above see [`/testfor blockinfo`](/documents/commands/testfor/blockinfo.md).
+The meaning of the commands above see [`/testfor blockinfo`](../testfor/blockinfo.md).
 
 ## Parameters
 
 ### `<pos>`
 
-[Pos](/documents/arguments/pos.md). The coordinate of the block to be tested.
+[Pos](../../arguments/pos.md). The coordinate of the block to be tested.
 
 ## Examples
 
@@ -37,4 +37,4 @@ The meaning of the commands above see [`/testfor blockinfo`](/documents/commands
 
 ## See also
 
-- [`/testfor blockinfo` command](/documents/commands/testfor/blockinfo.md)
+- [`/testfor blockinfo` command](../testfor/blockinfo.md)

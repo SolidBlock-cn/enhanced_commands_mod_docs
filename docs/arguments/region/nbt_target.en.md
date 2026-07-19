@@ -1,6 +1,6 @@
 # NBT target: specifying whose NBT to modify
 
-**NBT target** is an [argument type](...md). specifying where to store the NBT data. Note that NBT target is a whole NBT and usually is only a compound. When running the command actually, the path argument is usually needed too, specifying storing the data in the path of the data.
+**NBT target** is an [argument type](index.md). specifying where to store the NBT data. Note that NBT target is a whole NBT and usually is only a compound. When running the command actually, the path argument is usually needed too, specifying storing the data in the path of the data.
 
 ## Syntax
 
@@ -9,7 +9,7 @@
 - `literal <NBT function>`: Directly specifying NBT data, and modify the data. It usually does not affect the world actually, and is just used to test the modification result.
 - `storage <id>`: The NBT data from a specified storage. Same as vanilla `/data ... storage <id>`.
 
-For the usage of parameters, see [region](/documents/arguments/region.md), [entity selector](/documents/arguments/entity_selector.md) and [NBT function](../nbt_function.md).
+For the usage of parameters, see [region](../region/index.md), [entity selector](../entity_selector.md) and [NBT function](../nbt_function/index.md).
 
 ## Examples
 

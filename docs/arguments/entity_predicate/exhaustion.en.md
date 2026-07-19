@@ -1,6 +1,6 @@
 # `exhaustion`: Tests the entity's exhaustion
 
-This [entity predicate](...md) tests the exhaustion value of the entity. Accepts float-point number ranges. Can be inverted. Similar to [`food`](../food.md), only players can be selected when this parameter is added.
+This [entity predicate](index.md) tests the exhaustion value of the entity. Accepts float-point number ranges. Can be inverted. Similar to [`food`](../food.md), only players can be selected when this parameter is added.
 
 ## Examples
 

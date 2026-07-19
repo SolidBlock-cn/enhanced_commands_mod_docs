@@ -1,6 +1,6 @@
 # `/outline` 和 `//outline`
 
-此[命令](...md)用于设置一个区域的边缘位置的方块，并且可以同时设置边缘以内的位置的方块。
+此[命令](index.md)用于设置一个区域的边缘位置的方块，并且可以同时设置边缘以内的位置的方块。
 
 ## 语法
 
@@ -17,7 +17,7 @@
 
 ### `[边缘类型]`
 
-枚举。可用的值可参考区域类型 [`region()`](/documents/arguments/region/outline.md)。默认为 `outline`。
+枚举。可用的值可参考区域类型 [`region()`](../arguments/region/outline.md)。默认为 `outline`。
 
 ### 关键字参数
 

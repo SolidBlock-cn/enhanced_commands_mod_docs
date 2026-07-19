@@ -1,6 +1,11 @@
+---
+title: /velocity
+subtitle: Modify entity's velocity
+---
+
 # `/velocity`: Modify entity's velocity
 
-The [command](...md) is used to entity's velocity.
+The [command](index.md) is used to entity's velocity.
 
 > Modifying players' velocity is an experimental feature. It may not work stably and sometimes may not work. In details:
 > - In version 1.21.1, modifying player's speed does not work.
@@ -21,7 +26,7 @@ The [command](...md) is used to entity's velocity.
 
 ### `<target>`
 
-[Entity selector](/documents/arguments/entity_selector.md). The entities whose speed to modify.
+[Entity selector](../arguments/entity_selector.md). The entities whose speed to modify.
 
 ### `<vector>`
 
@@ -35,7 +40,7 @@ Double-precision floating-point number.
 
 ### `[concentration type]`
 
-[Concentration type](/documents/arguments/concentration_type.md). If not specified, `average` is used.
+[Concentration type](../arguments/concentration_type.md). If not specified, `average` is used.
 
 ## Examples
 

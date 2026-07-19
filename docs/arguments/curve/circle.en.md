@@ -7,7 +7,7 @@ The circle or part of circle (circle arc) at the specified center with around th
 - Pivot: The rotation axis of the circle, which is a vector. The plane of the circle is perpendicular to this vector.
 - Angle range: The rotation range of the circle. By default, 0 to 2π, which is a full turn, to draw a complete circle.
 
-The circle drawn with this curve can be any size and any angle. In comparison, the region [`hcyl()`](/documents/arguments/region/cylinder.md) can draw a complete circle rotating around the y-axis.
+The circle drawn with this curve can be any size and any angle. In comparison, the region [`hcyl()`](../region/cylinder.md) can draw a complete circle rotating around the y-axis.
 
 When drawing the circle, a basic radius vector will be determined according to the radius and pivot, following the following steps:
 

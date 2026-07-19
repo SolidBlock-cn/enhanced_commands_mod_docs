@@ -1,6 +1,6 @@
 # 实体谓词：使用和选择器基本相同的语法筛选实体
 
-**实体谓词**（entity predicate）是可用于判断实体是否符合的条件的[参数类型](...md)。在本模组中，实体谓词是通过[实体选择器](../entity_selector.md)实现的，并且使用和实体选择器相似的语法。
+**实体谓词**（entity predicate）是可用于判断实体是否符合的条件的[参数类型](index.md)。在本模组中，实体谓词是通过[实体选择器](../entity_selector.md)实现的，并且使用和实体选择器相似的语法。
 
 当实体谓词所使用的实体选择器没有 `limit` 选项时，会直接对实体进行判断。如果有 `limit` 选项，则会先选择出相应的实体，然后再判断实体是否属于被选择出来的实体。通常来说，对于实体谓词，一般不建议使用 `limit` 选项。
 
@@ -64,7 +64,7 @@
 - [`player_only`](player_only.md)
 - [`pose`](pose.md)
 - [`on_fire`](on_fire.md)
-- [`region`](region.md)
+- [`region`](region/index.md)
 - [`saturation`](saturation.md)
 - [`sender_only`](sender_only.md)（特殊类型）
 - [`selector`](selector.md)（特殊类型）

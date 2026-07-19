@@ -1,6 +1,6 @@
 # NBT 来源：指定从哪里获取 NBT
 
-**NBT 来源**是一种[参数类型](...md)，表示从哪里获取 NBT 数据。注意：NBT 来源是一整个 NBT，通常只会是复合标签（compound）。实际运行命令时，通常还需要指定路径和[聚合类型](../nbt_concentration_type.md)。
+**NBT 来源**是一种[参数类型](index.md)，表示从哪里获取 NBT 数据。注意：NBT 来源是一整个 NBT，通常只会是复合标签（compound）。实际运行命令时，通常还需要指定路径和[聚合类型](../nbt_concentration_type.md)。
 
 ## 语法
 
@@ -9,7 +9,7 @@
 - `literal <NBT 函数>`：直接指定 NBT 数据，NBT 函数在使用时，会以 null 为参数。
 - `storage <id>`：指定存储位置的 NBT 数据。与原版的 `/data ... storage <id>` 等同。
 
-关于参数用法，请参见[区域](/documents/arguments/region.md)、[实体选择器](/documents/arguments/entity_selector.md)、[NBT 函数](../nbt_function.md)。
+关于参数用法，请参见[区域](../index.md)、[实体选择器](../entity_selector.md)、[NBT 函数](../nbt_function/index.md)。
 
 ## 示例
 

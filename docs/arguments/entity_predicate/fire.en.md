@@ -1,6 +1,6 @@
 # `fire`: Tests the entity's on-fire time
 
-This [entity predicate](...md) tests the remaining on-fire time (ticks to the file extinguish naturally). It can be inverted.
+This [entity predicate](index.md) tests the remaining on-fire time (ticks to the file extinguish naturally). It can be inverted.
 
 ## Examples
 

@@ -1,10 +1,10 @@
 # `/testfor biome`
 
-This [command](../...md) can be used to test on biome.
+This [command](../index.md) can be used to test on biome.
 
 ## Syntax
 
-- `/testfor biome [pos]`: Test the biome of the specified [pos](/documents/arguments/pos.md). If the pos is not specified, the pos of command execution will be used.
+- `/testfor biome [pos]`: Test the biome of the specified [pos](../../arguments/pos.md). If the pos is not specified, the pos of command execution will be used.
 - `/testfor biome <pos> <biome>`: Test whether the specified pos matches the specified biome. Supports multiple values. Supports tags.
 
 ## Examples

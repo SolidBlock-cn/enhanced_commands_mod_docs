@@ -1,6 +1,6 @@
 # `team`: Tests entity's team
 
-This [entity predicate](...md) tests the team where the entity is, and is identical to the vanilla entity selector argument `team`.
+This [entity predicate](index.md) tests the team where the entity is, and is identical to the vanilla entity selector argument `team`.
 
 ## Data structure
 

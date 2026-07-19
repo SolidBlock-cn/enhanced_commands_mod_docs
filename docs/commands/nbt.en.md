@@ -1,6 +1,6 @@
 # `/nbt`: Operate on NBT as you want
 
-This [command](...md) can be used to query or modify NBT data, including NBT data in blocks, entities and storage.
+This [command](index.md) can be used to query or modify NBT data, including NBT data in blocks, entities and storage.
 
 ## Syntax
 
@@ -17,11 +17,11 @@ This [command](...md) can be used to query or modify NBT data, including NBT dat
 
 ### `<source>`
 
-[NBT source](/documents/arguments/nbt_source.md).
+[NBT source](../arguments/nbt_source.md).
 
 ### `<target>`
 
-[NBT target](/documents/arguments/nbt_target.md).
+[NBT target](../arguments/nbt_target.md).
 
 ### `<path>`
 
@@ -29,11 +29,11 @@ NBT path, same as vanilla usage.
 
 ### `<NBT predicate>`
 
-[NBT predicate](/documents/arguments/nbt_predicate.md).
+[NBT predicate](../arguments/nbt_predicate/index.md).
 
 ### `<NBT function>`
 
-[NBT function](/documents/arguments/nbt_function.md).
+[NBT function](../arguments/nbt_function/index.md).
 
 ### Keyword arguments
 
@@ -52,7 +52,7 @@ NBT path, same as vanilla usage.
 
 ## See also
 
-- [NBT function `replace()`](/documents/arguments/nbt_function/replaceblocks.md)
-- [NBT function `string_replace()`](/documents/arguments/nbt_function/string_replace.md)
-- [NBT function `regex_replace()`](/documents/arguments/nbt_function/regex_replace.md)
-- [NBT function `substring()`](/documents/arguments/nbt_function/substring.md)
+- [NBT function `replace()`](../arguments/nbt_function/replace.md)
+- [NBT function `string_replace()`](../arguments/nbt_function/string_replace.md)
+- [NBT function `regex_replace()`](../arguments/nbt_function/regex_replace.md)
+- [NBT function `substring()`](../arguments/nbt_function/substring.md)

@@ -1,6 +1,6 @@
 # `unknown`: Unknown entity predicate
 
-This [entity predicate](...md) represents predicates added during the entity selector parsing that are not recognized by this mod. It may be introduced by other mods.
+This [entity predicate](index.md) represents predicates added during the entity selector parsing that are not recognized by this mod. It may be introduced by other mods.
 
 ## Data structure
 

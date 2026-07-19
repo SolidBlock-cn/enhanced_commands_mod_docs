@@ -1,6 +1,6 @@
 # 引用方块函数
 
-此[方块函数](...md)引用数据包中的方块函数 ID。
+此[方块函数](index.md)引用数据包中的方块函数 ID。
 
 ID 为 `<namespace>:<path>` 的方块函数位于数据包中的 `data/<namespace>/enhanced_commands/block_function/<path>.json`。
 

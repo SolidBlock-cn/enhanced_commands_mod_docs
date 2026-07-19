@@ -1,6 +1,9 @@
-# `checkerboard-tag()`
+title: checkerboard-tag()
+subtitle: 根据方块标签画棋盘格
 
-此[方块函数](...md)类似于 [`checkerboard()`](../checkerboard.md)，但是以拥有方块标签的各个方块作为棋盘格图案。
+# `checkerboard-tag()`：根据方块标签画棋盘格
+
+此[方块函数](index.md)类似于 [`checkerboard()`](../checkerboard.md)，但是以拥有方块标签的各个方块作为棋盘格图案。
 
 如果方块标签没有方块，该方块函数不会生效。
 
