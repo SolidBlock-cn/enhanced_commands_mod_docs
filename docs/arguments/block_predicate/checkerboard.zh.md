@@ -3,7 +3,7 @@ subtitle: 棋盘格的谓词
 
 # `checkerboard()`：棋盘格的谓词
 
-此[方块谓词](index.md)生成一个棋盘格，根据棋盘格为每个位置确定谓词。参见 [`checkerboard() 方块函数`](../../block_function/checkerboard.md)。
+此[方块谓词](index.md)生成一个棋盘格，根据棋盘格为每个位置确定谓词。参见 [`checkerboard() 方块函数`](../block_function/checkerboard.md)。
 
 ## 语法
 
@@ -11,7 +11,7 @@ subtitle: 棋盘格的谓词
 
 方块谓词至少要有 1 个。权重不能为负数，可以为小数或 0，但各项的权重之和不能为 0，每项的权重未指定时，默认为 1。
 
-`参数` 的语法参见 [`checkerboard()` 方块函数](../../block_function/checkerboard.md)。
+`参数` 的语法参见 [`checkerboard()` 方块函数](../block_function/checkerboard.md)。
 
 ## 示例
 
@@ -22,4 +22,4 @@ subtitle: 棋盘格的谓词
 
 ## 参见
 
-- [`checkerboard()` 方块函数](../../block_function/checkerboard.md)
+- [`checkerboard()` 方块函数](../block_function/checkerboard.md)

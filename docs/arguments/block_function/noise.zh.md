@@ -39,7 +39,7 @@ Subtitle: 随心所欲生成方块噪声
 
 ### offset
 
-噪声生成效果的偏移。可以是 1~3 个值，格式为 `<x> [y] [z]`，用空格隔开。效果与 [`checkerboard()` 的 offset 参数](../checkerboard.md) 类似。
+噪声生成效果的偏移。可以是 1~3 个值，格式为 `<x> [y] [z]`，用空格隔开。效果与 [`checkerboard()` 的 offset 参数](checkerboard.md) 类似。
 
 ## 示例
 

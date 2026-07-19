@@ -11,7 +11,7 @@ subtitle: 满足任何一个即可
 
 方块谓词的数量不限。
 
-另一种语法是 `<方块谓词 1>|<方块谓词 2>`，参见[复合方块谓词](.../index.md#复合方块谓词)。
+另一种语法是 `<方块谓词 1>|<方块谓词 2>`，参见[复合方块谓词](index.md#复合方块谓词)。
 
 ## 示例
 
@@ -22,6 +22,6 @@ subtitle: 满足任何一个即可
 
 ## 参见
 
-- [`all()`](../all.md)
-- [`any()` 物品谓词](../../item_predicate/any.md)
-- [`any()` NBT 谓词](../../nbt_predicate/nbt.md)
+- [`all()`](all.md)
+- [`any()` 物品谓词](../item_predicate/any.md)
+- [`any()` NBT 谓词](../nbt_predicate/any.md)

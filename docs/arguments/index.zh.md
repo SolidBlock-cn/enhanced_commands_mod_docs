@@ -7,7 +7,7 @@
 - [聚合类型](concentration_type.md)
 - [曲线](curve/index.md)
 - [方向](direction.md)
-- [实体谓词](entity_predicate.md)
+- [实体谓词](entity_predicate/index.md)
 - [实体选择器](entity_selector.md)
 - [物品函数](item_function/index.md)
 - [物品谓词](item_predicate/index.md)

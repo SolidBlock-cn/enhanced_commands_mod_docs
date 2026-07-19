@@ -22,4 +22,4 @@ For the usage of parameters, see [region](../region/index.md), [entity selector]
 ## See also
 
 - [NBT target](../nbt_target.md)
-- [`/nbt` command](/documents/commands/nbt.md)
+- [`/nbt` command](../../commands/nbt.md)

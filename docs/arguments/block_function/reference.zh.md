@@ -16,4 +16,4 @@ ID 为 `<namespace>:<path>` 的方块函数位于数据包中的 `data/<namespac
 
 ## 参见
 
-- [`引用方块谓词`](../../block_predicate/reference.md)
+- [`引用方块谓词`](../block_predicate/reference.md)

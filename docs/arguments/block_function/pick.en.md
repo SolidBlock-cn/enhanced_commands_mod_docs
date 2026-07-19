@@ -35,5 +35,5 @@ Long integer. The seed to determine the block function to be used for each posit
 
 ## See also
 
-- [`pick()` item function](../../item_function/pick.md)
-- [`pick()` NBT function](../../nbt_function/pick.md)
+- [`pick()` item function](../item_function/pick.md)
+- [`pick()` NBT function](../nbt_function/pick.md)

@@ -64,7 +64,7 @@ Each entity predicate has a type. Different types have their own fields (see the
 - [`player_only`](player_only.md)
 - [`pose`](pose.md)
 - [`on_fire`](on_fire.md)
-- [`region`](region/index.md)
+- [`region`](region.md)
 - [`saturation`](saturation.md)
 - [`sender_only`](sender_only.md) (special type)
 - [`selector`](selector.md) (special type)

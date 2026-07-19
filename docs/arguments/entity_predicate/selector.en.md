@@ -7,4 +7,4 @@ When the entity selector has `limit` argument, when used as an entity predicate,
 ## Data structure
 
 - `type`: Currently `"enhanced_commands:selector"`.
-- Other fields are identical to fields of [entity selectors](../../entity_selector.md).
+- Other fields are identical to fields of [entity selectors](../entity_selector.md).

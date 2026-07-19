@@ -9,7 +9,7 @@ The [entity predicate](index.md) tests the air value of the entity. Accepts int 
 
 ## See also
 
-- [the `/air` command](/documents/commands/air.md).
+- [the `/air` command](../../commands/air.md).
 
 ## Data structure
 

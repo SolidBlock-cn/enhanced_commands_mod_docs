@@ -10,7 +10,7 @@ The [NBT function](index.md) returns a coordinate in the form of array. Although
 
 ### `<pos>`
 
-[Coordinate](../../pos.md). Supports relative coordinates and local coordinates.
+[Coordinate](../pos.md). Supports relative coordinates and local coordinates.
 
 ## Examples
 

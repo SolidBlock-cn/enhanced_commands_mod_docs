@@ -7,4 +7,4 @@
 ## 数据结构
 
 - `type`：此处为 `"enhanced_commands:selector"`。
-- 其他字段与[实体选择器](../../entity_selector.md)的字段一致。
+- 其他字段与[实体选择器](../entity_selector.md)的字段一致。

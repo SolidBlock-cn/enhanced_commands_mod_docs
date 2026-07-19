@@ -39,7 +39,7 @@
     - [`/testfor block`](testfor/block.md)：获取单个方块，或测试[方块谓词](../arguments/block_predicate/index.md)。
     - [`/testfor blockinfo`](testfor/blockinfo.md)：获取或测试单个方块的信息，例如硬度、光照等信息。
     - [`/testfor blocks`](testfor/blocks.md)：获取多个方块的信息，并测试[方块谓词](../arguments/block_predicate/index.md)。
-    - [`/testfor entity`](testfor/entity.md)：获取使用[实体选择器](../arguments/entity_selector.md)选择到的实体的信息，或使用[实体谓词](../../entity_predicate/index.md)测试这些实体。
+    - [`/testfor entity`](testfor/entity.md)：获取使用[实体选择器](../arguments/entity_selector.md)选择到的实体的信息，或使用[实体谓词](../arguments/entity_predicate/index.md)测试这些实体。
     - [`/testfor biome`](testfor/biome.md)：获取指定位置的生物群系，并进行测试。
 
 ## 独立的 `/execute` 子命令

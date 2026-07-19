@@ -20,5 +20,5 @@
 
 ## 参见
 
-- [`overlay()` 方块函数](../../block_function/overlay.md)
-- [`overlay()` NBT 函数](../../nbt_function/overlay.md)
+- [`overlay()` 方块函数](../block_function/overlay.md)
+- [`overlay()` NBT 函数](../nbt_function/overlay.md)

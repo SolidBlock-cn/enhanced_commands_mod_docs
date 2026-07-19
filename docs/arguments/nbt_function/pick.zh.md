@@ -36,5 +36,5 @@
 
 ## 参见
 
-- [`pick()` 方块函数](../../block_function/pick.md)
-- [`pick()` 物品函数](../../item_function/pick.md)
+- [`pick()` 方块函数](../block_function/pick.md)
+- [`pick()` 物品函数](../item_function/pick.md)

@@ -11,7 +11,7 @@
 
 ## 参见
 
-- [`/health` 命令](/documents/commands/health.md)
+- [`/health` 命令](../../commands/health.md)
 
 ## 数据结构
 

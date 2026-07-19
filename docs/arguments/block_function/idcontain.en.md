@@ -31,4 +31,4 @@ Long integer. The seed used to randomly select blocks.
 
 ## See also
 
-- [The block predicate `idcontain()`](../../block_predicate/idcontain.md)
+- [The block predicate `idcontain()`](../block_predicate/idcontain.md)

@@ -21,4 +21,4 @@
 
 ## 参见
 
-- [`intersect()`](../intersect.md)：表示多个区域的交集。
+- [`intersect()`](intersect.md)：表示多个区域的交集。

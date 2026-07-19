@@ -31,4 +31,4 @@ subtitle: 随机匹配正则表达式
 
 ## 参见
 
-- [方块谓词 `idcontain()`](../../block_predicate/idcontain.md)
+- [方块谓词 `idcontain()`](../block_predicate/idcontain.md)

@@ -35,5 +35,5 @@ subtitle: 随机选择方块函数
 
 ## 参见
 
-- [`pick()` 物品函数](../../item_function/pick.md)
-- [`pick()` NBT 函数](../../nbt_function/pick.md)
+- [`pick()` 物品函数](../item_function/pick.md)
+- [`pick()` NBT 函数](../nbt_function/pick.md)

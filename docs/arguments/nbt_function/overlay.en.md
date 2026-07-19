@@ -20,5 +20,5 @@ There may be no NBT functions, which means to return the parameter directly with
 
 ## See also
 
-- [`overlay()` block function](../../block_function/overlay.md)
-- [`overlay()` item](../../item_function/overlay.md)
+- [`overlay()` block function](../block_function/overlay.md)
+- [`overlay()` item](../item_function/overlay.md)

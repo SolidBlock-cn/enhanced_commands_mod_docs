@@ -33,7 +33,7 @@ subtitle: 解决您的栅栏和墙
 
 ## 参见
 
-- [`/postprocess` 命令](/documents/commands/postprocess.md)
+- [`/postprocess` 命令](../../commands/postprocess.md)
 
 ## 数据结构
 

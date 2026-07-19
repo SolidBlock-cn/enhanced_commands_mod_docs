@@ -76,4 +76,4 @@ $$
 
 ## 参见
 
-- [`checkerboard()` 方块谓词](../../block_predicate/checkerboard.md)
+- [`checkerboard()` 方块谓词](../block_predicate/checkerboard.md)

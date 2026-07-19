@@ -6,7 +6,7 @@
 
 `any([物品谓词], ...)`
 
-如果物品谓词多于 0 个，则等同于 `<物品谓词 1>}<物品谓词 2>` 的语法，参见[复合物品谓词](.../index.md#复合物品谓词)。
+如果物品谓词多于 0 个，则等同于 `<物品谓词 1>}<物品谓词 2>` 的语法，参见[复合物品谓词](index.md#复合物品谓词)。
 
 ## 示例
 
@@ -23,6 +23,6 @@
 
 ## 参见
 
-- [`all()`](../all.md)
-- [`any()` 方块谓词](../../block_predicate/any.md)
-- [`any()` NBT 谓词](../../nbt_predicate/nbt.md)
+- [`all()`](all.md)
+- [`any()` 方块谓词](../block_predicate/any.md)
+- [`any()` NBT 谓词](../nbt_predicate/any.md)

@@ -140,7 +140,7 @@
 
 ## 实体选择器参数
 
-本模组支持原版的实体选择器参数，并还加入了一些额外的参数以支持更多的功能。这些参数在[实体谓词](../entity_predicate.md)中同样可用。
+本模组支持原版的实体选择器参数，并还加入了一些额外的参数以支持更多的功能。这些参数在[实体谓词](entity_predicate/index.md)中同样可用。
 
 ### 原版的参数
 
@@ -148,46 +148,46 @@
 
 非直接作为谓词的参数：
 
-- `limit`：限制选择到的实体的个数。对于[基于选择器的实体谓词](../entity_predicate/selector.md)，如果指定了此参数，则谓词在作用时会先选择实体再判断。
+- `limit`：限制选择到的实体的个数。对于[基于选择器的实体谓词](entity_predicate/selector.md)，如果指定了此参数，则谓词在作用时会先选择实体再判断。
 - `x`、`y`、`z`：设置实体距离以及体积的基准点。
 - `dx`、`dy`、`dz`：指定长方体范围的大小。将影响实体选择器选择实体时选择的区块的范围。
 - `distance`：实体到基准点的距离。距离的最大值将影响实体选择器选择实体时选择的区块的范围。
-    - 作为实体谓词时，上述两个参数均会形成特殊的实体谓词 [`box`](../entity_predicate/box.md)，从而判断实体的位置。
+    - 作为实体谓词时，上述两个参数均会形成特殊的实体谓词 [`box`](entity_predicate/box.md)，从而判断实体的位置。
 - `sort`：排序方式。
 
 直接作为谓词的参数：
 
-- [`advancements`](../entity_predicate/advancements.md)：测试实体的进度。
-- [`gamemode`](../entity_predicate/game_mode.md)：测试玩家的游戏模式。
-- [`name`](../entity_predicate/name.md)：测试实体的名字。
-- [`nbt`](../entity_predicate/nbt.md)：测试实体的 NBT。
-- [`predicate`](../entity_predicate/loot_table_predicate.md)：使用战利品表谓词进行测试。
-- [`scores`](../entity_predicate/scores.md)：测试实体的记分板分数。
-- [`tag`](../entity_predicate/tag.md)：测试实体的记分板标签。
-- [`team`](../entity_predicate/team.md)：测试实体的队伍。
-- [`type`](../entity_predicate/type.md)：测试实体的类型。
-- [`x_rotation`](../entity_predicate/pitch.md)：俯仰角。
-- [`y_rotation`](../entity_predicate/yaw.md)：偏航角。
+- [`advancements`](entity_predicate/advancements.md)：测试实体的进度。
+- [`gamemode`](entity_predicate/game_mode.md)：测试玩家的游戏模式。
+- [`name`](entity_predicate/name.md)：测试实体的名字。
+- [`nbt`](entity_predicate/nbt.md)：测试实体的 NBT。
+- [`predicate`](entity_predicate/loot_table_predicate.md)：使用战利品表谓词进行测试。
+- [`scores`](entity_predicate/scores.md)：测试实体的记分板分数。
+- [`tag`](entity_predicate/tag.md)：测试实体的记分板标签。
+- [`team`](entity_predicate/team.md)：测试实体的队伍。
+- [`type`](entity_predicate/type.md)：测试实体的类型。
+- [`x_rotation`](entity_predicate/pitch.md)：俯仰角。
+- [`y_rotation`](entity_predicate/yaw.md)：偏航角。
 
 ### 非原版的参数
 
-- [`air`](../entity_predicate/air.md)：测试实体的空气值。可以接受整数范围或关键字 `max` 表示最大空气值。可以取反。
+- [`air`](entity_predicate/air.md)：测试实体的空气值。可以接受整数范围或关键字 `max` 表示最大空气值。可以取反。
     - `@e[air=5..]`：选择空气值不少于 5 的实体。
     - `@a[air=!..0]`：选择空气值大于 0 的实体。
-- [`alternatives`](../entity_predicate/alternatives.md)：指定多个实体谓词，当实体符合这组谓词中的任意一个时通过。该参数的值需要用中括号括起来，里面是多个实体谓词，多个实体谓词用逗号隔开。
+- [`alternatives`](entity_predicate/alternatives.md)：指定多个实体谓词，当实体符合这组谓词中的任意一个时通过。该参数的值需要用中括号括起来，里面是多个实体谓词，多个实体谓词用逗号隔开。
     - `@e[alternatives=[[type=cow], [type=sheep]]]`：选择所有的牛和羊。
     - `@a[alternatives=[Player1, Player2]]`：选择 Player1 和 Player2。
     - `@e[type=sheep, alternatives=[[tag=a], [tag=b]]]`：在所有的羊中，选择有 a 或 b 标签的。
     - `@e[type=sheep, alternatives=![[tag=a], [tag=b]]]`：在所有的羊中，选择既没有 a 也没有 b 标签的。
-- [`baby`](../entity_predicate/baby.md)：测试实体是否为幼年实体。如果实体类型不存在幼年实体，则视为未幼年实体。
+- [`baby`](entity_predicate/baby.md)：测试实体是否为幼年实体。如果实体类型不存在幼年实体，则视为未幼年实体。
     - `@e[baby=true]`：选择所有幼年实体。
     - `@e[baby=false]`：选择所有非幼年（包括不存在幼年状态）的实体。
-- [`block`](../entity_predicate/block.md)：测试实体所在位置的方块。
+- [`block`](entity_predicate/block.md)：测试实体所在位置的方块。
     - `@e[block=air]`：选择所在位置为空气的实体。
     - `@e[block=water|*[waterlogged=true]]`：选择所在位置为水或任意含水方块的实体。
     - `@a[block={~~-1~=redstone_block}]`：选择下方一格位置为红石块的玩家。
     - `@e[block={~~-1~=grass_block, ~~-2~=dirt}]`：选择下方一格位置为草方块，且下方两格位置为泥土的玩家。
-- [`effect`](../entity_predicate/effect.md)：测试实体的状态效果。
+- [`effect`](entity_predicate/effect.md)：测试实体的状态效果。
     - `@a[effect=night_vision]`：所有拥有夜视效果的玩家。
     - `@a[effect=strength, effect=speed]`：所有拥有力量和速度效果的玩家。
     - `@a[effect={strength=true, effect=true}]`：等价于上一个例子。
@@ -196,25 +196,25 @@
     - `@a[effect={fire_resistance=!true}]`：等价于上一个例子。
     - `@a[effect=!blindness, effect=night_vision]`：所有没有失明效果但有夜视效果的玩家。
     - `@a[effect={blindness=false, night_vision=true}]`：等价于上一个例子。
-- [`exhaustion`](../entity_predicate/exhaustion.md)：测试实体的消耗度。可以接受浮点数范围。
+- [`exhaustion`](entity_predicate/exhaustion.md)：测试实体的消耗度。可以接受浮点数范围。
     - `@a[exhaustion=0.5..]`：选择消耗度至少为 0.5 的玩家。
-- [`fire`](../entity_predicate/fire.md)：测试实体的剩余着火时间（离火自然熄灭所需要的刻数）。
+- [`fire`](entity_predicate/fire.md)：测试实体的剩余着火时间（离火自然熄灭所需要的刻数）。
     - `@e[fire=1..]`：选择剩余着火时间至少为 1（即正在着火）的实体。
     - `@e[fire=20..]`：选择剩余着火时间至少为 20 的实体。
-- [`food`](../entity_predicate/food.md)：测试实体的饱食度。可以接受整数范围。
+- [`food`](entity_predicate/food.md)：测试实体的饱食度。可以接受整数范围。
     - `@e[food=20]`：选择饱食度为 20 的玩家（尽管是 `@e`，但只能玩家能被选择）。
     - `@a[food=10..15]`：选择饱食度在 10 至 15 之间的玩家。
     - `@a[food=!10]`：选择饱食度不为 10 的玩家。
-- [`health`](../entity_predicate/health.md)：测试实体的生命值，可以接受一个范围或者关键字 `max`。参数可以取反。无论参数是否取反，此参数都将只能够选择生物的生命值，矿车、掉落的物品等实体虽有特殊的生命值但是不会实体选择器用于选择。
+- [`health`](entity_predicate/health.md)：测试实体的生命值，可以接受一个范围或者关键字 `max`。参数可以取反。无论参数是否取反，此参数都将只能够选择生物的生命值，矿车、掉落的物品等实体虽有特殊的生命值但是不会实体选择器用于选择。
     - `@e[health=20]`：选择所有生命值为 20 的生物。
     - `@e[health=!20]`：选择所有生命值不为 20 的生物。
     - `@e[health=max]`：选择生命值为最大值的生物。
     - `@e[health=10..]`：选择生命值不小于 10 的生物。
-- [`is`](../entity_predicate/sub_predicate.md)：指定一个[实体谓词](../entity_predicate.md)，只有当实体同时也符合此谓词时也通过。这意味着筛选选择到的实体。此选项支持取反，效果上将相当于 [`not`](../entity_predicate/sub_predicate.md)。
+- [`is`](entity_predicate/sub_predicate.md)：指定一个[实体谓词](entity_predicate/index.md)，只有当实体同时也符合此谓词时也通过。这意味着筛选选择到的实体。此选项支持取反，效果上将相当于 [`not`](entity_predicate/sub_predicate.md)。
     - `@p[is=@s]`：距离最近的实体，同时该实体也得是命令的执行者。
     - `@a[is=@e[type=cow]]`：所有是牛的玩家，该实体选择器有效但显然选择不到实体。
     - `@e[is=!@s]`：除了命令执行者之外的所有实体，效果上相当于 `@e[not=@s]`。
-- [`not`](../entity_predicate/sub_predicate.md)：指定一个[实体谓词](../entity_predicate.md)，只有当实体不符合此谓词时通过。这意味着排除部分选择到的实体。此选项支持取反，效果上相当于 [`is`](../entity_predicate/sub_predicate.md)。
+- [`not`](entity_predicate/sub_predicate.md)：指定一个[实体谓词](entity_predicate/index.md)，只有当实体不符合此谓词时通过。这意味着排除部分选择到的实体。此选项支持取反，效果上相当于 [`is`](entity_predicate/sub_predicate.md)。
     - `@e[not=@s]`：除了命令执行者之外的所有实体。
     - `@e[not=[type=cow]]`：除了牛之外的所有实体，效果上相当于 `@e[type=!cow]`。
     - `@e[not=@s, not=@pets]`：除了命令执行者和命令执行者的宠物之外的所有实体，效果上相当于 `@e[alternatives=![@s, @pets]]`。
@@ -226,30 +226,30 @@
     - `@vehicle[of=@a]`：任意玩家正在骑乘的实体。
     - `@passengers`：命令执行者的所有乘客。
     - `@passengers[passengers=@e[type=horse]]`：所有马的所有乘客。
-- [`on_fire`](../entity_predicate/on_fire.md)：测试实体是否存在着火。接一个布尔值。如果实体本身是对火免疫的，则一律视为未着火的。
+- [`on_fire`](entity_predicate/on_fire.md)：测试实体是否存在着火。接一个布尔值。如果实体本身是对火免疫的，则一律视为未着火的。
     - `@e[on_fire=true]`：选择所有正在着火（且不能免疫火）的实体。
     - `@e[on_fire=false]`：选择所有未着火（或对火免疫）的实体。
-- [`owner`](../entity_predicate/owner.md)：测试实体的拥有者。后面接一个[实体谓词](../entity_predicate.md)，或者不接。
+- [`owner`](entity_predicate/owner.md)：测试实体的拥有者。后面接一个[实体谓词](entity_predicate/index.md)，或者不接。
     - `@e[owner=]`：选择所有未被驯养的实体，包括无法被驯养的实体。
     - `@e[owner=!]`：选择所有被驯养的实体，不管该实体的驯养者是谁（可以是不在当前世界上的玩家）。
     - `@e[owner=Alice]`：选择被玩家 Alice 驯养的所有实体。当 Alice 不在世界上时失效。
     - `@e[owner=!@p]`：选择被世界上除了距离命令执行位置最近的玩家之外的玩家驯养的所有实体。
     - `@e[owner=@s]`：选择被命令执行者驯养的所有实体，类似于 `@pets`。
-- [`pose`](../entity_predicate/pose.md)：选择指定姿势的实体。
+- [`pose`](entity_predicate/pose.md)：选择指定姿势的实体。
     - `@e[pose=crouching]`：选择所有正在爬行的实体。
     - `@a[pose=!swimming]`：选择所有未在游泳的实体。
-- [`region`](../entity_predicate/region/index.md)：选择指定的[区域](/region/index.md)内的实体。支持使用相对坐标和局部坐标，会根据命令源的位置和朝向（而不是被选择的实体的位置和朝向）来计算。
+- [`region`](entity_predicate/region.md)：选择指定的[区域](/region/index.md)内的实体。支持使用相对坐标和局部坐标，会根据命令源的位置和朝向（而不是被选择的实体的位置和朝向）来计算。
     - `@e[region=sphere(5)]`：选择距离命令源为中心。半径为 5 的球体范围内的实体。
-- [`saturation`](../entity_predicate/saturation.md)：测试实体的饱和度。可以接受浮点数范围。
+- [`saturation`](entity_predicate/saturation.md)：测试实体的饱和度。可以接受浮点数范围。
     - `@e[saturation=5..]`：选择饱和度至少为 5 的玩家。
     - `@e[saturation=!0]`：选择饱和度不为 0 的玩家。
-- [`sneaking`](../entity_predicate/sneaking.md)：测试实体是否正在潜行。飞行模式下玩家下降时也会被选中。此选项与战利品表中的谓词不同。
+- [`sneaking`](entity_predicate/sneaking.md)：测试实体是否正在潜行。飞行模式下玩家下降时也会被选中。此选项与战利品表中的谓词不同。
     - `@e[sneaking=true]`：选择所有正在潜行的实体。
     - `@e[sneaking=false]`：选择所有未在潜行的实体。
-- [`sprinting`](../entity_predicate/sprinting.md)：测试实体是否存在疾跑。
+- [`sprinting`](entity_predicate/sprinting.md)：测试实体是否存在疾跑。
     - `@e[sprinting=true]`：选择正在疾跑的实体。
     - `@a[sprinting=false]`：选择未在疾跑的实体。
-- [`swimming`](../entity_predicate/swimming.md)：测试实体是否存在游泳。此参数可以取反。
+- [`swimming`](entity_predicate/swimming.md)：测试实体是否存在游泳。此参数可以取反。
     - `@e[swimming=true]`：选择正在游泳的实体。
     - `@a[swimming=false]`：选择未在游泳的实体。
 
@@ -261,7 +261,7 @@
 * `player_only`：布尔值，可选，默认为 `false`。
 * `local_world_only`：布尔值，可选，默认为 `false`。
 * `predicates`：列表，可选。通常不包括特殊类型的实体谓词。
-    * [实体谓词](../entity_predicate.md)
+    * [实体谓词](entity_predicate/index.md)
 * `distance`：双精度浮点数，或由映射指定的取值范围，可选。
 * `position_offset`：映射，可选。
 * `dx`：双精度浮点数，可选。

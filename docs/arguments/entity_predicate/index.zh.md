@@ -64,7 +64,7 @@
 - [`player_only`](player_only.md)
 - [`pose`](pose.md)
 - [`on_fire`](on_fire.md)
-- [`region`](region/index.md)
+- [`region`](region.md)
 - [`saturation`](saturation.md)
 - [`sender_only`](sender_only.md)（特殊类型）
 - [`selector`](selector.md)（特殊类型）

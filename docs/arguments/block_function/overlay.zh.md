@@ -16,5 +16,5 @@
 
 ## 参见
 
-- [`overlay()` 物品函数](../../item_function/overlay.md)
-- [`overlay()` NBT 函数](../../nbt_function/overlay.md)
+- [`overlay()` 物品函数](../item_function/overlay.md)
+- [`overlay()` NBT 函数](../nbt_function/overlay.md)

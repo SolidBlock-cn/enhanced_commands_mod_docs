@@ -7,7 +7,7 @@ Besides using vanilla argument types, this mod also adds some extra and more com
 - [concentration type](concentration_type.md)
 - [curve](curve/index.md)
 - [direction](direction.md)
-- [entity predicate](entity_predicate.md)
+- [entity predicate](entity_predicate/index.md)
 - [entity selector](entity_selector.md)
 - [item function](item_function/index.md)
 - [item predicate](item_predicate/index.md)

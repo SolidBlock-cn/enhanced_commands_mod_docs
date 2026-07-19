@@ -22,4 +22,4 @@
 ## 参见
 
 - [NBT 目标](../nbt_target.md)
-- [`/nbt` 命令](/documents/commands/nbt.md)
+- [`/nbt` 命令](../../commands/nbt.md)

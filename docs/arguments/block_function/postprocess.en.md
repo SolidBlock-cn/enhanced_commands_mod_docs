@@ -33,7 +33,7 @@ Direction. To specify multiple directions, separate them with a space.
 
 ## See also
 
-- [the `/postprocess` command](/documents/commands/postprocess.md)
+- [the `/postprocess` command](../../commands/postprocess.md)
 
 ## Data structure
 

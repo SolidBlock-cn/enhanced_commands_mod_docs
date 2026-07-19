@@ -11,7 +11,7 @@ This [entity predicate](index.md) tests the health value of entities. Accepts a 
 
 ## See also
 
-- [the `/health` command](/documents/commands/health.md)
+- [the `/health` command](../../commands/health.md)
 
 ## Data structure
 

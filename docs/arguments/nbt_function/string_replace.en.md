@@ -83,5 +83,5 @@ The following are some examples in actual commands:
 
 ## See also
 
-- [`replace()` function](../replaceblocks.md): Replacing NBTs that match the predicate.
-- [`regex_replace()` function](../regex_replace.md): Replacing regular expressions.
+- [`replace()` function](replace.md): Replacing NBTs that match the predicate.
+- [`regex_replace()` function](regex_replace.md): Replacing regular expressions.

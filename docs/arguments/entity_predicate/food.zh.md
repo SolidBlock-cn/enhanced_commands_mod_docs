@@ -12,7 +12,7 @@
 
 ## 参见
 
-- [`/food` 命令](/documents/commands/food.md)
+- [`/food` 命令](../../commands/food.md)
 
 ## 数据结构
 

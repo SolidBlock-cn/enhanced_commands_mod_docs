@@ -9,7 +9,7 @@
 
 ## 参见
 
-- [`/air` 命令](/documents/commands/air.md)。
+- [`/air` 命令](../../commands/air.md)。
 
 ## 数据结构
 

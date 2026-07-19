@@ -11,7 +11,7 @@ A [region](index.md) that contains only a single block position.
 
 ### `<coordinate>`
 
-The single [block position](../../pos.md)。
+The single [block position](../pos.md)。
 
 ## Examples
 

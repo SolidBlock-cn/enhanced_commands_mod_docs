@@ -22,4 +22,4 @@
 ## 参见
 
 - [NBT 来源](../nbt_source.md)
-- [`/nbt` 命令](/documents/commands/nbt.md)
+- [`/nbt` 命令](../../commands/nbt.md)

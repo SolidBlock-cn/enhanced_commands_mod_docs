@@ -36,5 +36,5 @@ Floating point number, between 0 and 1. Relative probability each NBT function c
 
 ## See also
 
-- [`pick()` block function](../arguments/block_function/pick.md)
-- [`pick()` item function](../arguments/item_function/pick.md)
+- [`pick()` block function](../block_function/pick.md)
+- [`pick()` item function](../item_function/pick.md)

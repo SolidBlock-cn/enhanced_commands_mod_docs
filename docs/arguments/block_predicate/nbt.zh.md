@@ -1,6 +1,6 @@
 # NBT 方块谓词
 
-这个[方块谓词](index.md)检测方块实体的 NBT 是否符合指定的[NBT 谓词](../../nbt_predicate/index.md)。当方块没有方块实体时，NBT 谓词使用不通过。
+这个[方块谓词](index.md)检测方块实体的 NBT 是否符合指定的[NBT 谓词](../nbt_predicate/index.md)。当方块没有方块实体时，NBT 谓词使用不通过。
 
 ## 语法
 
@@ -15,4 +15,4 @@
 
 ## 参见
 
-- [NBT 方块函数](../../block_function/nbt.md)
+- [NBT 方块函数](../block_function/nbt.md)

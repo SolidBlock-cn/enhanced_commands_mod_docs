@@ -1,6 +1,6 @@
 # `saturation`: Tests entity's saturation
 
-This [entity predicate](index.md) tests entity's saturation. It accepts a floating-point number range, and supports inversion.Similar to [`food`](../food.md), only players can be selected when this parameter is added.
+This [entity predicate](index.md) tests entity's saturation. It accepts a floating-point number range, and supports inversion.Similar to [`food`](food.md), only players can be selected when this parameter is added.
 
 ## Examples
 

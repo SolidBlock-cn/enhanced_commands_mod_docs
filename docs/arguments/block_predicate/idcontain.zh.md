@@ -19,4 +19,4 @@ subtitle: 对方块 id 做个正则！
 
 ## 参见
 
-- [方块函数 `idcontain()`](../../block_function/idcontain.md)
+- [方块函数 `idcontain()`](../block_function/idcontain.md)

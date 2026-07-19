@@ -11,7 +11,7 @@ subtitle: 全都要满足，一个也不能少
 
 方块谓词的数量不限。
 
-另一种语法是 `<方块谓词 1>&<方块谓词 2>`，参见[复合方块谓词](.../index.md#复合方块谓词)。
+另一种语法是 `<方块谓词 1>&<方块谓词 2>`，参见[复合方块谓词](index.md#复合方块谓词)。
 
 ## 示例
 
@@ -23,6 +23,6 @@ subtitle: 全都要满足，一个也不能少
 
 ## 参见
 
-- [`any()`](../any.md)
-- [`all()` 物品谓词](../../item_predicate/all.md)
-- [`all()` NBT 谓词](../../nbt_predicate/all.md)
+- [`any()`](any.md)
+- [`all()` 物品谓词](../item_predicate/all.md)
+- [`all()` NBT 谓词](../nbt_predicate/all.md)

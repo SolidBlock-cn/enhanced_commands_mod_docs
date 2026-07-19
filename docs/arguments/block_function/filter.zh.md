@@ -1,6 +1,6 @@
 # `filter()`
 
-此[方块函数](index.md)会先计算一个方块函数的结果，如果这个结果符合指定的[方块谓词](../../block_predicate/index.md)，就返回这个结果，否则不执行操作或者返回另一个方块函数的结果。
+此[方块函数](index.md)会先计算一个方块函数的结果，如果这个结果符合指定的[方块谓词](../block_predicate/index.md)，就返回这个结果，否则不执行操作或者返回另一个方块函数的结果。
 
 此函数可以用于对方块函数的结果进行筛选。需要注意的是，这个方块谓词的计算过程可能对方块实体不会生效，因为方块实体必须要是实际已经存在才能够正常地检测。
 
@@ -10,6 +10,6 @@
 
 ## 示例
 
-- `filter(*, ![waterlogged=true])`：[随机的方块](../random.md)，但如果这个随机的方块是含水的，则不执行操作。
+- `filter(*, ![waterlogged=true])`：[随机的方块](random.md)，但如果这个随机的方块是含水的，则不执行操作。
 - `filter(*, ![waterlogged=true], ice)`：随机的方块，但如果这个随机的方块是含水的，则使用冰代替。
 - `filter(idcontain(red), !idcontain(redstone), red_wool)`：随机的 ID 中含有“red”的方块，但如果这个方块的名称中含有“redstone”，则使用红色羊毛代替。

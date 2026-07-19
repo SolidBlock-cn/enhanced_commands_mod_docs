@@ -36,5 +36,5 @@
 
 ## 参见
 
-- [`pick()` 方块函数](../../block_function/pick.md)
-- [`pick()` NBT 函数](../../nbt_function/pick.md)
+- [`pick()` 方块函数](../block_function/pick.md)
+- [`pick()` NBT 函数](../nbt_function/pick.md)
