@@ -34,7 +34,8 @@ Integer. Range not limited. If not specified, by default 1. Each integer is equi
 
 For example, if the current moon phase is first quarter (id = 6), and rotation steps 1, 9, 7... or -7, -15, -23... set to waxing gibbous (id = 7), rotation steps 2, 10, 18... or -6, -14, -22... sets to full oon (id = 0).
 
-> ℹ️Note: The essence of setting moon phase is setting game time.
+!!! note
+    The essence of setting moon phase is setting game time.
 
 ### `<size>`
 

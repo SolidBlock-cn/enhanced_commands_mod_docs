@@ -13,7 +13,8 @@
 
 参数名称 `gamemode` 可以简写为 `m`，二者等价。
 
-> 注意：此谓词在命令中的实体选择器对应的参数名称是 `gamemode`，没有下划线，但其内部实体谓词类型 id 是 `enhanced_commands:game_mode`，有下划线。
+!!! note "注意"
+    此谓词在命令中的实体选择器对应的参数名称是 `gamemode`，没有下划线，但其内部实体谓词类型 id 是 `enhanced_commands:game_mode`，有下划线。
 
 ## 示例
 

@@ -25,7 +25,8 @@ In some cases, the integer value using absolute positions are aligned to the cen
 - `1 2 ^3`: Invalid coordinate.
 - `^ ^2 ~5`: Invalid coordinate.
 
-> By default, when the player executes the command, the position and rotation of the command source is the player's position and rotation, which can be modified with the attribute subcommands of `/execute`, including independent commands separated in the mod.
+!!! info
+    By default, when the player executes the command, the position and rotation of the command source is the player's position and rotation, which can be modified with the attribute subcommands of `/execute`, including independent commands separated in the mod.
 
 ## Data structure
 

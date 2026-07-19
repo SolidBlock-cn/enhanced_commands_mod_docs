@@ -13,7 +13,8 @@ The game modes can use full names (such as `creative`), abbreviations (such as `
 
 The argument name `gamemode` can be abbreviated to `m`; both are equivalent.
 
-> Note: The option name of this predicate in the entity selector in commands is `gamemode`, without underscore, but the internal entity predicate type id is `enhanced_commands:game_mode`, with underscore.
+!!! note
+     The option name of this predicate in the entity selector in commands is `gamemode`, without underscore, but the internal entity predicate type id is `enhanced_commands:game_mode`, with underscore.
 
 ## Examples
 

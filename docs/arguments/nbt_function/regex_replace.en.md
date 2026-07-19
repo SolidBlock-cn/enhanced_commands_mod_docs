@@ -2,7 +2,8 @@
 
 The [NBT function](index.md) replaced regular expressions in the NBT.
 
-> **Warning:** It may be risky to replace NBTs, because you may affect many values at once, and it is usually not easy to undo the changes. Before you execute replacements, especially replacements that may affect many targets and many values, check carefully. It is also recommended to execute replacement in a smaller range (to fewer blocks, fewer entities, etc.), and make sure the replacement is executed correctly as expected before executing in larger ranges.
+!!! warning
+    It may be risky to replace NBTs, because you may affect many values at once, and it is usually not easy to undo the changes. Before you execute replacements, especially replacements that may affect many targets and many values, check carefully. It is also recommended to execute replacement in a smaller range (to fewer blocks, fewer entities, etc.), and make sure the replacement is executed correctly as expected before executing in larger ranges.
 
 ## Syntax
 

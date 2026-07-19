@@ -6,7 +6,8 @@ If the NBT to be replaced itself match the predicate, the NBT function will be a
 
 The function is not used to find and replace some contents in the string. To find and replace in the string, please use [`string_replace()` function](string_replace.md) or [`regex_replace()` function](regex_replace.md).
 
-> **Warning:** It may be risky to replace NBTs, because you may affect many values at once, and it is usually not easy to undo the changes. Before you execute replacements, especially replacements that may affect many targets and many values, check carefully. It is also recommended to execute replacement in a smaller range (to fewer blocks, fewer entities, etc.), and make sure the replacement is executed correctly as expected before executing in larger ranges.
+!!! warning
+    It may be risky to replace NBTs, because you may affect many values at once, and it is usually not easy to undo the changes. Before you execute replacements, especially replacements that may affect many targets and many values, check carefully. It is also recommended to execute replacement in a smaller range (to fewer blocks, fewer entities, etc.), and make sure the replacement is executed correctly as expected before executing in larger ranges.
 
 ## Syntax
 

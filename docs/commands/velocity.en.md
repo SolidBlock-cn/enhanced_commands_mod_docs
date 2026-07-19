@@ -7,9 +7,11 @@ subtitle: Modify entity's velocity
 
 The [command](index.md) is used to entity's velocity.
 
-> Modifying players' velocity is an experimental feature. It may not work stably and sometimes may not work. In details:
-> - In version 1.21.1, modifying player's speed does not work.
-> - In version 1.21.4, modifying player's speed works, but the server may not accurately identify player's current speed. When the player is falling or triggered movement by an explosion, the speed can be identified by the server. But when the player is walking or flying by themselves, the server may not identify the velocity and it may be identified as a zero vector by the server.
+!!! note
+    Modifying players' velocity is an experimental feature. It may not work stably and sometimes may not work. In details:
+    
+    - In version 1.21.1, modifying player's speed does not work.
+    - In version 1.21.4, modifying player's speed works, but the server may not accurately identify player's current speed. When the player is falling or triggered movement by an explosion, the speed can be identified by the server. But when the player is walking or flying by themselves, the server may not identify the velocity and it may be identified as a zero vector by the server.
 
 ## 语法
 
@@ -32,7 +34,8 @@ The [command](index.md) is used to entity's velocity.
 
 The vector composed of three floating-point number.
 
-> Currently, relative coordinates and local coordinates are supported but not suggested.
+!!! info
+    Currently, relative coordinates and local coordinates are supported but not suggested.
 
 ### `<scale>`/`<size>`
 

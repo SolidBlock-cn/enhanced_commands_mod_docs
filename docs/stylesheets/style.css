@@ -1,7 +1,9 @@
-html[lang=zh] article > p {
+html[lang=zh] article > p,
+html[lang=zh] .admonition > p:not(.admonition-title) {
     text-indent: 2em;
 }
 
-html[lang=zh] article > p > * {
+html[lang=zh] article > p > *,
+html[lang=zh] .admonition > p:not(.admonition-title) * {
     text-indent: 0;
 }

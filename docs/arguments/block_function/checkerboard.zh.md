@@ -17,21 +17,26 @@ subtitle: 迷人的棋盘格图案
 
 对于坐标为 $(x, y, z)$ 的方块，如果向下取整、缩放和偏移值分别为 $F$、$s$ 和 $o$，第 $n$（$1\leqslant n\leqslant m, n\in \mathbf N$）个方块函数及其权重分别为 $a_n$ 和 $w_n$，则计算方块坐标的方式为：
 
-> 设 $f(a, b) = \begin{cases}a & a = 0 \\ \operatorname{floor}\left(\dfrac{a}{b}\right) & a \ne 0 \end{cases}$，
->
-> 取 $v = f\left(x - o_x, F_x\right) s_x + f\left(y - o_y, F_y\right) s_y + f\left(z - o_z, F_z\right) s_z$
->
-> 计算各方块函数的权重之和：
->
-$$
-w = \displaystyle\sum_{n=1}^{m}{w_n}
-$$
->
-> 设 $v^\prime$ = $v \mod w$
->
-> 则坐标为 $(x, y, z)$ 的方块使用的方块函数为 $a_i$，其中 $i$ 是满足 $\displaystyle\sum_{n=1}^{i} \geqslant v^\prime$ 的最小值。
->
-> 特别地，当 $w_1 = w_2 = … = w_m$，则坐标为 $(x,y,z)$ 使用的方块函数为 $a_i$，其中 $i = \operatorname{floor}(v')$。
+!!! info "信息"
+    设 $f(a, b) = \begin{cases}a & a = 0 \\ \operatorname{floor}\left(\dfrac{a}{b}\right) & a \ne 0 \end{cases}$，
+
+    取
+    
+    $$
+    v = f\left(x - o_x, F_x\right) s_x + f\left(y - o_y, F_y\right) s_y + f\left(z - o_z, F_z\right) s_z
+    $$
+
+    计算各方块函数的权重之和：
+
+    $$
+    w = \displaystyle\sum_{n=1}^{m}{w_n}
+    $$
+
+    设 $v^\prime$ = $v \mod w$
+
+    则坐标为 $(x, y, z)$ 的方块使用的方块函数为 $a_i$，其中 $i$ 是满足 $\displaystyle\sum_{n=1}^{i} \geqslant v^\prime$ 的最小值。
+
+    特别地，当 $w_1 = w_2 = … = w_m$，则坐标为 $(x,y,z)$ 使用的方块函数为 $a_i$，其中 $i = \operatorname{floor}(v')$。
 
 ## 语法
 
@@ -66,14 +71,27 @@ $$
 - `checkerboard(white_wool 2, black_wool)`：由白色羊毛和黑色羊毛组成的棋盘格。用 3 除 $v$，整除或余 1 时为白色羊毛，余 2 时为黑色羊毛。
 - `checkerboard(white_wool 1.5, black_wool)`：由白色羊毛和黑色羊毛组成的棋盘格。
 - `checkerboard(white_wool 0, black_wool 0)`：无效，因为各个方块函数的权重之和为 0。
-- `checkerboard(white_wool, black_wool ; floor = 2)`：由白色羊毛和黑色羊毛组成的棋盘格，每格的大小为 2×2×2 的立方体。
-- `checkerboard(white_wool, black_wool ; floor = 2 3 4)`：由白色羊毛和黑色羊毛组成的棋盘格，每格的大小为 2×3×4 的立方体。
-- `checkerboard(white_wool, black wool ; scale = 0.5)`：由白色羊毛和黑色羊毛组成的棋盘格，每次计算时各坐标均除以 2。
-- `checkerboard(white_wool, black wool ; scale = 1 0 1)`：由白色羊毛和黑色羊毛组成的棋盘格，其中棋盘格忽略 y 坐标。
-- `checkerboard(white_wool, black wool ; offset = 1 0 0)`：由白色羊毛和黑色羊毛组成的棋盘格，但是棋盘整体沿 `(1, 0, 0)` 的方向移动。
-- `checkerboard(white_wool 1 gray_wool 2, black wool 1; floor = 2, scale = 0.5, offset = 0 1 0, seed = 15)`：含有所有参数的棋盘格的方块函数。
-- `checkerboard(white_wool, black wool ; scale = 0.2, scale = 5)`：无效的方块函数，因为有重复的参数。
+- `checkerboard(white_wool, black_wool; floor = 2)`：由白色羊毛和黑色羊毛组成的棋盘格，每格的大小为 2×2×2 的立方体。
+- `checkerboard(white_wool, black_wool; floor = 2 3 4)`：由白色羊毛和黑色羊毛组成的棋盘格，每格的大小为 2×3×4 的立方体。
+- `checkerboard(white_wool, black_wool; scale = 0.5)`：由白色羊毛和黑色羊毛组成的棋盘格，每次计算时各坐标均除以 2。
+- `checkerboard(white_wool, black_wool; scale = 1 0 1)`：由白色羊毛和黑色羊毛组成的棋盘格，其中棋盘格忽略 y 坐标。
+- `checkerboard(white_wool, black_wool; offset = 1 0 0)`：由白色羊毛和黑色羊毛组成的棋盘格，但是棋盘整体沿 `(1, 0, 0)` 的方向移动。
+- `checkerboard(white_wool 1, gray_wool 2, black wool 1; floor = 2, scale = 0.5, offset = 0 1 0)`：含有所有参数的棋盘格的方块函数。
+- `checkerboard(white_wool, black wool; scale = 0.2, scale = 5)`：无效的方块函数，因为有重复的参数。
 
 ## 参见
 
 - [`checkerboard()` 方块谓词](../block_predicate/checkerboard.md)
+
+## 数据格式
+
+- `id`：此时为 `enhanced_commands:checkerboard`。
+- `functions`：方块函数的列表。
+- `floor`：三维向量（双精度浮点数，下同），可选，默认值为 `[0d, 0d, 0d]`。
+- `scale`：三维向量（双精度浮点数，下同），可选，默认值为 `[1d, 1d, 1d]`。
+- `offset`：三维向量（双精度浮点数，下同），可选，默认值为 `[0d, 0d, 0d]`。
+
+示例：
+
+1. `#!json {"functions":{"elements":["minecraft:white_wool","minecraft:gray_wool","minecraft:black_wool"],"weighted":false},"type":"enhanced_commands:checkerboard"}`
+2. `#!json {"functions":{"entries":[{"element":"minecraft:white_wool"},{"element":"minecraft:gray_wool","weight":2.0},{"element":"minecraft:black_wool"}],"weighted":true},"floor":[2.0,2.0,2.0],"scale":[0.5,0.5,0.5],"offset":[0.0,1.0,0.0],"type":"enhanced_commands:checkerboard"}`

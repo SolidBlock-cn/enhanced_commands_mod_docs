@@ -78,7 +78,8 @@ For example:
 - `@s[c=5]`: Invalid, as `@s` cannot specify entity amounts.
 - `@e[r=3,rm=5]`: Invalid, because the furthest distance can’t be lower than the nearest distance.
 
-> Note: The mod doesn’t support `rx`, `rxm`, `ry` and `rym` yet.
+!!! note
+    The mod doesn’t support `rx`, `rxm`, `ry` and `rym` yet.
 
 ### Simplified gamemode aliases and using multiple gamemodes.
 
@@ -115,11 +116,13 @@ In vanilla, some options or entity selectors can be inverted with a `!` mark, su
 - Inverting when selecting experience levels, such as:
     - `@a[level=!2]`: Selects players whose experience levels aren’t 2.
     - `@a[level=!2..3]`: Selects players whose experience levels aren’t between 2 and 3.
-  > Note: As long as experience levels are specified, even if the condition is inverted, the selected can’t select any entities other than players.
+    !!! note
+        As long as experience levels are specified, even if the condition is inverted, the selected can’t select any entities other than players.
 - Inverting when selecting scores, such as:
     - `@e[scores={a=!2}]`: Selects entities whose value in score "a" is not 2.
     - `@e[scores={a=!3, b=!5..6}]`: Selects entities whose value in score "a" is not 3 and value in score "b" is not between 5 and 6.
-  > Note: Even if inverted, when the score objective doesn’t exist, or the entity doesn’t have a score in this objective, the entity can’t be selected. For example, `@e[scores={a=!2}]` to be described most accurately, is when the score "a" exists, selecting players who have a value on this score objective, which does not equal to 2.
+    !!! note
+        Even if inverted, when the score objective doesn’t exist, or the entity doesn’t have a score in this objective, the entity can’t be selected. For example, `@e[scores={a=!2}]` to be described most accurately, is when the score "a" exists, selecting players who have a value on this score objective, which does not equal to 2.
 
 ### Specifying loot predicate JSONs
 
@@ -132,7 +135,8 @@ Where you type loot predicates, directly type the JSON, and the command will be 
 - `@e[predicate={condition: entity_properties, entity: this, predicate: {flags: {is_sneaking: true}}}]`: Sneaking entities.
 - `@e[predicate={condition: location_check, predicate: {biome: badlands}}]`: Entities in the badlands biome.
 
-> It's advised to avoid using direct loot predicates if other selector parameters can achieve the same effect.
+!!! tip
+    It's advised to avoid using direct loot predicates if other selector parameters can achieve the same effect.
 
 ### Better error tips
 

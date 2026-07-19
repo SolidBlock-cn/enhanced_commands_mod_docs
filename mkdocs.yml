@@ -41,6 +41,8 @@ theme:
     - navigation.path
     - toc.follow
     - navigation.footer
+    - content.code.copy
+    - content.code.select
 
 plugins:
   - search
@@ -65,7 +67,7 @@ plugins:
             Item function: 物品函数
             Item predicate: 物品谓词
             NBT function: NBT 函数
-            Nbt predicate: NBT 谓词
+            NBT predicate: NBT 谓词
             Region: 区域
             '/if and /unless': '/if 和 /unless'
         - locale: en
@@ -76,6 +78,26 @@ copyright: 'Note: The website is currently under test. Some internal links may b
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -84,3 +106,6 @@ extra_javascript:
 
 extra_css:
   - stylesheets/style.css
+
+watch:
+  - includes
