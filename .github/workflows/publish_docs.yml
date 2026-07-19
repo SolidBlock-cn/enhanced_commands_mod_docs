@@ -16,6 +16,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install mkdocs  # 安装 mkdocs
+        pip install mkdocs[i18n]
         pip install mkdocs-material  # 安装 mkdocs-material 主题
         pip install mkdocs-awesome-nav
         pip install python-markdown-math
