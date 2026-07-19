@@ -1,4 +1,4 @@
-# `/testfor block_info`
+# `/testfor blockinfo`
 
 此[命令](../index.md)用于获取世界内指定位置的方块的一些信息，以及对这些信息进行测试。
 
