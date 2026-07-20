@@ -186,7 +186,7 @@ NBT 函数支持以下函数语法：
 - [`from()`](from.md)：从另一个 NBT 来源导入数据。
 - [`overlay()`](overlay.md)：依次运行多个 NBT 函数。
 - [`pick()`](pick.md)：随机选择一个 NBT 函数。
-- [`pos()`](pos.md)：将坐标以双精度浮点数数字的形式返回。
+- [`pos()`](pos.md)：将坐标以双精度浮点数数组的形式返回。
 - [`regex_replace()`](regex_replace.md)：进行正则表达式文本替换。
 - [`replace()`](replace.md)：替换 NBT 中所有符合指定的 NBT 谓词的值，并应用 NBT 函数。
 - [`string_replace()`](string_replace.md)：进行字符串替换。
