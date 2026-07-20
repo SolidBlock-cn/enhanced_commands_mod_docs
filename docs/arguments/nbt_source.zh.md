@@ -1,7 +1,7 @@
 title: NBT 来源
-subtitle: 指定从谁那里获取 NBT
+subtitle: 指定从哪里获取 NBT
 
-# NBT 来源：指定从那里获取 NBT
+# NBT 来源：指定从哪里获取 NBT
 
 **NBT 来源**是一种[参数类型](index.md)，表示从哪里获取 NBT 数据。注意：NBT 来源是一整个 NBT，通常只会是复合标签（compound）。实际运行命令时，通常还需要指定路径和[聚合类型](nbt_concentration_type.md)。
 
