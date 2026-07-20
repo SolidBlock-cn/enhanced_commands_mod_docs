@@ -28,7 +28,7 @@ subtitle: 根据方块标签画棋盘格
 - `offset`：三维向量（双精度浮点数，下同），可选，默认值为 `[0d, 0d, 0d]`。
 
 ??? example "示例：`checkerboard-tag(#planks)`"
-    '''json
+    ```json
     {
       "tag": "#minecraft:planks",
       "type": "checkerboard-tag"
@@ -36,7 +36,7 @@ subtitle: 根据方块标签画棋盘格
     ```
 
 ??? example "示例：`checkerboard-tag(#wool; scale = 2)`"
-    '''json
+    ```json
     {
       "tag": "#minecraft:wool",
       "scale": [
