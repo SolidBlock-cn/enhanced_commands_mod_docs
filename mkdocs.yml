@@ -43,6 +43,7 @@ theme:
     - navigation.footer
     - content.code.copy
     - content.code.select
+    - content.action.edit
 
 plugins:
   - search
@@ -109,3 +110,5 @@ extra_css:
 
 watch:
   - includes
+
+repo_url: https://github.com/SolidBlock-cn/enhanced_commands_mod_docs
