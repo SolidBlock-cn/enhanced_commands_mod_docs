@@ -58,6 +58,7 @@ plugins:
           name: 简体中文
           build: true
           copyright: 请注意：本网站目前仍在测试。
+          fixed_link: true
           nav_translations:
             Home: 主页
             Arguments: 参数
@@ -73,9 +74,20 @@ plugins:
             NBT predicate: NBT 谓词
             Region: 区域
             '/if and /unless': '/if 和 /unless'
+          admonition_translations:
+            note: 注意
+            warining: 警告
+            tip: 提示
+            example: 示例
+            danger: 危险
+            success: 成功
+            failure: 失败
+            question: 问题
+            quote: 引用
         - locale: en
           name: English
           build: true
+          fixed_link: true
 copyright: 'Note: The website is currently under test.
 
 markdown_extensions:
