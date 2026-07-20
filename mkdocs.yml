@@ -75,15 +75,15 @@ plugins:
             Region: 区域
             '/if and /unless': '/if 和 /unless'
           admonition_translations:
-            note: 注意
-            warning: 警告
-            tip: 提示
-            example: 示例
-            danger: 危险
-            success: 成功
-            failure: 失败
-            question: 问题
-            quote: 引用
+            - note: 注意
+            - warning: 警告
+            - tip: 提示
+            - example: 示例
+            - danger: 危险
+            - success: 成功
+            - failure: 失败
+            - question: 问题
+            - quote: 引用
         - locale: en
           name: English
           build: true
