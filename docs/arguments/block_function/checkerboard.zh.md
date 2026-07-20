@@ -96,8 +96,8 @@ subtitle: 迷人的棋盘格图案
     {
         "functions": {
             "elements": [
-            "minecraft:white_wool",
-            "minecraft:black_wool"
+                "minecraft:white_wool",
+                "minecraft:black_wool"
             ],
             "weighted": false
         },
@@ -110,16 +110,16 @@ subtitle: 迷人的棋盘格图案
     {
         "functions": {
             "entries": [
-            {
-                "element": "minecraft:white_wool"
-            },
-            {
-                "element": "minecraft:gray_wool",
-                "weight": 2.0
-            },
-            {
-                "element": "minecraft:black_wool"
-            }
+                {
+                    "element": "minecraft:white_wool"
+                },
+                {
+                    "element": "minecraft:gray_wool",
+                    "weight": 2.0
+                },
+                {
+                    "element": "minecraft:black_wool"
+                }
             ],
             "weighted": true
         },
