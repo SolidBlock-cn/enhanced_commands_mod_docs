@@ -31,4 +31,4 @@
 
 ## 参见
 
-- [属性方块函数](../block_function/properties.md)
+- [属性方块函数](../block_function/property_names.md)

@@ -1,6 +1,3 @@
 Title: 主页
 
-这是增强命令（Enhanced Commands，此模组名称为暂定）模组的文档。
-
-- [参数](arguments/index.md)
-- [命令](commands.md)
+这是增强命令（Enhanced Commands）模组的文档。点击页面顶部或左侧的导航以浏览内容。

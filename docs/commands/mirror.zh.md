@@ -1,3 +1,8 @@
+---
+title: /mirror 和 //mirror
+subtitle: 镜像或翻转方块
+---
+
 # `/mirror` 和 `//mirror`
 
 此[命令](index.md)用于镜像（或者说是翻转）一个区域内的方块和实体。只支持绕 x、y 或 z 轴翻转。

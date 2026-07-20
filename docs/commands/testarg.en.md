@@ -6,8 +6,8 @@ This [command](index.md) is used to test the argument types of commands, and tes
 
 - `/testarg block_function <block function> [string|nbt|json|string_test|nbt_test|json_test]`: [Block function](../arguments/block_function/index.md).
     - `string`: Convert to string.
-    - `nbt`: Encode into NBT.
-    - `json`: Encode into JSON.
+    - `nbt`: Encode into NBT. The output NBT can be copied to clipboard by clicking the mouse in the chat screen.
+    - `json`: Encode into JSON. The output NBT can be copied to clipboard by clicking the mouse in the chat screen, which copies the prettified version.
     - `string_test`: Convert to string, and parse according to the string, and checker whether the converted result is identical to the original string. Usually it should return `true`, but if it returns `false`, it means there is consistency within this conversion: strings converted (or NBT, JSON encoded) from Java objects are not correctly converted (or decoded) to the same Java object as original ones, which means bugs in this mod, or maybe there are some unsupported contents. This command is usually test the consistency during the object conversion. Same to the following `nbt_test` and `json_test`.
     - `nbt_test`: Encode to NBT, and decode to Java objects, and test whether the converted result is identical to the original one.
     - `json_test`: Encode to JSON, and decode to Java objects, and test whether the converted result is identical to the original one.

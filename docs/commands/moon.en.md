@@ -1,3 +1,8 @@
+---
+title: /moon
+subtitle: View and set moon phase
+---
+
 # `/moon`: View and set moon phase
 
 The [command](index.md) can be used to view and set moon phase, and execute commands under a condition related to moon phase. An alias of this command is `/jadeplate`.

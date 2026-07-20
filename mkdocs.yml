@@ -57,7 +57,7 @@ plugins:
           default: true
           name: 简体中文
           build: true
-          copyright: 请注意：本网站目前仍在测试。一些内部链接可能无效，请使用页面顶部的标签页或屏幕左侧的导航和目录。
+          copyright: 请注意：本网站目前仍在测试。
           nav_translations:
             Home: 主页
             Arguments: 参数
@@ -68,6 +68,7 @@ plugins:
             Entity predicate: 实体谓词
             Item function: 物品函数
             Item predicate: 物品谓词
+            Mod configs: 模组配置
             NBT function: NBT 函数
             NBT predicate: NBT 谓词
             Region: 区域
@@ -75,7 +76,7 @@ plugins:
         - locale: en
           name: English
           build: true
-copyright: 'Note: The website is currently under test. Some internal links may be invalid. Please use the tabs at the top of the page or the navigation and TOC on the left side of the page.'
+copyright: 'Note: The website is currently under test.
 
 markdown_extensions:
   - pymdownx.arithmatex:

@@ -1,3 +1,8 @@
+---
+title: /nbt
+subtitle: 随心所欲地操作 NBT
+---
+
 # `/nbt`：随心所欲地操作 NBT
 
 此[命令](index.md)可用于查询或修改 NBT 数据，包括方块、实体和存储的 NBT 数据。
@@ -52,7 +57,7 @@ NBT 路径，和原版用法一致。
 
 ## 参见
 
-- [NBT 函数 `replace()`](../arguments/nbt_function/replaceblocks.md)
+- [NBT 函数 `replace()`](../arguments/nbt_function/replace.md)
 - [NBT 函数 `string_replace()`](../arguments/nbt_function/string_replace.md)
 - [NBT 函数 `regex_replace()`](../arguments/nbt_function/regex_replace.md)
 - [NBT 函数 `substring()`](../arguments/nbt_function/substring.md)

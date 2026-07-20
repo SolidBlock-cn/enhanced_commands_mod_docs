@@ -6,8 +6,8 @@
 
 - `/testarg block_function <方块函数> [string|nbt|json|string_test|nbt_test|json_test]`：[方块函数](../arguments/block_function/index.md)。
     - `string`：转化为字符串。
-    - `nbt`：编码为 NBT。
-    - `json`：编码为 JSON。
+    - `nbt`：编码为 NBT。输出的 NBT 在聊天界面中可通过鼠标点击来复制。
+    - `json`：编码为 JSON。输出的 JSON 在聊天界面中可通过鼠标点击来复制，复制后是美观排版后的。
     - `string_test`：转化为字符串，然后再解析字符串，并检查解析后的结果与原字符串是否一致。通常来说应当返回 `true`，如果返回 `false`，说明这一转化过程存在不一致性，Java 中的对象转化为字符串（或编码 NBT、JSON）后没有正确地解析（或解码）回和原来相等的 Java 对象，可能是模组的漏洞，也可能是有不支持转化的内容。这一命令常用于检查对象转化过程是否一致。下面的 `nbt_test` 和 `json_test` 也是同样。
     - `nbt_test`：编码为 NBT，然后再将其解码为 Java 对象，并检查转码后的结果与原参数值是否一致。
     - `json_test`：编码为 JSON，然后再将其解码为 Java 对象，并检查转码后的结果与原参数值是否一致。
@@ -34,4 +34,4 @@
     - `... (vanilla_vec3|vanilla_vec3_accurate|vanilla_block_pos) <坐标>`：显示指定原版类型的坐标参数根据命令源的计算结果。
 - `/testarg region <区域> [string|nbt|json|string_test|nbt_test|json_test]`：[区域](../arguments/region/index.md)。
     - 同上。
-- `/testart region <区域> illustrate`：使用玻璃绘制此区域，并检测此区域是否有异常。如果区域附近有方块坐标在迭代区域的方块坐标时未被包含，却被判定为在此区域内，将用橙色染色玻璃表示。如果迭代过程包含的区域方块坐标中，有部分方块坐标被判定为不在区域内，将用红色染色玻璃表示。正常情况下，不应该产生任何的红色染色玻璃和橙色染色玻璃。该操作可通过 [`/undo`](undo_and_redi.md) 撤销。
+- `/testart region <区域> illustrate`：使用玻璃绘制此区域，并检测此区域是否有异常。如果区域附近有方块坐标在迭代区域的方块坐标时未被包含，却被判定为在此区域内，将用橙色染色玻璃表示。如果迭代过程包含的区域方块坐标中，有部分方块坐标被判定为不在区域内，将用红色染色玻璃表示。正常情况下，不应该产生任何的红色染色玻璃和橙色染色玻璃。该操作可通过 [`/undo`](undo_and_redo.md) 撤销。

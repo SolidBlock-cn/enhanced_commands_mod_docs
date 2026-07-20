@@ -76,7 +76,7 @@ subtitle: 迷人的棋盘格图案
 - `checkerboard(white_wool, black_wool; scale = 0.5)`：由白色羊毛和黑色羊毛组成的棋盘格，每次计算时各坐标均除以 2。
 - `checkerboard(white_wool, black_wool; scale = 1 0 1)`：由白色羊毛和黑色羊毛组成的棋盘格，其中棋盘格忽略 y 坐标。
 - `checkerboard(white_wool, black_wool; offset = 1 0 0)`：由白色羊毛和黑色羊毛组成的棋盘格，但是棋盘整体沿 `(1, 0, 0)` 的方向移动。
-- `checkerboard(white_wool 1, gray_wool 2, black wool 1; floor = 2, scale = 0.5, offset = 0 1 0)`：含有所有参数的棋盘格的方块函数。
+- `checkerboard(white_wool 1, gray_wool 2, black_wool 1; floor = 2, scale = 0.5, offset = 0 1 0)`：含有所有参数的棋盘格的方块函数。
 - `checkerboard(white_wool, black wool; scale = 0.2, scale = 5)`：无效的方块函数，因为有重复的参数。
 
 ## 参见
@@ -85,13 +85,59 @@ subtitle: 迷人的棋盘格图案
 
 ## 数据格式
 
-- `id`：此时为 `enhanced_commands:checkerboard`。
+- `id`：此时为 `checkerboard`。
 - `functions`：方块函数的列表。
 - `floor`：三维向量（双精度浮点数，下同），可选，默认值为 `[0d, 0d, 0d]`。
 - `scale`：三维向量（双精度浮点数，下同），可选，默认值为 `[1d, 1d, 1d]`。
 - `offset`：三维向量（双精度浮点数，下同），可选，默认值为 `[0d, 0d, 0d]`。
 
-示例：
+??? example "示例：`checkerboard(white_wool, black_wool)`"
+    ```json
+    {
+        "functions": {
+            "elements": [
+            "minecraft:white_wool",
+            "minecraft:black_wool"
+            ],
+            "weighted": false
+        },
+        "type": "checkerboard"
+    }
+    ```
 
-1. `#!json {"functions":{"elements":["minecraft:white_wool","minecraft:gray_wool","minecraft:black_wool"],"weighted":false},"type":"enhanced_commands:checkerboard"}`
-2. `#!json {"functions":{"entries":[{"element":"minecraft:white_wool"},{"element":"minecraft:gray_wool","weight":2.0},{"element":"minecraft:black_wool"}],"weighted":true},"floor":[2.0,2.0,2.0],"scale":[0.5,0.5,0.5],"offset":[0.0,1.0,0.0],"type":"enhanced_commands:checkerboard"}`
+??? example "示例：`checkerboard(white_wool 1, gray_wool 2, black_wool 1; floor = 2, scale = 0.5, offset = 0 1 0)`"
+    ```json
+    {
+        "functions": {
+            "entries": [
+            {
+                "element": "minecraft:white_wool"
+            },
+            {
+                "element": "minecraft:gray_wool",
+                "weight": 2.0
+            },
+            {
+                "element": "minecraft:black_wool"
+            }
+            ],
+            "weighted": true
+        },
+        "floor": [
+            2.0,
+            2.0,
+            2.0
+        ],
+        "scale": [
+            0.5,
+            0.5,
+            0.5
+        ],
+        "offset": [
+            0.0,
+            1.0,
+            0.0
+        ],
+        "type": "checkerboard"
+    }
+    ```

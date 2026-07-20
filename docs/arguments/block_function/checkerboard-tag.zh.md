@@ -21,13 +21,29 @@ subtitle: 根据方块标签画棋盘格
 
 ## 数据格式
 
-- `id`：此时为 `enhanced_commands:checkerboard-tag`。
-- `tag`：方块的 标签或直接列表。
+- `id`：此时为 `checkerboard-tag`。
+- `tag`：方块的[标签或直接列表](../../glossaries.md#tag-or-direct-list)。
 - `floor`：三维向量（双精度浮点数，下同），可选，默认值为 `[0d, 0d, 0d]`。
 - `scale`：三维向量（双精度浮点数，下同），可选，默认值为 `[1d, 1d, 1d]`。
 - `offset`：三维向量（双精度浮点数，下同），可选，默认值为 `[0d, 0d, 0d]`。
 
-示例：
+??? example "示例：`checkerboard-tag(#planks)`"
+    '''json
+    {
+      "tag": "#minecraft:planks",
+      "type": "checkerboard-tag"
+    }
+    ```
 
-1. `#!json {"tag":"#minecraft:planks","type":"enhanced_commands:checkerboard-tag"}`
-2. `#!json {"tag":"#minecraft:wool","scale":[2.0,2.0,2.0],"type":"enhanced_commands:checkerboard-tag"}`
+??? example "示例：`checkerboard-tag(#wool; scale = 2)`"
+    '''json
+    {
+      "tag": "#minecraft:wool",
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "type": "checkerboard-tag"
+    }
+    ```

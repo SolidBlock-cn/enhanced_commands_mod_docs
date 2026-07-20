@@ -242,7 +242,7 @@
 - [`pose`](entity_predicate/pose.md)：选择指定姿势的实体。
     - `@e[pose=crouching]`：选择所有正在爬行的实体。
     - `@a[pose=!swimming]`：选择所有未在游泳的实体。
-- [`region`](entity_predicate/region.md)：选择指定的[区域](/region/index.md)内的实体。支持使用相对坐标和局部坐标，会根据命令源的位置和朝向（而不是被选择的实体的位置和朝向）来计算。
+- [`region`](entity_predicate/region.md)：选择指定的[区域](region/index.md)内的实体。支持使用相对坐标和局部坐标，会根据命令源的位置和朝向（而不是被选择的实体的位置和朝向）来计算。
     - `@e[region=sphere(5)]`：选择距离命令源为中心。半径为 5 的球体范围内的实体。
 - [`saturation`](entity_predicate/saturation.md)：测试实体的饱和度。可以接受浮点数范围。
     - `@e[saturation=5..]`：选择饱和度至少为 5 的玩家。

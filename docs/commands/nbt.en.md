@@ -1,4 +1,9 @@
-# `/nbt`: Operate on NBT as you want
+---
+title: /nbt
+subtitle: Operate on NBTs as you want
+---
+
+# `/nbt`: Operate on NBTs as you want
 
 This [command](index.md) can be used to query or modify NBT data, including NBT data in blocks, entities and storage.
 
