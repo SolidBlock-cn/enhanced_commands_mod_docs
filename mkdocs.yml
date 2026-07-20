@@ -88,7 +88,7 @@ plugins:
           name: English
           build: true
           fixed_link: true
-copyright: 'Note: The website is currently under test.
+copyright: 'Note: The website is currently under test.'
 
 markdown_extensions:
   - pymdownx.arithmatex:
