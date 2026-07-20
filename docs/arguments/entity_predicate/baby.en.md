@@ -1,4 +1,9 @@
-## `baby`: Selects baby entities
+---
+title: baby
+subtitle: Selects baby entities
+---
+
+# `baby`: Selects baby entities
 
 This [entity predicate](index.md) tests whether the entity is a baby. It takes a boolean value. If the entity type doesn’t support baby entities, entities will be seen as non-babies.
 
