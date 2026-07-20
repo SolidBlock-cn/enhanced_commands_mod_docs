@@ -1,4 +1,9 @@
-## `air`: Tests the entity's air
+---
+title: air
+subtitle: Tests the entity's air
+---
+
+# `air`: Tests the entity's air
 
 The [entity predicate](index.md) tests the air value of the entity. Accepts int ranges or the keyword `max` which means the max air value. Can be inverted.
 
