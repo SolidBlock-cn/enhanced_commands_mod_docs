@@ -76,7 +76,7 @@ plugins:
             '/if and /unless': '/if 和 /unless'
           admonition_translations:
             note: 注意
-            warining: 警告
+            warning: 警告
             tip: 提示
             example: 示例
             danger: 危险
