@@ -18,7 +18,7 @@ subtitle: 测试玩家的游戏模式
 
 参数名称 `gamemode` 可以简写为 `m`，二者等价。
 
-!!! note "注意"
+!!! note
     此谓词在命令中的实体选择器对应的参数名称是 `gamemode`，没有下划线，但其内部实体谓词类型 id 是 `enhanced_commands:game_mode`，有下划线。
 
 ## 示例

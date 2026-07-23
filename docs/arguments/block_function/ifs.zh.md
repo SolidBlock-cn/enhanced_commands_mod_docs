@@ -16,7 +16,7 @@
 - `ifs(P1, F1a; P2, F2a, F2b)` 相当于 `if(P1, F1a, if(P2, F2a, F2b))`
 - `ifs(P1, F1a; P2, F2a; P3, F3a, F3b)` 相当于 `if(P1, F1a, if(P2, F2a, if(P3, F3a, F3b)))`
 
-!!! note "注意"
+!!! note
     只有所有方块谓词都不匹配时，才使用最后一组的方块函数 b。非最后一组的方块函数 b，在任何情况下都不会使用，所以虽然能正常解析，但没有必要指定，例如：
 
     - <code>ifs(P1, F1a, ~~F1b~~; P2, F2a, ~~F2b~~; P3, F3a, F3b)</code>

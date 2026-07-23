@@ -17,7 +17,7 @@ subtitle: 迷人的棋盘格图案
 
 对于坐标为 $(x, y, z)$ 的方块，如果向下取整、缩放和偏移值分别为 $F$、$s$ 和 $o$，第 $n$（$1\leqslant n\leqslant m, n\in \mathbf N$）个方块函数及其权重分别为 $a_n$ 和 $w_n$，则计算方块坐标的方式为：
 
-!!! info "信息"
+!!! info
     设 $f(a, b) = \begin{cases}a & a = 0 \\ \operatorname{floor}\left(\dfrac{a}{b}\right) & a \ne 0 \end{cases}$，
 
     取

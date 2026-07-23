@@ -70,6 +70,7 @@ plugins:
             failure: 失败
             question: 问题
             quote: 引用
+            info: 信息
         - locale: en
           name: English
           build: true

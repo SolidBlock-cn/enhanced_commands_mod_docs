@@ -2,7 +2,7 @@
 
 此[命令](index.md)用于调试，可以给予指定玩家的管理员权限，而无需命令的执行者拥有权限。
 
-!!! danger "危险"
+!!! danger
     此命令可以被任何玩家执行（包括非管理员）。除非你是在调试或测试，请使用命令  `/enhanced_commands:config commands enable_debug_commands false` 以禁用调试命令（在非开发环境中默认被禁用）。
 
 ## 语法
