@@ -1,3 +1,7 @@
+---
+title: Argument types
+---
+
 # Argument types
 
 Besides using vanilla argument types, this mod also adds some extra and more complicated **argument types**.

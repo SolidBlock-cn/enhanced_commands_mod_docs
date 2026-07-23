@@ -1,3 +1,7 @@
+---
+title: Commands
+---
+
 # Commands
 
 This mod adds a series of **commands**.

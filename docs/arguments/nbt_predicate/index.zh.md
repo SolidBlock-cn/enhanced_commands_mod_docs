@@ -1,3 +1,7 @@
+---
+title: NBT 谓词
+---
+
 # NBT 谓词
 
 **NBT 谓词**（NBT predicate）是用于判断 NBT 是否满足的条件。任何 NBT 值都会符合或者不符合某个谓词。NBT 谓词可用于筛选。

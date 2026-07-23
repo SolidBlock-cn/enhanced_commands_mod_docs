@@ -1,3 +1,7 @@
+---
+title: Curve
+---
+
 # Curve
 
 **Curve** is an [argument type](index.md) which is a curve in the world, and specifies how to iterate points in the world, to draw this curve.

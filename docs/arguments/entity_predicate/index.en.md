@@ -1,3 +1,8 @@
+---
+title: Entity predicate
+subtitle: filtering entities with a syntax basically same to selectors
+---
+
 # Entity predicate: filtering entities with a syntax basically same to selectors
 
 An **entity predicate** is an [argument type](index.md) playing the role of a condition to test whether the entity matches. In this mod, entity predicates are implemented with [entity selectors](../entity_selector.md), and use the syntax identical to entity selectors.

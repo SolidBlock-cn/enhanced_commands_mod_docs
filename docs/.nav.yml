@@ -1,15 +1,11 @@
 nav:
   - index.md
-  - Arguments:
-    - arguments/index.md
-    - 'arguments/*'
-  - Commands:
-    - commands/index.md
-    - 'commands/*'
-  - Mod configs:
-    - mod_configs/index.md
-    - 'mod_configs/*'
+  - Arguments
+  - Commands
+  - Mod configs
   - glossaries.md
 
 sort:
   sections: mixed
+
+use_index_title: true
