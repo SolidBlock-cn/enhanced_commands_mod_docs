@@ -1,4 +1,9 @@
-# `concat()` function: concatenating multiple strings
+---
+title: concat()
+subtitle: concatenating multiple strings
+---
+
+# `concat()`: concatenating multiple strings
 
 The [NBT function](index.md) can be used to concatenate multiple strings. It can concatenate strings and numbers; numbers will be converted into strings (without the datatype suffix). If there are any values of other types in the concatenation, exceptions will be thrown.
 
@@ -41,7 +46,7 @@ The [NBT function](index.md) to be concatenated as a list. If the return value o
 
 ## Data structure
 
-* **type**: String, currently `enhanced_commands:concat`.
+* **type**: String, currently `concat`.
 * **flatten**: Boolean. Whether the NBT function is flattening.
 * **elements**: List. Only when `flatten: false`. The NBT functions.
     * Compound. An NBT function.

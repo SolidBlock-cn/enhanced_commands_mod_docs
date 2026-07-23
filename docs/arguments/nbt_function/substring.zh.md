@@ -1,4 +1,9 @@
-# `substring()` 函数：截取子字符串
+---
+title: substring()
+subtitle: 截取子字符串
+---
+
+# `substring()`：截取子字符串
 
 此 [NBT 函数](index.md)用于截取子字符串。如果参数不是字符串，会抛出错误。
 

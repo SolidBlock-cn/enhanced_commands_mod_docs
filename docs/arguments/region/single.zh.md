@@ -1,3 +1,8 @@
+---
+title: single()
+subtitle: 单个方块坐标
+---
+
 # `single()`：单个方块坐标
 
 仅表示一个单一的方块坐标的[区域](index.md)。
@@ -21,5 +26,5 @@
 
 ## 数据结构
 
-- **type**：字符串。当前为 `enhanced_commands:single`。
+- **type**：当前为 `single`。
 - **pos**：数组。

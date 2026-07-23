@@ -1,4 +1,9 @@
-# `replace()`: replacing values in the NBT
+---
+title: replace()
+subtitle: Replacing values in the NBT
+---
+
+# `replace()`: Replacing values in the NBT
 
 This [NBT function](index.md) can be used to replace values that match the specified NBT predicate within the NBT, by applying the specified NBT function.
 

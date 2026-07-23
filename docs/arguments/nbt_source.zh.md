@@ -1,5 +1,7 @@
+---
 title: NBT 来源
 subtitle: 指定从哪里获取 NBT
+---
 
 # NBT 来源：指定从哪里获取 NBT
 

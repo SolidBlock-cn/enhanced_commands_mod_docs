@@ -1,4 +1,9 @@
-# `regex_replace()` 函数：在 NBT 中进行正则替换
+---
+title: regex_replace()
+subtitle: 在 NBT 中进行正则替换
+---
+
+# `regex_replace()`：在 NBT 中进行正则替换
 
 此 [NBT 函数](index.md) 可对 NBT 进行正则表达式替换。
 

@@ -1,4 +1,9 @@
-# `from()` function: importing NBT data from the specified source
+---
+title: from()
+subtitle: importing NBT data from the specified source
+---
+
+# `from()`: importing NBT data from the specified source
 
 The [NBT function](index.md) can be used to import NBT data from a specified [NBT source](../nbt_source.md). It is possible to specify the path of NBT data to be import, and the concentration type of the data. If the NBT source has multiple NBTs, such as a [region](../region/index.md) containing multiple block entities, or an [entity selector](../entity_selector.md) that finds multiple entity, the concentration type must be specified, or errors will be thrown.
 
@@ -6,7 +11,7 @@ The [NBT function](index.md) can be used to import NBT data from a specified [NB
 
 - `from(<NBT source>, [NBT path], [NBT concentration type])`
 
-## 参数
+## Parameters
 
 ### `<NBT source>`
 

@@ -1,4 +1,9 @@
-# `overlay()`
+---
+title: overlay()
+subtitle: 依次应用多个物品函数
+---
+
+# `overlay()`：依次应用多个物品函数
 
 此[物品函数](index.md)用于依次应用多个物品函数。
 
@@ -14,7 +19,7 @@
 
 ## 数据结构
 
-- `type`：此时为 `enhanced_commands:overlay`。
+- `type`：此时为 `overlay`。
 - `functions`：列表。
     - 物品函数。
 

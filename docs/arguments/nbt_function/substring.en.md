@@ -1,4 +1,9 @@
-# `substring()` function: get a substring
+---
+title: substring()
+subtitle: Get a substring
+---
+
+# `substring()`: Get a substring
 
 This [NBT function](index.md) is used to get a substring. If the parameters is not a string, an error will be thrown.
 

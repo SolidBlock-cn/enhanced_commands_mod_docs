@@ -1,3 +1,8 @@
+---
+title: pick()
+subtitle: Choose an NBT function randomly
+---
+
 # `pick()`: Choose an NBT function randomly
 
 This [NBT function](index.md) is used to select from multiple block functions. You can specify a weight for each block function, which is by default 1.
@@ -24,7 +29,7 @@ Floating point number, between 0 and 1. Relative probability each NBT function c
 
 ## Data structure
 
-- `type`: Currently `enhanced_commands:pick`.
+- `type`: Currently `pick`.
 - `functions`: Compound. List of NBT functions to be randomly chosen.
     - `weighted`: Boolean.
     - `elements`: List, only exists when `weighted` is false.

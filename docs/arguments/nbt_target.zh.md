@@ -1,5 +1,7 @@
+---
 title: NBT 目标
 subtitle: 指定修改谁的 NBT
+---
 
 # NBT 目标：指定修改谁的 NBT
 

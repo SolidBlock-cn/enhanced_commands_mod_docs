@@ -1,3 +1,8 @@
+---
+title: pick()
+subtitle: 随机选择 NBT 函数
+---
+
 # `pick()`：随机选择 NBT 函数
 
 此 [NBT 函数](index.md)用于从多个 NBT 函数中随机选择。可以为每个随机项设置权重，如果不设置，那么其权重均为 1。
@@ -24,7 +29,7 @@
 
 ## 数据结构
 
-- `type`：此时为 `enhanced_commands:pick`。
+- `type`：此时为 `pick`。
 - `functions`：复合标签。随机选择的 NBT 函数的列表。
     - `weighted`：布尔值。
     - `elements`：列表，仅当 `weighted` 为 false 时存在。

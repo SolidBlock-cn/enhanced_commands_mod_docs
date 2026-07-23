@@ -1,3 +1,8 @@
+---
+title: string_replace()
+subtitle: 替换 NBT 中的字符串
+---
+
 # `string_replace()` 函数：替换 NBT 中的字符串
 
 此 [NBT 函数](index.md) 可对 NBT 中的字符串进行替换。

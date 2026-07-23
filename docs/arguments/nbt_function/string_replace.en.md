@@ -1,3 +1,8 @@
+---
+title: string_replace()
+subtitle: Replacing strings in the NBT
+---
+
 # `string_replace()` function: Replacing strings in the NBT
 
 The [NBT function](index.md) replaces strings in the NBT.

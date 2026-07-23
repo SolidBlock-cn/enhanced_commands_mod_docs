@@ -1,3 +1,8 @@
+---
+title: replace()
+subtitle: 替换 NBT 中的值
+---
+
 # `replace()`：替换 NBT 中的值
 
 此 [NBT 函数](index.md)可用于对 NBT 中的符合指定 NBT 谓词的值进行替换，替换的方式就是应用指定的 NBT 函数。

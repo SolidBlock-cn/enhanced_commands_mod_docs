@@ -1,4 +1,9 @@
-# `enchant()` 物品函数：随心所欲修改物品魔咒
+---
+title: enchant()
+subtitle: 随心所欲修改物品魔咒
+---
+
+# `enchant()`：随心所欲修改物品魔咒
 
 此[物品函数](index.md)可用于修改物品魔咒。
 
@@ -98,7 +103,7 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:enchant"`。
+- `type`：此时为 `"enchant"`。
 - `modifications`：列表。
     - 复合标签。
         - `type`：ID，魔咒修改的类型，默认命名空间为 `enhanced_commands`，以下均省略命名空间。

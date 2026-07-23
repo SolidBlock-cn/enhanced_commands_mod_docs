@@ -1,4 +1,9 @@
-# `from()` 函数：从指定的来源导入 NBT 数据
+---
+title: from()
+subtitle: 从指定的来源导入 NBT 数据
+---
+
+# `from()`：从指定的来源导入 NBT 数据
 
 此 [NBT 函数](index.md)可用于从指定的 [NBT 来源](../nbt_source.md)导入 NBT 数据。可以指定导入的 NBT 数据的路径，以及数据的聚合类型。如果 NBT 来源有多个 NBT，例如包含多个方块实体的[区域](../region/index.md)或选择了多个实体的[实体选择器](../entity_selector.md)，则必须指定聚合类型，否则会抛出错误。
 

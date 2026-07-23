@@ -1,4 +1,9 @@
-# `regex_replace()` function: replacing regex in the NBT
+---
+title: regex_replace()
+subtitle: replacing regex in the NBT
+---
+
+# `regex_replace()`: replacing regex in the NBT
 
 The [NBT function](index.md) replaced regular expressions in the NBT.
 

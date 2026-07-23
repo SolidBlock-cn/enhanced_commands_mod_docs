@@ -1,3 +1,8 @@
+---
+title: single()
+subtitle: Single block position
+---
+
 # `single()`: Single block position
 
 A [region](index.md) that contains only a single block position.
@@ -21,5 +26,5 @@ The single [block position](../pos.md)。
 
 ## Data format
 
-- **type**: String. Currently  `enhanced_commands:single`.
+- **type**: Currently  `single`.
 - **pos**: Array.

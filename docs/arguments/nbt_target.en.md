@@ -1,5 +1,7 @@
+---
 title: NBT target
 subtitle: specifying whose NBT to modify
+---
 
 # NBT target: specifying whose NBT to modify
 
