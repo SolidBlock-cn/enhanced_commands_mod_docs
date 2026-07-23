@@ -1,3 +1,8 @@
+---
+title: owner
+subtitle: 测试可驯养实体的拥有者
+---
+
 # `owner`：测试可驯养实体的拥有者
 
 此[实体谓词](index.md)对实体的拥有者筛选。后面接一个[实体谓词](index.md)，或者不接。
@@ -23,6 +28,6 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:owner"`。
+- `type`：此处为 `"owner"`。
 - `owner`：[实体谓词](index.md)。
 - `inverted`：布尔值，可选，默认为 `false`。

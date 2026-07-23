@@ -1,3 +1,8 @@
+---
+title: gamemode
+subtitle: 测试玩家的游戏模式
+---
+
 # `gamemode`：测试玩家的游戏模式
 
 此[实体谓词](index.md)用于测试玩家的游戏模式。和原版的一样，如果实体选择器使用了此谓词，那么整个实体选择器将会只选择玩家。
@@ -28,7 +33,7 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:game_mode"`。
+- `type`：此时为 `"game_mode"`。
 - `game_mode`：字符串或列表。游戏模式的名称。
     - 字符串，游戏模式的名称（若 `game_mode` 为列表）。
 - `inverted`：布尔值，可选，默认为 `false`。

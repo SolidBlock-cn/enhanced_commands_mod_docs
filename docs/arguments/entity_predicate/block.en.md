@@ -1,3 +1,8 @@
+---
+title: block
+subtitle: Tests the block where the entity is
+---
+
 # `block`: Tests the block where the entity is
 
 The [entity predicate](index.md) can be used to test any coordinate based on the position where the entity is, including relative coordinates and local coordinates. You can specify a single [block predicate](../block_predicate/index.md), or specify multiple pairs composed of a [coordinate](../pos.md) and a [block predicate](../block_predicate/index.md) to test blocks at the specified coordinates.
@@ -21,12 +26,12 @@ The [entity predicate](index.md) can be used to test any coordinate based on the
 
 When directly specifying a single block predicate:
 
-- `type`: Currently `"enhanced_commands:block_predicate"`.
+- `type`: Currently `"block_predicate"`.
 - `predicate`: [Block predicate](../block_predicate/index.md).
 
 When specifying coordinates and block predicates:
 
-- `type`: Currently `"enhanced_commands:block_predicates"`.
+- `type`: Currently `"block_predicates"`.
 - `predicates`: List.
     - Element in the list.
         - `pos`: [Coordinate](../pos.md).

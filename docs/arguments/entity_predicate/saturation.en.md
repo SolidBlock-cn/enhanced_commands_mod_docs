@@ -1,3 +1,8 @@
+---
+title: saturation
+subtitle: Tests entity's saturation
+---
+
 # `saturation`: Tests entity's saturation
 
 This [entity predicate](index.md) tests entity's saturation. It accepts a floating-point number range, and supports inversion.Similar to [`food`](food.md), only players can be selected when this parameter is added.
@@ -9,6 +14,6 @@ This [entity predicate](index.md) tests entity's saturation. It accepts a floati
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:saturation"`.
+- `type`: Currently `"saturation"`.
 - `saturation`: Floating-point number range.
 - `inverted`: Boolean, optional, by default `false`.

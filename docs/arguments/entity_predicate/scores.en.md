@@ -1,3 +1,8 @@
+---
+title: scores
+subtitle: Tests entity's scoreboard score
+---
+
 # `scores`: Tests entity's scoreboard score
 
 This [entity predicate](index.md) tests an entity's scoreboard score. Similar to vanilla `scores` argument, it takes a map (key-value pair) of "objective name - range", and this mod supports inversion to the number range.
@@ -18,7 +23,7 @@ Here only non-vanilla examples are shown.
 
 ## Data structure
 
-- `type`: `enhanced_commands:scores`.
+- `type`: Currently `"scores"`.
 - `scores`: List.
     - Element in the list. Map.
         - `name`: String.

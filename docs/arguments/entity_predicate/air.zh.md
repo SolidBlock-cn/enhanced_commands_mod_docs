@@ -20,11 +20,11 @@ subtitle: 测试实体的空气值
 
 当类型为 `air` 时：
 
-* `type`：此时为 `"enhanced_commands:air"`。
+* `type`：此时为 `"air"`。
 * `air`：整数范围。
 * `inverted`：布尔值，可选，默认为 `false`。
 
 当类型为 `air_max` 时：
 
-* `type`：此时为 `"enhanced_commands:air_max"`。
+* `type`：此时为 `"air_max"`。
 * `inverted`：布尔值，可选，默认为 `false`。

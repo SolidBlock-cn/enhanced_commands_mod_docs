@@ -1,3 +1,8 @@
+---
+title: saturation
+subtitle: 检测实体的饱和度
+---
+
 # `saturation`：检测实体的饱和度
 
 此[实体谓词](index.md)测试实体的饱和度。可以接受浮点数范围。可以取反。和 [`food`](food.md) 类似，加入此参数将只能选择玩家。

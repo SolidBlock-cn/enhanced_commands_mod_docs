@@ -1,3 +1,8 @@
+---
+title: sneaking
+subtitle: 检测潜行
+---
+
 # `sneaking`：检测潜行
 
 此[实体谓词](index.md)测试实体是否正在潜行。飞行模式下玩家下降时也会被选中。此选项与战利品表中的谓词不同。
@@ -11,5 +16,5 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:sneaking"`。
+- `type`：此处为 `"sneaking"`。
 - `expected`：布尔值。

@@ -1,3 +1,8 @@
+---
+title: owner
+subtitle: Tests the owner of tameable entities
+---
+
 # `owner`: Tests the owner of tameable entities
 
 This [entity predicate](index.md) filters by entities' owners. The value can be an [entity predicate](index.md) or no value.
@@ -23,6 +28,6 @@ If a selector is provided as a value, then no matter inverted or not, entities c
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:owner"`.
+- `type`: Currently `"owner"`.
 - `owner`: [Entity predicate](index.md).
 - `inverted`: Boolean, optional, by default `false`.

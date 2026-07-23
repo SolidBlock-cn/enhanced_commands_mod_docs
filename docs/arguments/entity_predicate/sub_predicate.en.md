@@ -1,4 +1,9 @@
-# `sub_predicate`: In entity selectors filter entity that `is` or is `not` what you want
+---
+title: sub_predicate
+subtitle: In entity selectors filter entity that “is” or “is not” what you want
+---
+
+# `sub_predicate`: In entity selectors filter entity that “`is`” or “is `not`” what you want
 
 Specifies an [entity predicate](index.md) and only passes when the entity also matches or does not match the predicate. This means filtering or excluding entities selected.
 
@@ -21,6 +26,6 @@ The argument can be inverted. `[is=!<entity predicate>]` is identical to `[not=<
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:sub_predicate"`.
+- `type`: Currently `"sub_predicate"`.
 - `predicate`: Entity predicate.
 - `inverted`: Boolean, optional, by default `false`.

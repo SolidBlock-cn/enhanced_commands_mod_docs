@@ -1,3 +1,8 @@
+---
+title: sender_only
+subtitle: 仅选择命令执行者
+---
+
 # `sender_only`：仅选择命令执行者
 
 此[实体谓词](index.md)仅在实体为命令执行者时通过。这一谓词是技术性的，无法通过实体选择器参数指定，而是来自实体选择器 `@s`。
@@ -6,6 +11,6 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:sender_only"`。
+- `type`：此处为 `"sender_only"`。
 
 无其他字段。

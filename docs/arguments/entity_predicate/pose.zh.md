@@ -1,3 +1,8 @@
+---
+title: pose
+subtitle: 测试实体的姿势
+---
+
 # `pose`：测试实体的姿势
 
 此[实体谓词](index.md)选择指定姿势的实体，支持取反。
@@ -27,6 +32,6 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:pose"`。
+- `type`：此处为 `"pose"`。
 - `pose`：字符串。
 - `inverted`：布尔值，可选，默认为 `false`。

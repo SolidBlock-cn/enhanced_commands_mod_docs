@@ -11,6 +11,6 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:level"`。
+- `type`：此处为 `"level"`。
 - `level`：整数取值范围。
 - `inverted`：布尔值，可选，默认为 `false`。

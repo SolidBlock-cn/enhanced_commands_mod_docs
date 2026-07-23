@@ -1,3 +1,8 @@
+---
+title: swimming
+subtitle: 测试游泳
+---
+
 # `swimming`：测试游泳
 
 此[实体谓词](index.md)测试实体是否正在游泳。此参数可以取反。
@@ -9,5 +14,5 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:swimming"`。
+- `type`：此处为 `"swimming"`。
 - `expected`：布尔值。

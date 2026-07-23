@@ -1,3 +1,8 @@
+---
+title: sneaking
+subtitle: Tests sneaking
+---
+
 # `sneaking`: Tests sneaking
 
 This [entity predicate](index.md) tests whether the entity is sneaking. Players flying and descending will also be selected. This option is different from the loot predicate.
@@ -11,5 +16,5 @@ The parameter can be inverted but usually unnecessary. For example, `@e[sneaking
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:sneaking"`.
+- `type`: Currently `"sneaking"`.
 - `expected`: Boolean.

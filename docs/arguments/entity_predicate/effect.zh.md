@@ -1,3 +1,8 @@
+---
+title: effect
+subtitle: 检测实体的状态效果
+---
+
 # `effect`：检测实体的状态效果
 
 此[实体谓词](index.md)可用于检测实体拥有的状态效果。可以指定一个状态效果，也可以指定多个状态效果。
@@ -23,13 +28,13 @@
 
 当直接指定单个效果时：
 
-- `type`：此时为 `"enhanced_commands:effect"`。
+- `type`：此时为 `"effect"`。
 - `effect`：字符串，效果的 id。
 - `inverted`：布尔值，可选，默认为 `false`。
 
 当使用效果与布尔值的映射时：
 
-- `type`：此时为 `"enhanced_commands:effects"`。
+- `type`：此时为 `"effects"`。
 - `effects`：列表。
     - 列表的元素。
         - `effect`：字符串，效果的 id。

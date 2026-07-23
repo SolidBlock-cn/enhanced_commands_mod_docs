@@ -16,5 +16,5 @@ subtitle: 选择幼年实体
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:baby"`。
+- `type`：此时为 `"baby"`。
 - `expected`：布尔值。

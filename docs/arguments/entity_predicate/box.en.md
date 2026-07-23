@@ -6,5 +6,5 @@ This entity predicate cannot be specified through entity selector arguments, ple
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:box`.
+- `type`: Currently `"box"`.
 - None of the other fields are supported.

@@ -1,3 +1,8 @@
+---
+title: empty
+subtitle: Select no entities
+---
+
 # `empty`: Select no entities
 
 This [entity predicate](index.md) exists technically, means not selecting any entity. Used for [special entity selector type `@0`](../entity_selector.md#more-entity-selector-types)。
@@ -10,4 +15,4 @@ This [entity predicate](index.md) exists technically, means not selecting any en
 
 No extra fields.
 
-- `type`: Currently `"enhanced_commands:empty"`.
+- `type`: Currently `"empty"`.

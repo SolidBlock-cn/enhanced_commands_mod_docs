@@ -1,3 +1,8 @@
+---
+title: fire
+subtitle: 测试实体的着火时间
+---
+
 # `fire`：测试实体的着火时间
 
 此[实体谓词](index.md)测试实体的剩余着火时间（离火自然熄灭所需要的刻数）。可以取反。
@@ -10,6 +15,6 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:fire"`。
+- `type`：此时为 `"fire"`。
 - `time`：整数取值范围。
 - `inverted`：布尔值，可选，默认为 `false`。

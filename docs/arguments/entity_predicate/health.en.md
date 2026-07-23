@@ -1,3 +1,8 @@
+---
+title: health
+subtitle: Tests entity's health value
+---
+
 # `health`: Tests entity's health value
 
 This [entity predicate](index.md) tests the health value of entities. Accepts a range, or the keyword `max`. The parameter can be inverted. This parameter only selects health values of living entities. Entities such as minecarts and dropped items also have their special health values but can’t be used to select by the entity selector.
@@ -17,11 +22,11 @@ This [entity predicate](index.md) tests the health value of entities. Accepts a 
 
 If the number value is a range:
 
-- `type`: Currently `"enhanced_commands:health"`.
+- `type`: Currently `"health"`.
 - `health`: Floating-point number range.
 - `inverted`: Boolean, optional, by default `false`.
 
 If the number value is specified to "max":
 
-- `type`: Currently `"enhanced_commands:health_max"`.
+- `type`: Currently `"health_max"`.
 - `inverted`: Boolean, optional, by default `false`.

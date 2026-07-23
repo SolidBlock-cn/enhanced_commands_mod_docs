@@ -1,3 +1,8 @@
+---
+title: effect
+subtitle: Tests the entity's status effects
+---
+
 # `effect`: Tests the entity's status effects
 
 This [entity predicate](index.md) can be used to test status effects of entities. Can specify one single or multiple status effects.
@@ -23,13 +28,13 @@ This [entity predicate](index.md) can be used to test status effects of entities
 
 When specifying a single effect directly:
 
-- `type`: Currently `"enhanced_commands:effect"`.
+- `type`: Currently `"effect"`.
 - `effect`: String, the effect's id.
 - `inverted`: Boolean, optional, false by default.
 
 When using a map of effect and boolean:
 
-- `type`: Currently `"enhanced_commands:effects"`.
+- `type`: Currently `"effects"`.
 - `effects`: List.
     - Element of the list.
         - `effect`: String, the effect's id.

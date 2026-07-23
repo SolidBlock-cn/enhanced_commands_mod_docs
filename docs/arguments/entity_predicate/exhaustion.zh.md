@@ -1,3 +1,8 @@
+---
+title: exhaustion
+subtitle: 测试实体的消耗度
+---
+
 # `exhaustion`：测试实体的消耗度
 
 此[实体谓词](index.md)测试实体的消耗度。可以接受浮点数范围。可以取反。和 [`food`](food.md) 类似，加入此参数将只能选择玩家。
@@ -12,6 +17,6 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:exhaustion"`。
+- `type`：此时为 `"exhaustion"`。
 - `exhaustion`：浮点数取值范围。
 - `inverted`：布尔值，可选，默认为 `false`。

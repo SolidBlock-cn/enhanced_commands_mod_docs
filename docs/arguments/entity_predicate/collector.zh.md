@@ -6,5 +6,5 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:collector"`。
+- `type`：此时为 `"collector"`。
 - `collector`：字符串。

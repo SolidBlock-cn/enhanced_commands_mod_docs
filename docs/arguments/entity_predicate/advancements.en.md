@@ -1,3 +1,8 @@
+---
+title: advancements
+subtitle: Tests player's advancement
+---
+
 # `advancements`: Tests player's advancement
 
 This [entity predicate](index.md) tests player's advancement. Same as vanilla, but when specifying advancement criteria, quoted strings are allowed.
@@ -7,9 +12,9 @@ This [entity predicate](index.md) tests player's advancement. Same as vanilla, b
 - `[advancements={<advancement id> = <boolean>, ...}]`
 - `[advancements={<advancement id> = {<criterion> = <boolean>, ...}, ...}]`
 
-## 数据结构
+## Data structure
 
-- `type`: Currently `"enhanced_commands:advancements`.
+- `type`: Currently `"advancements"`.
 - `advancements`: Map.
-    - `<进度 id>`: Boolean or map. If map, has the following fields:
-        - `<准则>`: Boolean.
+    - `<advancement id>`: Boolean or map. If map, has the following fields:
+        - `<criterion>`: Boolean.

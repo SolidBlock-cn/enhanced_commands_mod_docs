@@ -20,10 +20,11 @@ The [entity predicate](index.md) tests the air value of the entity. Accepts int 
 
 When the type is `air`:
 
-* `type`: Currently `"enhanced_commands:air"`
+* `type`: Currently `"air"`.
 * `air`: Int range.
 * `inverted`: Boolean, optional, `false` by default.
 
 When the type is `air_max`:
 
+* `type`: Currently `"air_max"`.
 * `inverted`: Boolean, optional, `false` by default.

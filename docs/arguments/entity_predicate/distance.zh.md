@@ -6,7 +6,7 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:distance"`。
+- `type`：此时为 `"distance"`。
 - `distance`：双精度浮点数或映射。
     - `min`：双精度浮点数。
     - `max`：双精度浮点数。

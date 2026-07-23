@@ -1,3 +1,8 @@
+---
+title: alternatives
+subtitle: 多个实体谓词的并集
+---
+
 # `alternatives`：多个实体谓词的并集
 
 此[实体谓词](index.md)指定多个实体谓词，当实体符合这组谓词中的任意一个时通过。该参数的值需要用中括号括起来，里面是多个实体谓词，多个实体谓词用逗号隔开。此参数支持取反。
@@ -11,7 +16,7 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:alternatives"`。
+- `type`：此时为 `"alternatives"`。
 - `predicates`：列表。
     - 一个[实体谓词](index.md)。
 - `inverted`：布尔值，可选，默认为 false。

@@ -1,3 +1,8 @@
+---
+title: name
+subtitle: 测试实体的名字。
+---
+
 # `name`：测试实体的名字。
 
 此[实体谓词](index.md)和原版的实体选择器的 `name` 参数一致，测试实体的名字，支持取反。
@@ -9,6 +14,6 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:name"`。
+- `type`：此处为 `"name"`。
 - `name`：字符串。
 - `inverted`：布尔值，可选，默认为 `false`。

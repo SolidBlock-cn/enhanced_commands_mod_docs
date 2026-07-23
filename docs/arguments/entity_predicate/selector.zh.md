@@ -1,3 +1,8 @@
+---
+title: selector
+subtitle: 基于实体选择器的谓词
+---
+
 # `selector`：基于实体选择器的谓词
 
 此[实体谓词](index.md)检测实体是否符合指定的实体选择器。这是模组中的实体谓词最主要的实现方式。
@@ -6,5 +11,5 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:selector"`。
+- `type`：此处为 `"selector"`。
 - 其他字段与[实体选择器](../entity_selector.md)的字段一致。

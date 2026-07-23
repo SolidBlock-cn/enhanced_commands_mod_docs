@@ -6,7 +6,7 @@ In the entity selector arguments, the range of distance is specified through `di
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:distance"`.
+- `type`: Currently `"distance"`.
 - `distance`: Double-precision floating-point number or map.
     - `min`: Double-precision floating-point number.
     - `max`: Double-precision floating-point number.

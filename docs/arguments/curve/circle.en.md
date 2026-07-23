@@ -1,3 +1,8 @@
+---
+title: circle()
+subtitle: draw an arbitrary circle
+---
+
 # `circle()`: draw an arbitrary circle
 
 The circle or part of circle (circle arc) at the specified center with around the specified rotation axis vector. The circle is perpendicular to the rotation axis vector. This curve has the following basic properties:

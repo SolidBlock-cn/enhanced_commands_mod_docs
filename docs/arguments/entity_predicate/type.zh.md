@@ -1,3 +1,8 @@
+---
+title: type
+subtitle: 测试实体的类型
+---
+
 # `type`：测试实体的类型
 
 此[实体谓词](index.md)测试实体的类型。可以一次指定一个类型，也可指定多个类型。指定的类型可以是实体类型 id，也可以是实体类型的标签。此参数也可以取反。
@@ -21,19 +26,19 @@
 
 若只指定一个类型，且不是标签：
 
-- `type`：此处为 `"enhanced_commands:type"`。
+- `type`：此处为 `"type"`。
 - `entity_type`：字符串。
 - `inverted`：布尔值，可选，默认为 `false`。
 
 若只指定一个类型，且是标签：
 
-- `type`：此处为 `enhanced_commands:type_tag"`。
+- `type`：此处为 `type_tag"`。
 - `tag`：字符串，标签 id，带有井号。
 - `inverted`：布尔值，可选，默认为 `false`。
 
 若指定了多个类型：
 
-- `type`：此处为 `enhanced_commands:types`。
+- `type`：此处为 `types`。
 - `types`：列表。
     - 列表的元素。字符串。实体 id 或标签 id（带有井号）。
 - `inverted`：布尔值，可选，默认为 `false`。

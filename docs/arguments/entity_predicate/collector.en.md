@@ -6,5 +6,5 @@ This entity predicate does not support specifying through entity selector option
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:collector"`.
+- `type`: Currently `"collector"`.
 - `collector`: String.

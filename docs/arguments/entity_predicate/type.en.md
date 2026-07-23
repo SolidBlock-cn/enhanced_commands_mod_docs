@@ -1,3 +1,8 @@
+---
+title: type
+subtitle: Tests the entity type
+---
+
 # `type`: Tests the entity type
 
 This [entity predicate](index.md) tests the entity type. You can specify one type, or multiple types. The specified type can be the entity type id, or the entity type tag. This argument also supports inversion.
@@ -21,19 +26,19 @@ Usually, for entity selectors, if the `type` argument only specify one type, is 
 
 If only one type is specified, and it is not tag:
 
-- `type`: Currently `"enhanced_commands:type"`.
+- `type`: Currently `"type"`.
 - `entity_type`: String.
 - `inverted`: Boolean, optional, by default `false`.
 
 若只指定一个类型，且是标签：
 
-- `type`: Currently `enhanced_commands:type_tag"`.
+- `type`: Currently `type_tag"`.
 - `tag`: String, tag id, including hash symbol.
 - `inverted`: Boolean, optional, by default `false`.
 
 若指定了多个类型：
 
-- `type`: Currently `enhanced_commands:types`.
+- `type`: Currently `types`.
 - `types`: List.
     - Element of the list. String. Entity id or tag id (including hash symbol).
 - `inverted`: Boolean, optional, by default `false`.

@@ -1,3 +1,8 @@
+---
+title: on_fire
+subtitle: Tests whether the entity is on fire
+---
+
 # `on_fire`: Tests whether the entity is on fire
 
 This [entity predicate](index.md) tests whether the entity is on fire. The value of the argument, and supports inversion, for example, `[on_fire=!true]` is identical to `[on_fire=false]`.
@@ -9,5 +14,5 @@ This [entity predicate](index.md) tests whether the entity is on fire. The value
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:on_fire"`.
+- `type`: Currently `"on_fire"`.
 - `expected`: Boolean.

@@ -6,5 +6,5 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:box`。
+- `type`：此时为 `"box"`。
 - 其余所有字段均不支持。

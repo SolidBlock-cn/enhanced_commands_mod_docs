@@ -1,3 +1,8 @@
+---
+title: scores
+subtitle: 测试实体的记分板分数
+---
+
 # `scores`：测试实体的记分板分数
 
 此[实体谓词](index.md)测试实体的记分板分数，与原版的 `scores` 参数类似，接收一个“记分项名称-取值范围”的映射（键值对），并且此模组支持将取值范围取反。
@@ -18,7 +23,7 @@
 
 ## 数据结构
 
-- `type`：`enhanced_commands:scores`。
+- `type`：当前为 `"scores"`。
 - `scores`：列表。
     - 列表中的元素。映射。
         - `name`：字符串。

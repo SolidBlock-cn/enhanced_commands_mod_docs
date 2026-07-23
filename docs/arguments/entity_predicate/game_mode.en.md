@@ -1,3 +1,8 @@
+---
+title: gamemode
+subtitle: Tests the player's game mode
+---
+
 # `gamemode`: Tests the player's game mode
 
 This [entity predicate](index.md) is used to test player's game mode. Same as vanilla, if an entity selector uses this predicate, the whole entity selector only selects players.
@@ -28,7 +33,7 @@ The argument name `gamemode` can be abbreviated to `m`; both are equivalent.
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:game_mode"`.
+- `type`: Currently `"game_mode"`.
 - `game_mode`: String or list. Name of the game mode.
     - String, name of the game mode (if `game_mode` is a list).
 - `inverted`: Boolean, optional, by default `false`.

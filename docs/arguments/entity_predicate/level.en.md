@@ -11,6 +11,6 @@ Entity selectors using this predicate only select player.
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:level"`.
+- `type`: Currently `"level"`.
 - `level`: Integer range.
 - `inverted`: Boolean value, optional, by default `false`.

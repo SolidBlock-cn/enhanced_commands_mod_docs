@@ -1,3 +1,8 @@
+---
+title: swimming
+subtitle: Tests swimming
+---
+
 # `swimming`: Tests swimming
 
 This [entity predicate](index.md) tests whether the entity is swimming. The parameter can be inverted.
@@ -9,5 +14,5 @@ This [entity predicate](index.md) tests whether the entity is swimming. The para
 
 ## Data structures
 
-- `type`: Currently `"enhanced_commands:swimming"`.
+- `type`: Currently `"swimming"`.
 - `expected`: Boolean.

@@ -1,3 +1,8 @@
+---
+title: name
+subtitle: Tests entity's name
+---
+
 # `name`: Tests entity's name
 
 This [entity predicate](index.md) is same as vanilla `name` argument, testing entity's name and supporting inversion.
@@ -9,6 +14,6 @@ This [entity predicate](index.md) is same as vanilla `name` argument, testing en
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:name"`.
+- `type`: Currently `"name"`.
 - `name`: String/
 - `inverted`: Boolean, optional, by default `false`.

@@ -1,3 +1,8 @@
+---
+title: food
+subtitle: Tests the entity's food value
+---
+
 # `food`: Tests the entity's food value
 
 This [entity predicate](index.md) tests the food value of entities. Accepts integer ranges. Can be inverted.
@@ -12,6 +17,6 @@ Only players have food values, so adding this parameter will only select players
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:food"`.
+- `type`: Currently `"food"`.
 - `food`: Integer range.
 - `inverted`: Boolean, optional, by default `false`。

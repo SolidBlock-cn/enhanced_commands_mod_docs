@@ -1,3 +1,8 @@
+---
+title: pose
+subtitle: Tests entity's pose
+---
+
 # `pose`: Tests entity's pose
 
 This [entity predicate](index.md) selects entities in the specified pose, and supports inversion.
@@ -27,6 +32,6 @@ Supported pose names include:
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:pose"`.
+- `type`: Currently `"pose"`.
 - `pose`: String.
 - `inverted`: Boolean, optional, by default `false`.

@@ -1,3 +1,8 @@
+---
+title: block
+subtitle: 检测实体所在位置的方块
+---
+
 # `block`：检测实体所在位置的方块
 
 此[实体谓词](index.md)可用于测试实体所在位置为基础的任意坐标（包括相对坐标和局部坐标）的方块，可以单独指定一个[方块谓词](../block_predicate/index.md)，也可以指定由[坐标](../pos.md)和[方块谓词](../block_predicate/index.md)的多个配对，用于检测指定坐标的方块。
@@ -21,12 +26,12 @@
 
 当直接指定单个方块谓词时：
 
-- `type`：此时为 `"enhanced_commands:block_predicate"`。
+- `type`：此时为 `"block_predicate"`。
 - `predicate`：[方块谓词](../block_predicate/index.md)。
 
 当指定坐标与方块谓词时：
 
-- `type`：此时为 `"enhanced_commands:block_predicates"`。
+- `type`：此时为 `"block_predicates"`。
 - `predicates`：列表。
     - 列表中的一个元素。
         - `pos`：[坐标](../pos.md)。

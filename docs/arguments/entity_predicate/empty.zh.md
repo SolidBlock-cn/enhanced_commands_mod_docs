@@ -1,3 +1,8 @@
+---
+title: empty
+subtitle: 不选择实体
+---
+
 # `empty`：不选择实体
 
 此[实体谓词](index.md)是技术性的存在，表示不选择任何实体。用于[特殊的实体选择器类型 `@0`](../entity_selector.md#更多的实体选择器类型)。
@@ -10,4 +15,4 @@
 
 无额外字段。
 
-- `type`：此时为 `"enhanced_commands:empty"`。
+- `type`：此时为 `"empty"`。

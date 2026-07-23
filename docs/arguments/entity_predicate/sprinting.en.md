@@ -1,3 +1,8 @@
+---
+title: sprinting
+subtitle: Tests sprinting
+---
+
 # `sprinting`: Tests sprinting
 
 This [entity predicate](index.md) tests whether the entity is sprinting. The parameter can be inverted.
@@ -9,5 +14,5 @@ This [entity predicate](index.md) tests whether the entity is sprinting. The par
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:sprinting"`.
+- `type`: Currently `"sprinting"`.
 - `expected`: Boolean.

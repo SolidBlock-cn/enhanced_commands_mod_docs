@@ -1,3 +1,8 @@
+---
+title: sprinting
+subtitle: 检测疾跑
+---
+
 # `sprinting`：检测疾跑
 
 此[实体谓词](index.md)测试实体是否存在疾跑。此参数可以取反。
@@ -9,5 +14,5 @@
 
 ## 数据结构
 
-- `type`：此处为 `"enhanced_commands:sprinting"`。
+- `type`：此处为 `"sprinting"`。
 - `expected`：布尔值。

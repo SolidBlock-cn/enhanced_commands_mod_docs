@@ -1,3 +1,8 @@
+---
+title: food
+subtitle: 测试实体的饱食度
+---
+
 # `food`：测试实体的饱食度
 
 此[实体谓词](index.md)测试实体的饱食度。可以接受整数范围。可以取反。
@@ -16,6 +21,6 @@
 
 ## 数据结构
 
-- `type`：此时为 `"enhanced_commands:food"`。
+- `type`：此时为 `"food"`。
 - `food`：整数取值范围。
 - `inverted`：布尔值，可选，默认为 `false`。

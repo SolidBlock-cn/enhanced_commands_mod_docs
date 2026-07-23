@@ -16,5 +16,5 @@ The parameter can be inverted. For example, `@e[baby=!true]` is equivalent to `@
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:baby"`.
+- `type`: Currently `"baby"`.
 - `expected`: Boolean.

@@ -1,3 +1,8 @@
+---
+title: selector
+subtitle: Predicate based on entity selector
+---
+
 # `selector`: Predicate based on entity selector
 
 This [entity predicate](index.md) tests whether the entity matches the specified entity selector. This is the primary implementation of entity predicates in this mod.
@@ -6,5 +11,5 @@ When the entity selector has `limit` argument, when used as an entity predicate,
 
 ## Data structure
 
-- `type`: Currently `"enhanced_commands:selector"`.
+- `type`: Currently `"selector"`.
 - Other fields are identical to fields of [entity selectors](../entity_selector.md).

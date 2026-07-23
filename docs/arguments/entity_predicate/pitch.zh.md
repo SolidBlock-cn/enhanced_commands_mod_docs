@@ -1,3 +1,8 @@
+---
+title: pitch
+subtitle: 测试实体的俯仰角
+---
+
 # `pitch`：测试实体的俯仰角
 
 此[实体谓词](index.md)测试实体的俯仰角，与原版实体选择器的 `x_rotation` 参数相同。
