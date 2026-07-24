@@ -9,15 +9,15 @@ subtitle: 根据方块标签画棋盘格
 
 ## 语法
 
-- `checkerboard-tag(#<方块标签 id>)`
-- `checkerboard-tag(#<方块标签 id>; [参数])`
+- `#!mcfunction checkerboard-tag(#<方块标签 id>)`
+- `#!mcfunction checkerboard-tag(#<方块标签 id>; [参数])`
 
 方块标签必须存在。参数的用法同 [`checkerboard() 的参数`](checkerboard.md)。
 
 ## 示例
 
-- `checkerboard-tag(#planks)`：由不同的木板方块组成的棋盘格。
-- `checkerboard-tag(#wool; scale = 2)`：由不同的羊毛方块组成的棋盘格，棋盘大小为 2×2×2 的正方体。
+- `#!mcfunction checkerboard-tag(#planks)`：由不同的木板方块组成的棋盘格。
+- `#!mcfunction checkerboard-tag(#wool; scale = 2)`：由不同的羊毛方块组成的棋盘格，棋盘大小为 2×2×2 的正方体。
 
 ## 数据格式
 

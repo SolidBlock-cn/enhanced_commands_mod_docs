@@ -12,7 +12,7 @@
 - `age`：整数。
 - `member`：布尔值，可选，默认为 false。
 
-则表示该内容在序列化后是一个映射，它转化成 NBT 后可能是 `{name: Example, age: 25, member: true}`，序列化为 JSON 后可能是 `#!json {"name": "Example", "age": 25, "member": true}`。
+则表示该内容在序列化后是一个映射，它转化成 NBT 后可能是 `#!snbt {name: Example, age: 25, member: true}`，序列化为 JSON 后可能是 `#!json {"name": "Example", "age": 25, "member": true}`。
 
 有时，在描述数据结构时，可能不是指定基本的类型，而是一个其他的类型，则说明遵循该类型的数据结构，例如，如果某个字段像这样描述：
 

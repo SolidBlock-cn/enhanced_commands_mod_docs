@@ -9,20 +9,20 @@ subtitle: 在实体选择器参数中额外指定 is 和 not
 
 ## 语法
 
-- `[is=<实体谓词>]`：选择符合指定谓词的实体。
-- `[not=<实体谓词>]`：排除符合指定谓词的实体。
+- `#!mcfunction [is=<实体谓词>]`：选择符合指定谓词的实体。
+- `#!mcfunction [not=<实体谓词>]`：排除符合指定谓词的实体。
 
 参数可以取反。`[is=!<实体谓词>]` 等价于 `[not=<实体谓词>]`，`[not=!<实体谓词>]` 等价于 `[is=<实体谓词>]`。
 
 ## 示例
 
-- `@p[is=@s]`：距离最近的玩家，同时该实体也得是命令的执行者。
-- `@a[is=@e[type=cow]]`：所有是牛的玩家，该实体选择器有效但显然选择不到实体。
-- `@e[not=@s]`：除了命令执行者之外的所有存活实体。
-- `@e[is=!@s]`：除了命令执行者之外的所有存活实体，相当于 `@e[not=@s]`。
-- `@e[not=[type=cow]]`：除了牛之外的所有存活实体，效果上相当于 `@e[type=!cow]`。
-- `@e[not=@s, not=@pets]`：除了命令执行者和命令执行者的宠物之外的所有存活实体，效果上相当于 `@e[alternatives=![@s, @pets]]`。
-- `@e[type=cow, not=!@s]`：所有是命令执行者的存活的牛，效果上相当于 `@e[type=cow, is=@s]`、`@s[type=cow]`。
+- `#!mcfunction @p[is=@s]`：距离最近的玩家，同时该实体也得是命令的执行者。
+- `#!mcfunction @a[is=@e[type=cow]]`：所有是牛的玩家，该实体选择器有效但显然选择不到实体。
+- `#!mcfunction @e[not=@s]`：除了命令执行者之外的所有存活实体。
+- `#!mcfunction @e[is=!@s]`：除了命令执行者之外的所有存活实体，相当于 `#!mcfunction @e[not=@s]`。
+- `#!mcfunction @e[not=[type=cow]]`：除了牛之外的所有存活实体，效果上相当于 `#!mcfunction @e[type=!cow]`。
+- `#!mcfunction @e[not=@s, not=@pets]`：除了命令执行者和命令执行者的宠物之外的所有存活实体，效果上相当于 `#!mcfunction @e[alternatives=![@s, @pets]]`。
+- `#!mcfunction @e[type=cow, not=!@s]`：所有是命令执行者的存活的牛，效果上相当于 `#!mcfunction @e[type=cow, is=@s]`、`#!mcfunction @s[type=cow]`。
 
 ## 数据结构
 

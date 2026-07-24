@@ -7,3 +7,12 @@ html[lang=zh] article > p > *,
 html[lang=zh] .admonition > p:not(.admonition-title) * {
     text-indent: 0;
 }
+
+:root, [data-md-color-scheme=default]  {
+    --md-code-hl-operator-color: rgb(81, 154, 103);
+    --md-code-hl-punctuation-color: rgb(69, 147, 122);
+}
+[data-md-color-scheme=slate]  {
+    --md-code-hl-operator-color: rgb(90, 167, 113);
+    --md-code-hl-punctuation-color: rgb(91, 171, 145);
+}
