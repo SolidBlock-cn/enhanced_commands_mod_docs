@@ -1,0 +1,7283 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../entity_predicate/yaw/">
+      
+      
+        <link rel="next" href="../">
+      
+      
+        
+          <link rel="alternate" href="../../../arguments/entity_selector/" hreflang="zh">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Entity selector - Enhanced Commands Mod Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#entity-selector" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../" title="Enhanced Commands Mod Docs" class="md-header__button md-logo" aria-label="Enhanced Commands Mod Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Enhanced Commands Mod Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entity selector
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="切换到明亮模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到明亮模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="切换到黑暗模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到黑暗模式" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="切换到系统偏好"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="切换到系统偏好" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../arguments/entity_selector/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SolidBlock-cn/enhanced_commands_mod_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Main page
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../block_function/checkerboard/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Argument types
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/activeregion/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Commands
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../mod_configs/block_operation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Mod configs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../glossaries/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossaries
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="Enhanced Commands Mod Docs" class="md-nav__button md-logo" aria-label="Enhanced Commands Mod Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Enhanced Commands Mod Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SolidBlock-cn/enhanced_commands_mod_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Argument types
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Argument types
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../block_function/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Block Function
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Block Function
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/checkerboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    checkerboard()
+  
+
+    
+      <br>
+      <small>迷人的棋盘格图案</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/checkerboard-tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    checkerboard-tag()
+  
+
+    
+      <br>
+      <small>根据方块标签画棋盘格</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/dry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dry()
+  
+
+    
+      <br>
+      <small>抽干方块中的水</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/empty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empty block function
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/filter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    filter()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/idcontain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    idcontain()
+  
+
+    
+      <br>
+      <small>Match Regex Randomly</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/idreplace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    idreplace()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/if/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    if()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/ifs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ifs()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/mirror/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mirror()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/nbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/noise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    noise()
+  
+
+    
+      <br>
+      <small>随心所欲生成方块噪声</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/overlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overlay()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/pick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pick()
+  
+
+    
+      <br>
+      <small>Choose Block Functions Randomly</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/postprocess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    postprocess()
+  
+
+    
+      <br>
+      <small>Settle your fences and walls</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/property_names/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/property_nbt_combination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性 NBT 组合
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/random/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    * and rand()
+  
+
+    
+      <br>
+      <small>Random block</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引用方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/rotate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rotate()
+  
+
+    
+      <br>
+      <small>旋转方块</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/simple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    简单方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/stonecut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    stonecut()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    标签方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/use_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原始方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../block_predicate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方块谓词
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    方块谓词
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/all/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    all()
+  
+
+    
+      <br>
+      <small>全都要满足，一个也不能少</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/any/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    any()
+  
+
+    
+      <br>
+      <small>满足任何一个即可</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/checkerboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    checkerboard()
+  
+
+    
+      <br>
+      <small>棋盘格的谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/expose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    expose()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/horizontal_offset/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    > 和 <
+  
+
+    
+      <br>
+      <small>竖直偏移方块谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/idcontain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    idcontain()
+  
+
+    
+      <br>
+      <small>对方块 id 做个正则！</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/nbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 方块谓词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/noise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    noise()
+  
+
+    
+      <br>
+      <small>根据噪声决定方块谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/predicate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    predicate()
+  
+
+    
+      <br>
+      <small>引用战利品表谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    probability()
+  
+
+    
+      <br>
+      <small>Define Probability By Yourself</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性方块谓词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/property_nbt_combination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性 NBT 组合
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引用方块谓词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/region/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    region()
+  
+
+    
+      <br>
+      <small>检测方块是否位于区域内</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/rel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rel()
+  
+
+    
+      <br>
+      <small>检测相对位置的方块</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/same_and_diff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    same() 和 diff()
+  
+
+    
+      <br>
+      <small>比较两个方块谓词的测试结果</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/simple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    简单方块谓词
+  
+
+    
+      <br>
+      <small>最基本的判断，但也绝不简单</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    标签方块谓词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concentration_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    聚合类型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../curve/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curve
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Curve
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../curve/circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    circle()
+  
+
+    
+      <br>
+      <small>draw an arbitrary circle</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../curve/straight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    straight()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../direction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方向
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../entity_predicate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entity predicate
+  
+
+    
+      <br>
+      <small>filtering entities with a syntax basically same to selectors</small>
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Entity predicate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/advancements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    advancements
+  
+
+    
+      <br>
+      <small>Tests player's advancement</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/air/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    air
+  
+
+    
+      <br>
+      <small>Tests the entity's air</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/alive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    alive
+  
+
+    
+      <br>
+      <small>Tests whether the entity is alive</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/alternatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    alternatives
+  
+
+    
+      <br>
+      <small>union set of multiple entity predicates</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/baby/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    baby
+  
+
+    
+      <br>
+      <small>Selects baby entities</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/block/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    block
+  
+
+    
+      <br>
+      <small>Tests the block where the entity is</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/box/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    box
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/collector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    collector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/distance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    distance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/effect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    effect
+  
+
+    
+      <br>
+      <small>Tests the entity's status effects</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/empty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    empty
+  
+
+    
+      <br>
+      <small>Select no entities</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/exhaustion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    exhaustion
+  
+
+    
+      <br>
+      <small>Tests the entity's exhaustion</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/fire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    fire
+  
+
+    
+      <br>
+      <small>Tests the entity's on-fire time</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/food/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    food
+  
+
+    
+      <br>
+      <small>Tests the entity's food value</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/game_mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gamemode
+  
+
+    
+      <br>
+      <small>Tests the player's game mode</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/health/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    health
+  
+
+    
+      <br>
+      <small>Tests entity's health value</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/level/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    level
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/local_world/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    local_world
+  
+
+    
+      <br>
+      <small>Special predicate to filter local world entities</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/loot_table_predicate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    loot_table_predicate
+  
+
+    
+      <br>
+      <small>Tests entities through loot table predicates</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    name
+  
+
+    
+      <br>
+      <small>Tests entity's name</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/nbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nbt
+  
+
+    
+      <br>
+      <small>Tests entity's NBT data</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/on_fire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    on_fire
+  
+
+    
+      <br>
+      <small>Tests whether the entity is on fire</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/owner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    owner
+  
+
+    
+      <br>
+      <small>Tests the owner of tameable entities</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pitch
+  
+
+    
+      <br>
+      <small>Tests entity's pitch angle</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/player_name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    player_name
+  
+
+    
+      <br>
+      <small>Tests player's name</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/player_only/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    player_only
+  
+
+    
+      <br>
+      <small>Predicate that filters players only</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/pose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pose
+  
+
+    
+      <br>
+      <small>Tests entity's pose</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/region/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    region
+  
+
+    
+      <br>
+      <small>Selects entities in the specified region</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/saturation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    saturation
+  
+
+    
+      <br>
+      <small>Tests entity's saturation</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/scores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    scores
+  
+
+    
+      <br>
+      <small>Tests entity's scoreboard score</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    selector
+  
+
+    
+      <br>
+      <small>Predicate based on entity selector</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/sender_only/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sender_only
+  
+
+    
+      <br>
+      <small>Selects the command executor only</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/sneaking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sneaking
+  
+
+    
+      <br>
+      <small>Tests sneaking</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/sprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sprinting
+  
+
+    
+      <br>
+      <small>Tests sprinting</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/sub_predicate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sub_predicate
+  
+
+    
+      <br>
+      <small>In entity selectors filter entity that “is” or “is not” what you want</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/swimming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    swimming
+  
+
+    
+      <br>
+      <small>Tests swimming</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tag
+  
+
+    
+      <br>
+      <small>Tests scoreboard tags</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    team
+  
+
+    
+      <br>
+      <small>Tests entity's team</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    type
+  
+
+    
+      <br>
+      <small>Tests the entity type</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/unknown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    unknown
+  
+
+    
+      <br>
+      <small>Unknown entity predicate</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/uuid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    uuid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/yaw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    yaw
+  
+
+    
+      <br>
+      <small>Tests entity's yaw angle</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entity selector
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Entity selector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#improvements-compared-to-vanilla-minecraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Improvements compared to vanilla Minecraft
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Improvements compared to vanilla Minecraft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more-entity-selector-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More entity selector types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specifying-type-for-p-and-r" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifying type for @p and @r
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specifying-multiple-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifying multiple types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplified-parameter-aliases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simplified parameter aliases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplified-gamemode-aliases-and-using-multiple-gamemodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simplified gamemode aliases and using multiple gamemodes.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#providing-suggestions-for-more-occasions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Providing suggestions for more occasions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-conditions-to-be-inverted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More conditions to be inverted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specifying-loot-predicate-jsons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifying loot predicate JSONs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#better-error-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Better error tips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-selector-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity selector parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entity selector parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vanilla-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vanilla parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-vanilla-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        non-vanilla parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../item_function/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物品函数
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    物品函数
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_function/enchant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    enchant()
+  
+
+    
+      <br>
+      <small>随心所欲修改物品魔咒</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_function/overlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overlay()
+  
+
+    
+      <br>
+      <small>依次应用多个物品函数</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_function/pick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pick()
+  
+
+    
+      <br>
+      <small>随机选择物品函数</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../item_predicate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物品谓词
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    物品谓词
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_predicate/all/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    all()
+  
+
+    
+      <br>
+      <small>全都要满足，一个也不能少</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_predicate/any/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    any()
+  
+
+    
+      <br>
+      <small>满足任意一个即可</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_predicate/count/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    count()
+  
+
+    
+      <br>
+      <small>测试物品的数量</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_predicate/probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    probability()
+  
+
+    
+      <br>
+      <small>自己指定一个概率</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyword_args/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关键字参数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_concentration_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT concentration type
+  
+
+    
+      <br>
+      <small>converting multiple NBTs to one</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../nbt_function/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 函数
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NBT 函数
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/concat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    concat()
+  
+
+    
+      <br>
+      <small>concatenating multiple strings</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    from()
+  
+
+    
+      <br>
+      <small>importing NBT data from the specified source</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/overlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overlay()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/pick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pick()
+  
+
+    
+      <br>
+      <small>Choose an NBT function randomly</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/pos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pos()
+  
+
+    
+      <br>
+      <small>using coordinates in the NBT</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/regex_replace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    regex_replace()
+  
+
+    
+      <br>
+      <small>replacing regex in the NBT</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/replace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    replace()
+  
+
+    
+      <br>
+      <small>Replacing values in the NBT</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/string_replace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    string_replace()
+  
+
+    
+      <br>
+      <small>Replacing strings in the NBT</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/substring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    substring()
+  
+
+    
+      <br>
+      <small>Get a substring</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../nbt_predicate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 谓词
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NBT 谓词
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_source/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT source
+  
+
+    
+      <br>
+      <small>specifying from where to get NBT</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_target/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT target
+  
+
+    
+      <br>
+      <small>specifying whose NBT to modify</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../region/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    区域
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_18" id="__nav_2_18_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_18">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    区域
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/cuboid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cuboid()、cuboid_outline() 和 cuboid_wall()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/cylinder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cyl() 和 hcyl()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/intersect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    intersect()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/outline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    outline()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/outwards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    outwards()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/single/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    single()
+  
+
+    
+      <br>
+      <small>Single block position</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/sphere/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sphere()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/union/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    union()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commands
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/activeregion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /activeregion 或 /ar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/air/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /air
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/convertblock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /convertblock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/convertblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /convertblocks 和 //convertblcks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/debug_deop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /debug:deop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/debug_op/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /debug:deop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/debug_permissionlevel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /debug:permissionlevel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/draw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /draw
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/food/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /food
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/for/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /for
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/health/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /health
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /history
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /if and /unless
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    /if and /unless
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/if_and_unless/blockinfo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /if|unless blockinfo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/if_and_unless/rand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /if|unless rand
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/inregion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /inregion
+  
+
+    
+      <br>
+      <small>Execute a command at all positions in a region</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/mirror/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /mirror 和 //mirror
+  
+
+    
+      <br>
+      <small>镜像或翻转方块</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/moon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /moon
+  
+
+    
+      <br>
+      <small>View and set moon phase</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/moveblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /moveblocks 和 //moveblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/nbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /nbt
+  
+
+    
+      <br>
+      <small>Operate on NBTs as you want</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/outline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /outline 和 //outline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/pile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /pile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/postprocess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /postprocess and //postprocess
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/rand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /rand
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/regionselection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /regionselection 或 /rs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/replace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /replaceblocks 和 //replaceblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/rotateblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /rotateblocks 和 //rotateblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/setblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /setblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/silenced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /silenced
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/stackblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /stackblocks 和 //stackblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/tame/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /tame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /tasks
+  
+
+    
+      <br>
+      <small>Manage tasks of the server</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testarg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testarg
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_33" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_33" id="__nav_3_33_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_33_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_33">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    /testfor
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/biome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor biome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/block/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor block
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/blockinfo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor blockinfo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/blocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor blocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/entity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor entity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/tprel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /tprel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/undo_and_redo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /undo 和 /redo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/velocity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /velocity
+  
+
+    
+      <br>
+      <small>Modify entity's velocity</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/wall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /wall 和 //wall
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../mod_configs/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mod configs
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mod configs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mod_configs/block_operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Block operation config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossaries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Main page
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../block_function/checkerboard/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Argument types
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/SolidBlock-cn/enhanced_commands_mod_docs/edit/main/docs/arguments/entity_selector.en.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/SolidBlock-cn/enhanced_commands_mod_docs/raw/main/docs/arguments/entity_selector.en.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="entity-selector">Entity selector<a class="headerlink" href="#entity-selector" title="Permanent link">&para;</a></h1>
+<p>An <strong>entity selector</strong>, or also known as <strong>target selector</strong>, is an <a href="../">argument type</a> used to select entities matching the specified conditions. Entity selectors already exist in vanilla Minecraft, and the mod extends the functionalities of entity selectors.</p>
+<h2 id="improvements-compared-to-vanilla-minecraft">Improvements compared to vanilla Minecraft<a class="headerlink" href="#improvements-compared-to-vanilla-minecraft" title="Permanent link">&para;</a></h2>
+<h3 id="more-entity-selector-types">More entity selector types<a class="headerlink" href="#more-entity-selector-types" title="Permanent link">&para;</a></h3>
+<p>We know that only the following selectors are provided in vanilla:</p>
+<ul>
+<li><code>@p</code>: The nearest player.</li>
+<li><code>@r</code>: A random player.</li>
+<li><code>@a</code>: All players.</li>
+<li><code>@e</code>: All entities, including players, but not including dead entities.</li>
+<li><code>@n</code>: The nearest entity, not including dead entities.</li>
+<li><code>@s</code>: The executor of the command.</li>
+</ul>
+<p>Besides the several entity selectors provided in vanilla, the mod provides some extra entity selectors, which can be used very conveniently.</p>
+<ul>
+<li><code>@0</code>: No entities, which means selecting no entities. The selector is usually used on specific occasions where no entities need to be selected.</li>
+<li><code>@E</code>: All entities, including dead entities. In vanilla, <code>@a</code> can select dead players, while <code>@e</code> only selects entities not dead. The mod's <code>@E</code> can select dead entities.</li>
+<li><code>@n</code>: The nearest entity (removed since 1.21 as vanilla already supported it).</li>
+<li><code>@R</code>: A random entity.</li>
+<li><code>@f</code>: The furthest entity.</li>
+<li><code>@nn</code>: The nearest entity except players.</li>
+<li><code>@pn</code>: Equivalent to <code>@nn</code>.</li>
+<li><code>@en</code>: All entities expect players.</li>
+<li><code>@fn</code>: The furthest entity except players.</li>
+<li><code>@rn</code>: A random entity except players.</li>
+<li><code>@Rn</code>: Equivalent to <code>@rn</code>.</li>
+<li><code>@pets</code>: All entities tamed by the current entity, equivalent to <code>@e[owner=@s]</code> in effect.</li>
+<li><code>@owner</code>: The owner of the current entity. For example, if the executor of the command is a tamed wolf or horse, <code>@owner</code> will select the player taming the wolf or horse. Similar to <code>/execute on owner</code>.</li>
+<li><code>@vehicle</code>: The entity that the current entity is riding. For example, if the executor of the command sits in a boat, <code>@vehicle</code> will select the boat. Similar to <code>/execute on vehicle</code>.</li>
+<li><code>@passengers</code>: All entities riding the current entity. For example, if the executor of the command is a boat, <code>@passengers</code> will select entities sitting on the boat, similar to <code>/execute on passengers</code>.</li>
+<li><code>@leasher</code>: The entity leashing the current entity. For example, if the executor of the command is a villager leashed by a player, <code>@leasher</code> will select the player leashing the entity, similar to <code>/execute on leasher</code>.</li>
+<li><code>@origin</code>: The origin of the entity. For example, if the executor of the command is a snowball, <code>@origin</code> will select the player that threw the snowball. Similar to <code>/execute on origin</code>.</li>
+<li><code>@attacker</code>: The attacker of the current entity. Similar to <code>/execute on attacker</code>.</li>
+<li><code>@target</code>: The target of the current entity. Similar to <code>/execute on targets</code>.</li>
+<li><code>@controlling_vehicle</code>: Selects the entity that the current entity is riding and controlling. For example, if a player and a villager sit on the same boat, as only players control boats, when the executor of the command is a player, the selector will select the boat, while when the executor is the village, the selector can’t select the boat.</li>
+<li><code>@controller</code>: Selects the entity riding and controlling the current entity. For example, if a player and a villager sit on the same boat, when the executor of the command is the boat, the selector will select the player instead of the villager.</li>
+</ul>
+<p>In the selectors above, entity selector type <code>@pets</code> and those after it allow to specify the relevant entities of the specified entity with the option "<code>of</code>", instead of relevant entities of the current entity. For example, <code>@pets[of=Steve]</code> can select all entities that the player Steve tames (equals to <code>@e[owner=Steve]</code> in effect). <code>@passengers[of=@n[type=minecart]]</code> can select passengers on the nearest minecart. See <a href="#of">the "<code>of</code>" option</a>.</p>
+<h3 id="specifying-type-for-p-and-r">Specifying <code>type</code> for <code>@p</code> and <code>@r</code><a class="headerlink" href="#specifying-type-for-p-and-r" title="Permanent link">&para;</a></h3>
+<p>Vanilla <code>@p</code> and <code>@r</code> only select players. To select the nearest entity of other types, you must use <code>@e[type=..., sort=nearest/furthest]</code>, which is too inconvenient! (Selector <code>@n</code> is added since 1.21.) But it's good that the mod modified it: if you use <code>@p</code> and <code>@r</code>, you can also select entities of other types. For example:</p>
+<ul>
+<li><code>@p[type=creeper]</code>: Selects the nearest creeper.</li>
+<li><code>@p[type=!creeper]</code>: Selects the nearest entity that is not a creeper.</li>
+<li><code>@r[type=cow]</code>: Selects a random cow.</li>
+<li><code>@r[type=!player]</code>: Selects a random entity that is not a player.</li>
+</ul>
+<h3 id="specifying-multiple-types">Specifying multiple types<a class="headerlink" href="#specifying-multiple-types" title="Permanent link">&para;</a></h3>
+<p>The vanilla <code>type</code> parameter can only specify one type or tag. The mod modified it so the selector can specify entities of multiple types or tags, but duplications aren’t allowed. For example:</p>
+<ul>
+<li><code>@p[type=cat|wolf]</code>: The nearest cat or wolf.</li>
+<li><code>@e[type=player|iron_golem]</code>: All players or iron golems.</li>
+<li><code>@e[type=zombie|zombie]</code>: Invalid, due to duplicate values.</li>
+</ul>
+<h3 id="simplified-parameter-aliases">Simplified parameter aliases<a class="headerlink" href="#simplified-parameter-aliases" title="Permanent link">&para;</a></h3>
+<p>If you remember playing old versions, you may know that the syntax of entity selectors was quite simple. For example, <code>c</code> to limit the count (now we use <code>limit</code>), <code>r</code> and <code>rm</code> to limit the furthest and nearest distance (now we use <code>range</code>). The syntax now is too complicated! The mod brings back old syntax back.</p>
+<ul>
+<li><code>c</code> is equivalent to <code>limit</code>. You can’t use both <code>c</code> and <code>limit</code>.</li>
+<li><code>r</code> and <code>rm</code> means the furthest and nearest distance, equivalent to <code>distance=&lt;rm&gt;..&lt;r&gt;</code>. If <code>r</code> and <code>rm</code> are specified, <code>distance</code> cannot be used.</li>
+<li><code>m</code> is equivalent to <code>gamemode</code>. You can’t use both <code>m</code> and <code>gamemode</code>.</li>
+</ul>
+<p>For example:</p>
+<ul>
+<li><code>@p[c=5]</code>: Nearest 5 players.<ul>
+<li>Equivalent to <code>@p[limit=5]</code>.</li>
+</ul>
+</li>
+<li><code>@e[r=5]</code>: All entities within the 5-block distance.<ul>
+<li>Equivalent to  <code>@e[distance=..5]</code>.</li>
+</ul>
+</li>
+<li><code>@e[r=5,rm=3]</code>: All entities within the 5-block distance but at least 3-block distance.<ul>
+<li>Equivalent to <code>@e[distance=3..5]</code>.</li>
+</ul>
+</li>
+<li><code>@e[c=5,limit=6]</code>: Invalid, as <code>c</code> and <code>limit</code> are duplicate.</li>
+<li><code>@s[c=5]</code>: Invalid, as <code>@s</code> cannot specify entity amounts.</li>
+<li><code>@e[r=3,rm=5]</code>: Invalid, because the furthest distance can’t be lower than the nearest distance.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The mod doesn’t support <code>rx</code>, <code>rxm</code>, <code>ry</code> and <code>rym</code> yet.</p>
+</div>
+<h3 id="simplified-gamemode-aliases-and-using-multiple-gamemodes">Simplified gamemode aliases and using multiple gamemodes.<a class="headerlink" href="#simplified-gamemode-aliases-and-using-multiple-gamemodes" title="Permanent link">&para;</a></h3>
+<p>In versions before the Ocean Update, gamemodes can be expressed quite simply as <code>s</code>, <code>c</code>, <code>a</code>, or<code>sp</code>, or integers between 0 and 3. But we must use full names now, which is unreasonable. Therefore, the mod brings back the simplified aliases of gamemodes.</p>
+<p>For example, the following examples mean selecting players in Creative Mode (<code>m</code> and <code>gamemode</code> are equivalent, see <a href="#simplified-parameter-aliases">#Simplified parameter aliases</a>):</p>
+<ul>
+<li><code>@a[gamemode=creative]</code> (vanilla usage)</li>
+<li><code>@a[m=creative]</code></li>
+<li><code>@a[gamemode=c]</code></li>
+<li><code>@a[m=c]</code></li>
+<li><code>@a[gamemode=1]</code></li>
+<li><code>@a[m=1]</code></li>
+</ul>
+<p>Besides, the mod supports selecting multiple gamemodes (duplications not allowed). For example:</p>
+<ul>
+<li><code>@a[m=c|a]</code>: Selects players in Creative Mode or Adventure Mode.</li>
+<li><code>@a[m=!c|s]</code>: Selects players in neither Creative Mode nor Survival Mode.</li>
+<li><code>@a[m=c|1]</code>: Invalid, as <code>c</code> and <code>1</code> are duplicate.</li>
+</ul>
+<h3 id="providing-suggestions-for-more-occasions">Providing suggestions for more occasions<a class="headerlink" href="#providing-suggestions-for-more-occasions" title="Permanent link">&para;</a></h3>
+<p>When typing entity selectors in vanilla, where some contents such as advancements and score terms are needed, no suggestions are provided, causing some inconvenience when we type commands. The mod improves it, allowing it to display suggestions in the following situations:</p>
+<ul>
+<li>Advancement ids, such as <code>@e[advancements={ &lt;- [here]</code></li>
+<li>Criterion names of advancements (compared to vanilla, quoted strings are allowed here, and when the string contains some special characters, suggestions are provided with quotation marks). For example: <code>@e[advancements={&lt;id&gt; = &lt;- [here]</code></li>
+<li>Score names, such as: <code>@a[scores={ &lt;- [here]</code></li>
+<li>Loot predicate ids, such as: <code>@r[predicate= &lt;- [here]</code></li>
+</ul>
+<h3 id="more-conditions-to-be-inverted">More conditions to be inverted<a class="headerlink" href="#more-conditions-to-be-inverted" title="Permanent link">&para;</a></h3>
+<p>In vanilla, some options or entity selectors can be inverted with a <code>!</code> mark, such as <code>@e[type=!player]</code>, which means all entities that aren’t players. The mod makes the feature support more occasions, including:</p>
+<ul>
+<li>Inverting when selecting experience levels, such as:<ul>
+<li><code>@a[level=!2]</code>: Selects players whose experience levels aren’t 2.</li>
+<li><code>@a[level=!2..3]</code>: Selects players whose experience levels aren’t between 2 and 3.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As long as experience levels are specified, even if the condition is inverted, the selected can’t select any entities other than players.</p>
+</div>
+</li>
+<li>Inverting when selecting scores, such as:<ul>
+<li><code>@e[scores={a=!2}]</code>: Selects entities whose value in score "a" is not 2.</li>
+<li><code>@e[scores={a=!3, b=!5..6}]</code>: Selects entities whose value in score "a" is not 3 and value in score "b" is not between 5 and 6.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Even if inverted, when the score objective doesn’t exist, or the entity doesn’t have a score in this objective, the entity can’t be selected. For example, <code>@e[scores={a=!2}]</code> to be described most accurately, is when the score "a" exists, selecting players who have a value on this score objective, which does not equal to 2.</p>
+</div>
+</li>
+</ul>
+<h3 id="specifying-loot-predicate-jsons">Specifying loot predicate JSONs<a class="headerlink" href="#specifying-loot-predicate-jsons" title="Permanent link">&para;</a></h3>
+<p>The loot predicate is a strong functionality of Minecraft, which supports some complicated judgements on conditions. However, loot predicates are defined in datapacks, and the storage is slightly complicated. With this mod, you can specify a loot predicate directly in the command without a datapack.</p>
+<p>Compared to vanilla, for convenience, the JSON parsing here is lenient, supporting unquoted string. It is also supported to add a <code>!</code> after the <code>=</code> to invert the predicate. You can also invert by using <code>{condition: inverted, term: {...}}</code>.</p>
+<p>Where you type loot predicates, directly type the JSON, and the command will be parsed directly during compilation, quite convenient. For example:</p>
+<ul>
+<li><code>@e[predicate={condition: entity_properties, entity: this, predicate: {flags: {is_sneaking: true}}}]</code>: Sneaking entities.</li>
+<li><code>@e[predicate={condition: location_check, predicate: {biome: badlands}}]</code>: Entities in the badlands biome.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It's advised to avoid using direct loot predicates if other selector parameters can achieve the same effect.</p>
+</div>
+<h3 id="better-error-tips">Better error tips<a class="headerlink" href="#better-error-tips" title="Permanent link">&para;</a></h3>
+<p>When you type something wrong in the entity selector, including wrong parameters, or some parameters that don’t exist or are duplicate, the mod provides more detailed error tips, such as noticing some parameter is duplicate, or not supported in the specific entity selector.</p>
+<h2 id="entity-selector-parameters">Entity selector parameters<a class="headerlink" href="#entity-selector-parameters" title="Permanent link">&para;</a></h2>
+<p>This mod supports all vanilla parameters, and also adds some extra parameters to support more functionalities. The parameters are also available in <a href="../entity_predicate/">entity predicates</a>.</p>
+<h3 id="vanilla-parameters">Vanilla parameters<a class="headerlink" href="#vanilla-parameters" title="Permanent link">&para;</a></h3>
+<p>The mod supports all vanilla parameters. Some enhancements to vanilla parameters are already described in this article. Some vanilla parameters are listed here.</p>
+<p>Parameters not directly used as the predicate:</p>
+<ul>
+<li><code>limit</code>: Limits the count of entities selected. For <a href="../entity_predicate/selector/">entity predicates based on selectors</a>, if this argument is provided, the predicate selects entities prior to testing the entity.</li>
+<li><code>x</code>, <code>y</code>, <code>z</code>: Sets the starting point of the entity distance and volume.</li>
+<li><code>dx</code>, <code>dy</code>, <code>dz</code>: Specifies the size of the cuboid range. It influences the chunk range of entity selection of the entity selector.</li>
+<li><code>distance</code>: Distance from the entity to the base point. The maximum value influences the chunk range of entity selection of the entity selector.<ul>
+<li>When used as an entity predicate, the two parameters above form a special entity predicate "<a href="../entity_predicate/box/"><code>box</code></a>" that makes judgment on entity positions.</li>
+</ul>
+</li>
+<li><code>sort</code>: Sorting.</li>
+</ul>
+<p>Parameters directly used as the predicate:</p>
+<ul>
+<li><a href="../entity_predicate/advancements/"><code>advancements</code></a>: Tests the entity's advancement.</li>
+<li><a href="../entity_predicate/game_mode/"><code>gamemode</code></a>: Tests the player's game mode.</li>
+<li><a href="../entity_predicate/name/"><code>name</code></a>: Tests the entity's name.</li>
+<li><a href="../entity_predicate/nbt/"><code>nbt</code></a>: Tests the entity's NBT.</li>
+<li><a href="../entity_predicate/loot_table_predicate/"><code>predicate</code></a>: Tests the entity according to the loot table predicate.</li>
+<li><a href="../entity_predicate/scores/"><code>scores</code></a>: Tests the entity's scoreboard score.</li>
+<li><a href="../entity_predicate/tag/"><code>tag</code></a>: Tests the entity's scoreboard tag.</li>
+<li><a href="../entity_predicate/team/"><code>team</code></a>: Tests the entity's team.</li>
+<li><a href="../entity_predicate/type/"><code>type</code></a>: Tests the entity's type.</li>
+<li><a href="../entity_predicate/pitch/"><code>x_rotation</code></a>: Pitch angle.</li>
+<li><a href="../entity_predicate/yaw/"><code>y_rotation</code></a>: Yaw angle.</li>
+</ul>
+<h3 id="non-vanilla-parameters">non-vanilla parameters<a class="headerlink" href="#non-vanilla-parameters" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../entity_predicate/air/"><code>air</code></a>: Tests the air value of the entity. Accepts int ranges or the keyword <code>max</code> which means the max air value.<ul>
+<li><code>@e[air=5..]</code>: Selects entities whose air values aren’t less than 5.</li>
+<li><code>@a[air=!..0]</code>: Selects entities whose air values are greater than 0.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/alternatives/"><code>alternatives</code></a>: Specifying multiple entity predicates. The entity only needs to pass one of the predicate tests. Values of the parameters are wrapped in a square bracket, with multiple entity predicates inside; multiple entity predicates are separated with comma.<ul>
+<li><code>@e[alternatives=[[type=cow], [type=sheep]]]</code>: Selects all cows and sheep.</li>
+<li><code>@a[alternatives=[Player1, Player2]]</code>: Selects Player1 and Player2.</li>
+<li><code>@e[type=sheep, alternatives=[[tag=a], [tag=b]]]</code>: Within all sheep, select those with tag "a" or tag "b".</li>
+<li><code>@e[type=sheep, alternatives=![[tag=a], [tag=b]]]</code>: Within all sheep, select those with neither tag "a" nor "b".</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/baby/"><code>baby</code></a>: Tests whether the entity is a baby. If the entity type doesn’t support baby entities, entities will be seen as non-babies.<ul>
+<li><code>@e[baby=true]</code>: Selects all baby entities.</li>
+<li><code>@e[baby=false]</code>: Selects all entities who aren’t babies (including entities who can’t be babies).</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/block/"><code>block</code></a>: Tests the blocks where the entity is.<ul>
+<li><code>@e[block=air]</code>: Selects entities where the block is air.</li>
+<li><code>@e[block=water|*[waterlogged=true]]</code>: Selects entities where the block is water or any waterlogged block.</li>
+<li><code>@a[block={~~-1~=redstone_block}]</code>: Selects entities where the block at one block below is a redstone block.</li>
+<li><code>@e[block={~~-1~=grass_block, ~~-2~=dirt}]</code>: Selects entities where the block at one block below is grass block and two blocks below is dirt.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/effect/"><code>effect</code></a>: Tests the entity's status effect.<ul>
+<li><code>@a[effect=night_vision]</code>: All players with night vision effect.</li>
+<li><code>@a[effect=strength, effect=speed]</code>: All player s with strength and speed effect.</li>
+<li><code>@a[effect={strength=true, effect=true}]</code>: Equivalent to the previous example.</li>
+<li><code>@a[effect=!fire_resistance]</code>: All players without fire resistance effect.</li>
+<li><code>@a[effect={fire_resistance=false}]</code>: Equivalent to the previous example.</li>
+<li><code>@a[effect={fire_resistance=!true}]</code>: Equivalent to the previous example.</li>
+<li><code>@a[effect=!blindness, effect=night_vision]</code>: All players without blindness and with night vision.</li>
+<li><code>@a[effect={blindness=false, night_vision=true}]</code>: Equivalent to the previous example.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/exhaustion/"><code>exhaustion</code></a>: Tests the exhaustion value of the entity. Accepts float-point number ranges.<ul>
+<li><code>@a[exhaustion=0.5..]</code>: Selects players whose exhaustion value is at least 0.5.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/fire/"><code>fire</code></a>: Tests the remaining on-fire time (ticks to the file extinguish naturally).<ul>
+<li><code>@e[fire=1..]</code>: Selects entities whose remaining on-fire time is at least 1 (which mean currently on fire).</li>
+<li><code>@e[fire=20..]</code>: Selects entities whose remaining on-fire time is at least 20.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/food/"><code>food</code></a>: Tests the food value of entities. Accepts integer ranges.<ul>
+<li><code>@e[food=20]</code>: Select players whose food value is 20 (although <code>@e</code> is used, only players can be selected).</li>
+<li><code>@a[food=10..15]</code>: Select players whose food value is between 10 and 15.</li>
+<li><code>@a[food=!10]</code>: Select players whose food value is not 10.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/health/"><code>health</code></a>: Tests the health value of entities. Accepts a range, or the keyword <code>max</code>. The parameter can be inverted. This parameter only selects health values of living entities. Entities such as minecarts and dropped items also have their special health values but can’t be used to select by the entity selector.<ul>
+<li><code>@e[health=20]</code>: Selects living entities whose health value is 20.</li>
+<li><code>@e[health=!20]</code>: Selects living entities whose health value is not 20.</li>
+<li><code>@e[health=max]</code>: Selects living entities whose health value is the max value.</li>
+<li><code>@e[health=10..]</code>: Selects living entities whose health value is not less than 10.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/sub_predicate/"><code>is</code></a>: Specifies an <a href="entity_predicate">entity predicate</a> and only passes when the entity also matches the predicate. This means filtering entities selected. The option can be inverted, which is identical to <a href="../entity_predicate/sub_predicate/"><code>not</code></a> in effect.<ul>
+<li><code>@p[is=@s]</code>: The nearest entity, and meanwhile the entity should be the executor of the command.</li>
+<li><code>@a[is=@e[type=cow]]</code>: All players that are cows. This entity selector is valid but obviously cannot select any entity.</li>
+<li><code>@e[is=!@s]</code>: All entities except the command executor. Identical to <code>@e[not=@s]</code> in effect.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/sub_predicate/"><code>not</code></a>: Specifies an <a href="entity_predicate">entity predicate</a> and only passes when the entity does not match the predicate. This means excluding some entities selected. The option can be inverted, which is identical to <a href="../entity_predicate/sub_predicate/"><code>is</code></a>.<ul>
+<li><code>@e[not=@s]</code>: All entities except the command executor.</li>
+<li><code>@e[not=[type=cow]]</code>: All entities except cows. Identical to <code>@e[type=!cow]</code> in effect.</li>
+<li><code>@e[not=@s, not=@pets]</code>: All entities except the command executor and pets of the command executor. Identical to <code>@e[alternatives=![@s, @pets]]</code> in effect.</li>
+<li><code>@e[type=cow, not=!@s]</code>: All cows that are the command executor. Identical to <code>@e[type=cow, is=@s]</code>, <code>@s[type=cow]</code>.</li>
+</ul>
+</li>
+<li><code>of</code>: Specifies an entity selector, used for some specific entity selector types such as <code>@pets</code>, <code>@vehicle</code>, meaning selecting relevant entities of the specified entities, instead of the relevant entities of the command executor. This option cannot be used once. See <a href="#more-entity-selector-types">#more entity selector types</a>. In other entity selectors, the option "<code>of</code>" can be used but has no effect.<ul>
+<li><code>@pets</code>: All entities that the command executor tames. Identical to <code>@e[owner=@s]</code>.</li>
+<li><code>@pets[of=Alex]</code>: All entities that the player Alex tames. Identical to <code>@e[owner=Alex]</code>.</li>
+<li><code>@vehicle</code>: Entities that the command executor is riding.</li>
+<li><code>@vehicle[of=@a]</code>: Entities that any player is riding.</li>
+<li><code>@passengers</code>: All passengers of the command executor.</li>
+<li><code>@passengers[passengers=@e[type=horse]]</code>: All passengers of all horses.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/on_fire/"><code>on_fire</code></a>: Tests whether the entity is on fire. Accepts a boolean value. If the entity is immune to fire, they’re seen as not on fire.<ul>
+<li><code>@e[on_fire=true]</code>: Selects entities on fire (and not immune to fire).</li>
+<li><code>@e[on_fire=false]</code>: Selects entities not on fire (or immune to fire).</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/owner/"><code>owner</code></a>: Filter by entities' owners. The value can be an <a href="../entity_predicate/">entity predicate</a> or no value.<ul>
+<li><code>@e[owner=]</code>: Selects all entities not tamed, including untamable entities.</li>
+<li><code>@e[owner=!]</code>: Selects all tamed entities, regardless of the owner (can be players no in the current world).</li>
+<li><code>@e[owner=Alice]</code>: Selects all entities tamed by player Alice. It fails when Alice is not in the world.</li>
+<li><code>@e[owner=!@p]</code>: Selects all entities tamed by any player who is not the nearest player to the execution position.</li>
+<li><code>@e[owner=@s]</code>: Selects all entities tamed by the executor of the command, similar to <code>@pets</code>.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/pose/"><code>pose</code></a>: Selects entities in the specified pose.<ul>
+<li><code>@e[pose=crouching]</code>: Selects all crouching entities.</li>
+<li><code>@a[pose=!swimming]</code>: Selects all entities not swimming.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/region/"><code>region</code></a>: Selects entities within a specified <a href="../region/">region</a>. Relative coordinates are local coordinates are supported, which are calculated according to the position and rotation of the command source (instead of the selected entities' position and rotation).<ul>
+<li><code>@e[region=sphere(5)]</code>: Selects entities within a sphere range, whose center is the command source's position, and radius is 5.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/saturation/"><code>saturation</code></a>: Tests the saturation of entity. Accepts float-point number ranges. Can be inverted.<ul>
+<li><code>@e[saturation=5..]</code>: Selects players whose saturation is at least 5.</li>
+<li><code>@e[saturation=!0]</code>: Selects players whose saturation is not 0.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/sneaking/"><code>sneaking</code></a>: Tests whether the entity is sneaking. Players flying and descending will also be selected. This option is different from the loot predicate.<ul>
+<li><code>@e[sneaking=true]</code>: Selects sneaking entities.</li>
+<li><code>@e[sneaking=false]</code>: Selects entities not sneaking.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/sprinting/"><code>sprinting</code></a>: Tests whether the entity is sprinting. The parameter can be inverted.<ul>
+<li><code>@e[sprinting=true]</code>: Selects sprinting entities.</li>
+<li><code>@a[sprinting=false]</code>: Selects entities not sprinting.</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/swimming/"><code>swimming</code></a>: Tests whether the entity is swimming. The parameter can be inverted.<ul>
+<li><code>@e[swimming=true]</code>: Selects swimming entities.</li>
+<li><code>@a[swimming=false]</code>: Selects entities not swimming.</li>
+</ul>
+</li>
+</ul>
+<h2 id="data-structure">Data structure<a class="headerlink" href="#data-structure" title="Permanent link">&para;</a></h2>
+<p>Entity selectors support serialization and deserialization through this mod. Some mods may add other properties or entity predicates into entity selectors. Contents added by other mods may not be serialized by this mod. Entity selectors specified through command arguments can usually be serialized normally, but entity selectors directly created by codes may not be serialized fully for all data,</p>
+<ul>
+<li><code>limit</code>: Integer, optional, by default 2<sup>31</sup> - 1.</li>
+<li><code>player_only</code>: Boolean, optional, by default <code>false</code>.</li>
+<li><code>local_world_only</code>: Boolean, optional, by default <code>false</code>.</li>
+<li><code>predicates</code>: List, optional. Usually not including entity predicates of special types.<ul>
+<li><a href="../entity_predicate/">Entity predicate</a></li>
+</ul>
+</li>
+<li><code>distance</code>: Double-precision floating-point, or a range defined by a map, optional.</li>
+<li><code>position_offset</code>: Map, optional.</li>
+<li><code>dx</code>: Double-precision floating-point, optional.</li>
+<li><code>dy</code>: Double-precision floating-point, optional.</li>
+<li><code>dz</code>: Double-precision floating-point, optional.</li>
+<li><code>sort</code>: String, optional, by default <code>arbitrary</code>. The sorting that the entity selector uses.</li>
+<li><code>sender_only</code>: Boolean, optional, by default <code>false</code>.</li>
+<li><code>player_name</code>: String. Optional.</li>
+<li><code>uuid</code>：UUID (usually a list or array), optional.</li>
+<li><code>entity_type</code>: String, specify an entity type, optional.</li>
+<li><code>uses_at</code>: Boolean, optional, by default <code>false</code>, which means whether "@" is used.</li>
+<li><code>collector</code>: String, optional. The special collector of entity selector.</li>
+<li><code>collector_of</code>: Entity selector, optional. Corresponds to the <code>of</code> argument in the entity selector arguments.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../entity_predicate/yaw/" class="md-footer__link md-footer__link--prev" aria-label="Previous: yaw">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                yaw
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--next" aria-label="Next: Argument types">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Argument types
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Note: The website is currently under test.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "toc.integrate", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "toc.follow", "navigation.footer", "content.code.copy", "content.code.select", "content.action.view", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

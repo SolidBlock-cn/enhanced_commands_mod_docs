@@ -1,0 +1,7283 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../entity_predicate/yaw/">
+      
+      
+        <link rel="next" href="../">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="zh">
+        
+          <link rel="alternate" href="../../en/arguments/entity_selector/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>实体选择器 - 增强命令模组文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#实体选择器" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="增强命令模组文档" class="md-header__button md-logo" aria-label="增强命令模组文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            增强命令模组文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              实体选择器
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="切换到明亮模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到明亮模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="切换到黑暗模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到黑暗模式" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="切换到系统偏好"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="切换到系统偏好" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/arguments/entity_selector/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SolidBlock-cn/enhanced_commands_mod_docs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../block_function/checkerboard/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  参数类型
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/activeregion/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  命令
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../mod_configs/block_operation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  模组配置
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../glossaries/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  术语表
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="增强命令模组文档" class="md-nav__button md-logo" aria-label="增强命令模组文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    增强命令模组文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SolidBlock-cn/enhanced_commands_mod_docs" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    主页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    参数类型
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    参数类型
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../block_function/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方块函数
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    方块函数
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/checkerboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    checkerboard()
+  
+
+    
+      <br>
+      <small>迷人的棋盘格图案</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/checkerboard-tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    checkerboard-tag()
+  
+
+    
+      <br>
+      <small>根据方块标签画棋盘格</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/dry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dry()
+  
+
+    
+      <br>
+      <small>抽干方块中的水</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/empty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    空白方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/filter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    filter()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/idcontain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    idcontain()
+  
+
+    
+      <br>
+      <small>随机匹配正则表达式</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/idreplace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    idreplace()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/if/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    if()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/ifs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ifs()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/mirror/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mirror()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/nbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/noise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    noise()
+  
+
+    
+      <br>
+      <small>随心所欲生成方块噪声</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/overlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overlay()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/pick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pick()
+  
+
+    
+      <br>
+      <small>随机选择方块函数</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/postprocess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    postprocess()
+  
+
+    
+      <br>
+      <small>解决您的栅栏和墙</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/property_names/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/property_nbt_combination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性 NBT 组合
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/random/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    * 和 rand()
+  
+
+    
+      <br>
+      <small>随机方块</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引用方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/rotate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rotate()
+  
+
+    
+      <br>
+      <small>旋转方块</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/simple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    简单方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/stonecut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    stonecut()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    标签方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_function/use_original/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原始方块函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../block_predicate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方块谓词
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    方块谓词
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/all/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    all()
+  
+
+    
+      <br>
+      <small>全都要满足，一个也不能少</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/any/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    any()
+  
+
+    
+      <br>
+      <small>满足任何一个即可</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/checkerboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    checkerboard()
+  
+
+    
+      <br>
+      <small>棋盘格的谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/expose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    expose()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/horizontal_offset/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    > 和 <
+  
+
+    
+      <br>
+      <small>竖直偏移方块谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/idcontain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    idcontain()
+  
+
+    
+      <br>
+      <small>对方块 id 做个正则！</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/nbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 方块谓词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/noise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    noise()
+  
+
+    
+      <br>
+      <small>根据噪声决定方块谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/predicate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    predicate()
+  
+
+    
+      <br>
+      <small>引用战利品表谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    probability()
+  
+
+    
+      <br>
+      <small>自己指定一个概率</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性方块谓词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/property_nbt_combination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性 NBT 组合
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    引用方块谓词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/region/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    region()
+  
+
+    
+      <br>
+      <small>检测方块是否位于区域内</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/rel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rel()
+  
+
+    
+      <br>
+      <small>检测相对位置的方块</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/same_and_diff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    same() 和 diff()
+  
+
+    
+      <br>
+      <small>比较两个方块谓词的测试结果</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/simple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    简单方块谓词
+  
+
+    
+      <br>
+      <small>最基本的判断，但也绝不简单</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../block_predicate/tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    标签方块谓词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concentration_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    聚合类型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../curve/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    曲线
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    曲线
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../curve/circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    circle()
+  
+
+    
+      <br>
+      <small>绘制一个任意的圆</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../curve/straight/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    straight()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../direction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方向
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../entity_predicate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    实体谓词
+  
+
+    
+      <br>
+      <small>使用和选择器基本相同的语法筛选实体</small>
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    实体谓词
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/advancements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    advancements
+  
+
+    
+      <br>
+      <small>测试玩家的进度</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/air/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    air
+  
+
+    
+      <br>
+      <small>测试实体的空气值</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/alive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    alive
+  
+
+    
+      <br>
+      <small>检测实体是否存活</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/alternatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    alternatives
+  
+
+    
+      <br>
+      <small>多个实体谓词的并集</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/baby/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    baby
+  
+
+    
+      <br>
+      <small>选择幼年实体</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/block/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    block
+  
+
+    
+      <br>
+      <small>检测实体所在位置的方块</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/box/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    box
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/collector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    collector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/distance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    distance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/effect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    effect
+  
+
+    
+      <br>
+      <small>检测实体的状态效果</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/empty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    empty
+  
+
+    
+      <br>
+      <small>不选择实体</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/exhaustion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    exhaustion
+  
+
+    
+      <br>
+      <small>测试实体的消耗度</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/fire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    fire
+  
+
+    
+      <br>
+      <small>测试实体的着火时间</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/food/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    food
+  
+
+    
+      <br>
+      <small>测试实体的饱食度</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/game_mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gamemode
+  
+
+    
+      <br>
+      <small>测试玩家的游戏模式</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/health/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    health
+  
+
+    
+      <br>
+      <small>测试实体生命值</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/level/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    level
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/local_world/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    local_world
+  
+
+    
+      <br>
+      <small>筛选当前世界玩家的特殊谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/loot_table_predicate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    loot_table_predicate
+  
+
+    
+      <br>
+      <small>根据战利品表谓词测试实体</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    name
+  
+
+    
+      <br>
+      <small>测试实体的名字。</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/nbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nbt
+  
+
+    
+      <br>
+      <small>测试实体的 NBT 数据</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/on_fire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    on_fire
+  
+
+    
+      <br>
+      <small>检测实体是否正在着火</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/owner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    owner
+  
+
+    
+      <br>
+      <small>测试可驯养实体的拥有者</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pitch
+  
+
+    
+      <br>
+      <small>测试实体的俯仰角</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/player_name/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    player_name
+  
+
+    
+      <br>
+      <small>测试玩家的名称</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/player_only/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    player_only
+  
+
+    
+      <br>
+      <small>仅筛选玩家的谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/pose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pose
+  
+
+    
+      <br>
+      <small>测试实体的姿势</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/region/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    region
+  
+
+    
+      <br>
+      <small>选择指定区域的实体</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/saturation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    saturation
+  
+
+    
+      <br>
+      <small>检测实体的饱和度</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/scores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    scores
+  
+
+    
+      <br>
+      <small>测试实体的记分板分数</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/selector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    selector
+  
+
+    
+      <br>
+      <small>基于实体选择器的谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/sender_only/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sender_only
+  
+
+    
+      <br>
+      <small>仅选择命令执行者</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/sneaking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sneaking
+  
+
+    
+      <br>
+      <small>检测潜行</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/sprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sprinting
+  
+
+    
+      <br>
+      <small>检测疾跑</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/sub_predicate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sub_predicate
+  
+
+    
+      <br>
+      <small>在实体选择器参数中额外指定 is 和 not</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/swimming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    swimming
+  
+
+    
+      <br>
+      <small>测试游泳</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/tag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tag
+  
+
+    
+      <br>
+      <small>检测记分板标签</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    team
+  
+
+    
+      <br>
+      <small>检测实体的队伍</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    type
+  
+
+    
+      <br>
+      <small>测试实体的类型</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/unknown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    unknown
+  
+
+    
+      <br>
+      <small>未知的实体谓词</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/uuid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    uuid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entity_predicate/yaw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    yaw
+  
+
+    
+      <br>
+      <small>测试实体的偏航角</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    实体选择器
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    实体选择器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#相较于原版的一些改进" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相较于原版的一些改进
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="相较于原版的一些改进">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#更多的实体选择器类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        更多的实体选择器类型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对-pr-指定-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对 @p、@r 指定 type
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#指定多个类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        指定多个类型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#简化的参数别称" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简化的参数别称
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#简化的游戏模式别称以及多游戏模式用法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简化的游戏模式别称以及多游戏模式用法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为更多场景提供建议" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为更多场景提供建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#更多的取反条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        更多的取反条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#直接指定战利品表谓词-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直接指定战利品表谓词 JSON
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#更好的错误提示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        更好的错误提示
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#实体选择器参数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实体选择器参数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实体选择器参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#原版的参数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原版的参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#非原版的参数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        非原版的参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#数据结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数据结构
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../item_function/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物品函数
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    物品函数
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_function/enchant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    enchant()
+  
+
+    
+      <br>
+      <small>随心所欲修改物品魔咒</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_function/overlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overlay()
+  
+
+    
+      <br>
+      <small>依次应用多个物品函数</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_function/pick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pick()
+  
+
+    
+      <br>
+      <small>随机选择物品函数</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../item_predicate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物品谓词
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    物品谓词
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_predicate/all/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    all()
+  
+
+    
+      <br>
+      <small>全都要满足，一个也不能少</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_predicate/any/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    any()
+  
+
+    
+      <br>
+      <small>满足任意一个即可</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_predicate/count/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    count()
+  
+
+    
+      <br>
+      <small>测试物品的数量</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../item_predicate/probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    probability()
+  
+
+    
+      <br>
+      <small>自己指定一个概率</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keyword_args/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关键字参数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_concentration_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 聚合类型
+  
+
+    
+      <br>
+      <small>将多个 NBT 转化为一个</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../nbt_function/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 函数
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NBT 函数
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/concat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    concat()
+  
+
+    
+      <br>
+      <small>连接多个字符串</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    from()
+  
+
+    
+      <br>
+      <small>从指定的来源导入 NBT 数据</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/overlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    overlay()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/pick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pick()
+  
+
+    
+      <br>
+      <small>随机选择 NBT 函数</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/pos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pos()
+  
+
+    
+      <br>
+      <small>在 NBT 中表示坐标</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/regex_replace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    regex_replace()
+  
+
+    
+      <br>
+      <small>在 NBT 中进行正则替换</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/replace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    replace()
+  
+
+    
+      <br>
+      <small>替换 NBT 中的值</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/string_replace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    string_replace()
+  
+
+    
+      <br>
+      <small>替换 NBT 中的字符串</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_function/substring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    substring()
+  
+
+    
+      <br>
+      <small>截取子字符串</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../nbt_predicate/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 谓词
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NBT 谓词
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_source/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 来源
+  
+
+    
+      <br>
+      <small>指定从哪里获取 NBT</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nbt_target/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NBT 目标
+  
+
+    
+      <br>
+      <small>指定修改谁的 NBT</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    坐标
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../region/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    区域
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_18" id="__nav_2_18_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_18">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    区域
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/cuboid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cuboid()、cuboid_outline() 和 cuboid_wall()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/cylinder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cyl() 和 hcyl()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/intersect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    intersect()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/outline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    outline()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/outwards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    outwards()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/single/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    single()
+  
+
+    
+      <br>
+      <small>单个方块坐标</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/sphere/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sphere()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../region/union/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    union()
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    命令
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    命令
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/activeregion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /activeregion 或 /ar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/air/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /air
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/convertblock/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /convertblock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/convertblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /convertblocks 和 //convertblcks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/debug_deop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /debug:deop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/debug_op/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /debug:op
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/debug_permissionlevel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /debug:permissionlevel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/draw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /draw
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/food/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /food
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/for/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /for
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/health/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /health
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /history
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /if and /unless
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    /if and /unless
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/if_and_unless/blockinfo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /if|unless blockinfo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/if_and_unless/rand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /if|unless rand
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/inregion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /inregion
+  
+
+    
+      <br>
+      <small>在一个区域的所有坐标执行命令</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/mirror/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /mirror 和 //mirror
+  
+
+    
+      <br>
+      <small>镜像或翻转方块</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/moon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /moon
+  
+
+    
+      <br>
+      <small>查看并设置月相</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/moveblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /moveblocks 和 //moveblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/nbt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /nbt
+  
+
+    
+      <br>
+      <small>随心所欲地操作 NBT</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/outline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /outline 和 //outline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/pile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /pile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/postprocess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /postprocess 和 //postprocess
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/rand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /rand
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/regionselection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /regionselection 或 /rs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/replace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /replaceblocks 和 //replaceblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/rotateblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /rotateblocks 和 //rotateblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/setblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /setblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/silenced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /silenced
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/stackblocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /stackblocks 和 //stackblocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/tame/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /tame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /tasks
+  
+
+    
+      <br>
+      <small>管理服务器的任务</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testarg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testarg
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_33" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_33" id="__nav_3_33_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_33_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_33">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    /testfor
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/biome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor biome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/block/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor block
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/blockinfo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor blockinfo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/blocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor blocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/testfor/entity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /testfor entity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/tprel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /tprel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/undo_and_redo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /undo 和 /redo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/velocity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /velocity
+  
+
+    
+      <br>
+      <small>修改实体的速度</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/wall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /wall 和 //wall
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../mod_configs/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模组配置
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    模组配置
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mod_configs/block_operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方块操作配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    术语表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    主页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../block_function/checkerboard/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    参数类型
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/SolidBlock-cn/enhanced_commands_mod_docs/edit/main/docs/arguments/entity_selector.zh.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/SolidBlock-cn/enhanced_commands_mod_docs/raw/main/docs/arguments/entity_selector.zh.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="实体选择器">实体选择器<a class="headerlink" href="#实体选择器" title="Permanent link">&para;</a></h1>
+<p><strong>实体选择器</strong>（entity selector），又称<strong>目标选择器</strong>（target selector），是用于从世界中选择符合指定条件的实体的<a href="../">参数类型</a>。实体选择器在原版中就存在，本模组扩展了实体选择器的功能。</p>
+<h2 id="相较于原版的一些改进">相较于原版的一些改进<a class="headerlink" href="#相较于原版的一些改进" title="Permanent link">&para;</a></h2>
+<h3 id="更多的实体选择器类型">更多的实体选择器类型<a class="headerlink" href="#更多的实体选择器类型" title="Permanent link">&para;</a></h3>
+<p>我们知道，原版仅提供以下选择器：</p>
+<ul>
+<li><code>@p</code>：距离最近的玩家。</li>
+<li><code>@r</code>：随机的玩家。</li>
+<li><code>@a</code>：所有的玩家。</li>
+<li><code>@e</code>：所有的实体，包括玩家，但不包括死亡的实体。</li>
+<li><code>@n</code>：最近的实体，不包括死亡的实体。</li>
+<li><code>@s</code>：命令的执行者。</li>
+</ul>
+<p>除了原版提供的几个实体选择器之外，本模组还提供了一些额外的实体选择器，可以很方便地使用。</p>
+<ul>
+<li><code>@0</code>：没有实体，也就是不选择任何实体。这个选择器一般用于特定的需要选择不到任何实体的情形。</li>
+<li><code>@E</code>：所有实体，包括已经死亡的实体。在原版中，<code>@a</code> 可选择已死亡的玩家，而 <code>@e</code> 只能选择未死亡的实体。而本模组的 <code>@E</code> 则可以选择已经死亡的实体。</li>
+<li><code>@n</code>：距离最近的实体（从 1.21 开始移除，因为原版就已经支持了）。</li>
+<li><code>@R</code>：随机的实体。</li>
+<li><code>@f</code>：距离最远的实体。</li>
+<li><code>@nn</code>：除玩家之外，距离最近的实体。</li>
+<li><code>@pn</code>：和 <code>@nn</code> 一致。</li>
+<li><code>@en</code>：所有除了玩家之外的实体。</li>
+<li><code>@fn</code>：除玩家之外，距离最远的实体。</li>
+<li><code>@rn</code>：除玩家之外，随机实体。</li>
+<li><code>@Rn</code>：和 <code>@rn</code> 一致。</li>
+<li><code>@pets</code>：当前实体驯养的所有实体，效果上相当于 <code>@e[owner=@s]</code>。</li>
+<li><code>@owner</code>：当前实体的驯养者。例如，如果命令执行者是被驯养的狼或马，那么 <code>@owner</code> 将选择到驯养了这只狼或马的玩家。类似于 <code>/execute on owner</code>。</li>
+<li><code>@vehicle</code>：当前实体骑乘的实体。例如，如果命令执行者坐在船上，那么 <code>@vehicle</code> 将选择到这艘船。类似于 <code>/execute on vehicle</code>。</li>
+<li><code>@passengers</code>：骑乘当前实体的所有实体。例如，如果命令执行者是船，那么 <code>@passengers</code> 将选择到所有坐在这艘船上的实体。类似于 <code>/execute on passengers</code>。</li>
+<li><code>@leasher</code>：拴住了当前实体的实体。例如，如果命令执行者是被玩家拴着的村民，那么 <code>@leasher</code> 将选择到拴着这个村民的玩家。类似于 <code>/execute on leasher</code>。</li>
+<li><code>@origin</code>：选择当前实体的来源。例如，如果命令的执行者的雪球，那么 <code>@origin</code> 将选择到抛出这个雪球的玩家。类似于 <code>/execute on origin</code>。</li>
+<li><code>@attacker</code>：选择当前实体的攻击者。类似于 <code>/execute on attacker</code>。</li>
+<li><code>@target</code>：选择当前实体的目标。类似于 <code>/execute on targets</code>。</li>
+<li><code>@controlling_vehicle</code>：选择当前实体正在骑乘并控制着的实体。例如，如果玩家和村民一同坐在同一艘船上，由于只有玩家能控制船，所以当命令执行者是玩家时，该选择器能选择到船，而当命令执行者是这个村民时，则无法选择到船。</li>
+<li><code>@controller</code>：选择骑乘并控制着当前实体的实体。例如，如果玩家和村民一同坐在同一艘船上，当命令执行者是船时，该选择器将选择到玩家而不会选择到村民。</li>
+</ul>
+<p>上面的选择器中，<code>@pets</code> 以及后面的实体选择器类型均允许通过选项 <code>of</code> 以选择指定实体的相关实体，而非当前实体的相关实体。例如，<code>@pets[of=Steve]</code> 可以选择玩家 Steve 驯养的所有实体（效果上相当于 <code>@e[owner=Steve]</code>），<code>@passengers[of=@n[type=minecart]]</code> 可选择距离最近的矿车上的乘客。参见 <a href="#of"><code>of</code> 选项</a>。</p>
+<h3 id="对-pr-指定-type">对 <code>@p</code>、<code>@r</code> 指定 <code>type</code><a class="headerlink" href="#对-pr-指定-type" title="Permanent link">&para;</a></h3>
+<p>原版的 <code>@p</code> 和 <code>@r</code> 只能选择玩家。如果需要选择最近的其他类型的实体，就必须要使用 <code>@e[type=..., sort=nearest/furthest]</code>，太不方便了！（从 1.21 开始，加入了选择器 <code>@n</code>。）好在此模组对其进行了修改，如果使用 <code>@p</code> 和 <code>@r</code>，也可以选择实体类型。例如：</p>
+<ul>
+<li><code>@p[type=creeper]</code>：选择距离最近的苦力怕。</li>
+<li><code>@p[type=!creeper]</code>：从除了苦力怕之外的所有实体中选择距离最近的。</li>
+<li><code>@r[type=cow]</code>：选择随机的牛。</li>
+<li><code>@r[type=!player]</code>：从所有非玩家的实体的随机选择一个。</li>
+</ul>
+<h3 id="指定多个类型">指定多个类型<a class="headerlink" href="#指定多个类型" title="Permanent link">&para;</a></h3>
+<p>原版的 <code>type</code> 参数只能指定一个类型或者标签，本模组进行了修改，使得实体选择器能够一次性选择多个类型或标签的实体，但不能有重复。例如：</p>
+<ul>
+<li><code>@p[type=cat|wolf]</code>：距离最近的猫或狼。</li>
+<li><code>@e[type=player|iron_golem]</code>：所有的玩家或者铁傀儡。</li>
+<li><code>@e[type=zombie|zombie]</code>：无效，因为有重复的值。</li>
+</ul>
+<h3 id="简化的参数别称">简化的参数别称<a class="headerlink" href="#简化的参数别称" title="Permanent link">&para;</a></h3>
+<p>如果你玩过老版本，你应该记得实体选择器的语法是比较简单的，比如用 <code>c</code> 表示限量（现为 <code>limit</code>），用 <code>r</code> 和 <code>rm</code> 表示最远和最近距离（现为 <code>range</code>）。如今的写法太复杂了！于是，本模组将这个语法重新带了进来。</p>
+<ul>
+<li><code>c</code> 相当于 <code>limit</code>。不能同时使用 <code>c</code> 和 <code>limit</code>。</li>
+<li><code>r</code> 和 <code>rm</code> 表示最远距离和最近距离，相当于 <code>distance=&lt;rm&gt;..&lt;r&gt;</code>。如果使用了 <code>r</code> 和 <code>rm</code>，则不能使用 <code>distance</code>。</li>
+<li><code>m</code> 相当于 <code>gamemode</code>。不能同时使用 <code>m</code> 和 <code>gamemode</code>。</li>
+</ul>
+<p>例如：</p>
+<ul>
+<li><code>@p[c=5]</code>：距离最近的 5 个玩家。<ul>
+<li>等价于 <code>@p[limit=5]</code>。</li>
+</ul>
+</li>
+<li><code>@e[r=5]</code>：距离在 5 个方块内的所有实体。<ul>
+<li>等价于 <code>@e[distance=..5]</code>。</li>
+</ul>
+</li>
+<li><code>@e[r=5,rm=3]</code>：距离在 5 个方块内、不少于 3 个方块的所有实体。<ul>
+<li>等价于 <code>@e[distance=3..5]</code>。</li>
+</ul>
+</li>
+<li><code>@e[c=5,limit=6]</code>：无效，因为 <code>c</code> 和 <code>limit</code> 重复了。</li>
+<li><code>@s[c=5]</code>：无效，因为 <code>@s</code> 不支持指定实体数量。</li>
+<li><code>@e[r=3,rm=5]</code>：无效，因为最远距离不能小于最近距离。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>本模组暂不支持 <code>rx</code>、<code>rxm</code>、<code>ry</code>、<code>rym</code>。</p>
+</div>
+<h3 id="简化的游戏模式别称以及多游戏模式用法">简化的游戏模式别称以及多游戏模式用法<a class="headerlink" href="#简化的游戏模式别称以及多游戏模式用法" title="Permanent link">&para;</a></h3>
+<p>在水域更新之前的版本，游戏模式可以很简便地表示为 <code>s</code>、<code>c</code>、<code>a</code>、<code>sp</code> 或者 0 到 3 之间的整数，而如今必须写全称。这没有道理。所以此模组将游戏模式的简称加了回来。</p>
+<p>例如，下面的例子都是选择游戏模式为创造模式的玩家（其中 <code>m</code> 和 <code>gamemode</code> 等价，参见<a href="#简化的参数别称">#简化的参数别称</a>）：</p>
+<ul>
+<li><code>@a[gamemode=creative]</code>（原版用法）</li>
+<li><code>@a[m=creative]</code></li>
+<li><code>@a[gamemode=c]</code></li>
+<li><code>@a[m=c]</code></li>
+<li><code>@a[gamemode=1]</code></li>
+<li><code>@a[m=1]</code></li>
+</ul>
+<p>此外，此模组还支持选择多个游戏模式（不能重复）。例如：</p>
+<ul>
+<li><code>@a[m=c|a]</code>：选择创造模式或者冒险模式的玩家。</li>
+<li><code>@a[m=!c|s]</code>：选择既不是创造模式又不是生存模式的玩家。</li>
+<li><code>@a[m=c|1]</code>：无效，因为 <code>c</code> 和 <code>1</code> 是重复的。</li>
+</ul>
+<h3 id="为更多场景提供建议">为更多场景提供建议<a class="headerlink" href="#为更多场景提供建议" title="Permanent link">&para;</a></h3>
+<p>在原版输入实体选择器时，在需要输入进度、记分项等内容的地方，不会提供建议，导致我们输入命令时存在一定不便。本模组进行了改进，可以在以下情况下显示建议：</p>
+<ul>
+<li>进度 id，例如：<code>@e[advancements={ &lt;- [这里]</code></li>
+<li>进度的准则名称（与原版相比，此处支持带有引号的字符串，当字符串含有一些特殊字符时，会提供含有引号的建议），例如：<code>@e[advancements={&lt;id&gt; = &lt;- [这里]</code></li>
+<li>记分板名称，例如：<code>@a[scores={ &lt;- [这里]</code></li>
+<li>战利品表谓词 id，例如：<code>@r[predicate= &lt;- [这里]</code></li>
+</ul>
+<h3 id="更多的取反条件">更多的取反条件<a class="headerlink" href="#更多的取反条件" title="Permanent link">&para;</a></h3>
+<p>在原版中，实体选择器的一些选项支持使用感叹号以取反，例如 <code>@e[type=!player]</code> 表示所有不是玩家的实体。本模组使之支持更多情况，包括：</p>
+<ul>
+<li>选择经验等级时取反，例如：<ul>
+<li><code>@a[level=!2]</code>：选择经验等级不为 2 的玩家。</li>
+<li><code>@a[level=!2..3]</code>：选择经验等级不在 2 到 3 范围内的玩家。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>只要指定了经验等级，即使条件是取反的，选择器也将无法选择除玩家之外的其他实体。</p>
+</div>
+</li>
+<li>选择分数时取反，例如：<ul>
+<li><code>@e[scores={a=!2}]</code>：选择分数 a 的值不为 2 的实体。</li>
+<li><code>@e[scores={a=!3, b=!5..6}]</code>：选择分数 a 的值不为 3，且分数 b 的值不在 5 到 6 范围内的实体。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>即使取反，当记分项不存在，或者实体的该记分项没有分数时，也无法选择到实体。例如，<code>@e[scores={a=!2}]</code> 实际上是指当记分项 a 存在，且在此记分项有值，且值不为 2 的实体。</p>
+</div>
+</li>
+</ul>
+<h3 id="直接指定战利品表谓词-json">直接指定战利品表谓词 JSON<a class="headerlink" href="#直接指定战利品表谓词-json" title="Permanent link">&para;</a></h3>
+<p>战利品表谓词是 Minecraft 的一项很强大的功能，支持对条件进行一些很复杂的判断。但遗憾的是，战利品表谓词需要在数据包内指定，存储方式有些复杂。不过别担心，借助此模组，你可以不使用数据包就直接在命令里面直接指定战利品表谓词！</p>
+<p>与原版相比，为了方便使用，此处的 JSON 解析是宽松的，支持不带引号的字符串。支持在等号后面加入感叹号（<code>!</code>）以将战利品表谓词取反，也可以使用 <code>{condition: inverted, term: {...}}</code> 来取反。</p>
+<p>在输入战利品表谓词的地方，直接输入 JSON，命令在编译时就可以直接解析，非常方便。例如：</p>
+<ul>
+<li><code>@e[predicate={condition: entity_properties, entity: this, predicate: {flags: {is_sneaking: true}}}]</code>：正在潜行的实体。</li>
+<li><code>@e[predicate={condition: location_check, predicate: {biome: badlands}}]</code>：正处于恶地生物群系中的实体。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<p>如果可以通过其他的选择器参数达到相同效果，建议尽量不要直接指定战利品表谓词。</p>
+</div>
+<h3 id="更好的错误提示">更好的错误提示<a class="headerlink" href="#更好的错误提示" title="Permanent link">&para;</a></h3>
+<p>当你在输入实体选择器时出现错误时，无论是输入错了某个参数，还是输入了某个不存在或者重复的参数，模组可以提供更加详细的错误提示，例如提示某个参数是重复的，或者在特定的选择器类型中是不支持的。</p>
+<h2 id="实体选择器参数">实体选择器参数<a class="headerlink" href="#实体选择器参数" title="Permanent link">&para;</a></h2>
+<p>本模组支持原版的实体选择器参数，并还加入了一些额外的参数以支持更多的功能。这些参数在<a href="../entity_predicate/">实体谓词</a>中同样可用。</p>
+<h3 id="原版的参数">原版的参数<a class="headerlink" href="#原版的参数" title="Permanent link">&para;</a></h3>
+<p>本模组支持所有原版参数。部分对原版参数的增强已在前面列举出。这里列举出原版的部分参数。</p>
+<p>非直接作为谓词的参数：</p>
+<ul>
+<li><code>limit</code>：限制选择到的实体的个数。对于<a href="../entity_predicate/selector/">基于选择器的实体谓词</a>，如果指定了此参数，则谓词在作用时会先选择实体再判断。</li>
+<li><code>x</code>、<code>y</code>、<code>z</code>：设置实体距离以及体积的基准点。</li>
+<li><code>dx</code>、<code>dy</code>、<code>dz</code>：指定长方体范围的大小。将影响实体选择器选择实体时选择的区块的范围。</li>
+<li><code>distance</code>：实体到基准点的距离。距离的最大值将影响实体选择器选择实体时选择的区块的范围。<ul>
+<li>作为实体谓词时，上述两个参数均会形成特殊的实体谓词 <a href="../entity_predicate/box/"><code>box</code></a>，从而判断实体的位置。</li>
+</ul>
+</li>
+<li><code>sort</code>：排序方式。</li>
+</ul>
+<p>直接作为谓词的参数：</p>
+<ul>
+<li><a href="../entity_predicate/advancements/"><code>advancements</code></a>：测试实体的进度。</li>
+<li><a href="../entity_predicate/game_mode/"><code>gamemode</code></a>：测试玩家的游戏模式。</li>
+<li><a href="../entity_predicate/name/"><code>name</code></a>：测试实体的名字。</li>
+<li><a href="../entity_predicate/nbt/"><code>nbt</code></a>：测试实体的 NBT。</li>
+<li><a href="../entity_predicate/loot_table_predicate/"><code>predicate</code></a>：使用战利品表谓词进行测试。</li>
+<li><a href="../entity_predicate/scores/"><code>scores</code></a>：测试实体的记分板分数。</li>
+<li><a href="../entity_predicate/tag/"><code>tag</code></a>：测试实体的记分板标签。</li>
+<li><a href="../entity_predicate/team/"><code>team</code></a>：测试实体的队伍。</li>
+<li><a href="../entity_predicate/type/"><code>type</code></a>：测试实体的类型。</li>
+<li><a href="../entity_predicate/pitch/"><code>x_rotation</code></a>：俯仰角。</li>
+<li><a href="../entity_predicate/yaw/"><code>y_rotation</code></a>：偏航角。</li>
+</ul>
+<h3 id="非原版的参数">非原版的参数<a class="headerlink" href="#非原版的参数" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../entity_predicate/air/"><code>air</code></a>：测试实体的空气值。可以接受整数范围或关键字 <code>max</code> 表示最大空气值。可以取反。<ul>
+<li><code>@e[air=5..]</code>：选择空气值不少于 5 的实体。</li>
+<li><code>@a[air=!..0]</code>：选择空气值大于 0 的实体。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/alternatives/"><code>alternatives</code></a>：指定多个实体谓词，当实体符合这组谓词中的任意一个时通过。该参数的值需要用中括号括起来，里面是多个实体谓词，多个实体谓词用逗号隔开。<ul>
+<li><code>@e[alternatives=[[type=cow], [type=sheep]]]</code>：选择所有的牛和羊。</li>
+<li><code>@a[alternatives=[Player1, Player2]]</code>：选择 Player1 和 Player2。</li>
+<li><code>@e[type=sheep, alternatives=[[tag=a], [tag=b]]]</code>：在所有的羊中，选择有 a 或 b 标签的。</li>
+<li><code>@e[type=sheep, alternatives=![[tag=a], [tag=b]]]</code>：在所有的羊中，选择既没有 a 也没有 b 标签的。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/baby/"><code>baby</code></a>：测试实体是否为幼年实体。如果实体类型不存在幼年实体，则视为未幼年实体。<ul>
+<li><code>@e[baby=true]</code>：选择所有幼年实体。</li>
+<li><code>@e[baby=false]</code>：选择所有非幼年（包括不存在幼年状态）的实体。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/block/"><code>block</code></a>：测试实体所在位置的方块。<ul>
+<li><code>@e[block=air]</code>：选择所在位置为空气的实体。</li>
+<li><code>@e[block=water|*[waterlogged=true]]</code>：选择所在位置为水或任意含水方块的实体。</li>
+<li><code>@a[block={~~-1~=redstone_block}]</code>：选择下方一格位置为红石块的玩家。</li>
+<li><code>@e[block={~~-1~=grass_block, ~~-2~=dirt}]</code>：选择下方一格位置为草方块，且下方两格位置为泥土的玩家。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/effect/"><code>effect</code></a>：测试实体的状态效果。<ul>
+<li><code>@a[effect=night_vision]</code>：所有拥有夜视效果的玩家。</li>
+<li><code>@a[effect=strength, effect=speed]</code>：所有拥有力量和速度效果的玩家。</li>
+<li><code>@a[effect={strength=true, effect=true}]</code>：等价于上一个例子。</li>
+<li><code>@a[effect=!fire_resistance]</code>：所有没有抗火效果的玩家。</li>
+<li><code>@a[effect={fire_resistance=false}]</code>：等价于上一个例子。</li>
+<li><code>@a[effect={fire_resistance=!true}]</code>：等价于上一个例子。</li>
+<li><code>@a[effect=!blindness, effect=night_vision]</code>：所有没有失明效果但有夜视效果的玩家。</li>
+<li><code>@a[effect={blindness=false, night_vision=true}]</code>：等价于上一个例子。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/exhaustion/"><code>exhaustion</code></a>：测试实体的消耗度。可以接受浮点数范围。<ul>
+<li><code>@a[exhaustion=0.5..]</code>：选择消耗度至少为 0.5 的玩家。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/fire/"><code>fire</code></a>：测试实体的剩余着火时间（离火自然熄灭所需要的刻数）。<ul>
+<li><code>@e[fire=1..]</code>：选择剩余着火时间至少为 1（即正在着火）的实体。</li>
+<li><code>@e[fire=20..]</code>：选择剩余着火时间至少为 20 的实体。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/food/"><code>food</code></a>：测试实体的饱食度。可以接受整数范围。<ul>
+<li><code>@e[food=20]</code>：选择饱食度为 20 的玩家（尽管是 <code>@e</code>，但只能玩家能被选择）。</li>
+<li><code>@a[food=10..15]</code>：选择饱食度在 10 至 15 之间的玩家。</li>
+<li><code>@a[food=!10]</code>：选择饱食度不为 10 的玩家。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/health/"><code>health</code></a>：测试实体的生命值，可以接受一个范围或者关键字 <code>max</code>。参数可以取反。无论参数是否取反，此参数都将只能够选择生物的生命值，矿车、掉落的物品等实体虽有特殊的生命值但是不会实体选择器用于选择。<ul>
+<li><code>@e[health=20]</code>：选择所有生命值为 20 的生物。</li>
+<li><code>@e[health=!20]</code>：选择所有生命值不为 20 的生物。</li>
+<li><code>@e[health=max]</code>：选择生命值为最大值的生物。</li>
+<li><code>@e[health=10..]</code>：选择生命值不小于 10 的生物。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/sub_predicate/"><code>is</code></a>：指定一个<a href="../entity_predicate/">实体谓词</a>，只有当实体同时也符合此谓词时也通过。这意味着筛选选择到的实体。此选项支持取反，效果上将相当于 <a href="../entity_predicate/sub_predicate/"><code>not</code></a>。<ul>
+<li><code>@p[is=@s]</code>：距离最近的实体，同时该实体也得是命令的执行者。</li>
+<li><code>@a[is=@e[type=cow]]</code>：所有是牛的玩家，该实体选择器有效但显然选择不到实体。</li>
+<li><code>@e[is=!@s]</code>：除了命令执行者之外的所有实体，效果上相当于 <code>@e[not=@s]</code>。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/sub_predicate/"><code>not</code></a>：指定一个<a href="../entity_predicate/">实体谓词</a>，只有当实体不符合此谓词时通过。这意味着排除部分选择到的实体。此选项支持取反，效果上相当于 <a href="../entity_predicate/sub_predicate/"><code>is</code></a>。<ul>
+<li><code>@e[not=@s]</code>：除了命令执行者之外的所有实体。</li>
+<li><code>@e[not=[type=cow]]</code>：除了牛之外的所有实体，效果上相当于 <code>@e[type=!cow]</code>。</li>
+<li><code>@e[not=@s, not=@pets]</code>：除了命令执行者和命令执行者的宠物之外的所有实体，效果上相当于 <code>@e[alternatives=![@s, @pets]]</code>。</li>
+<li><code>@e[type=cow, not=!@s]</code>：所有是命令执行者的牛，效果上相当于 <code>@e[type=cow, is=@s]</code>、<code>@s[type=cow]</code>。</li>
+</ul>
+</li>
+<li><code>of</code>：指定一个实体选择器，用于 <code>@pets</code>、<code>@vehicle</code> 等特定的实体选择器类型，表示选择指定实体的相关实体，而非命令执行者的相关实体。此选项只允许使用一次。参见<a href="#更多的实体选择器类型">更多的实体选择器类型</a>。在其他选择器中，<code>of</code> 选项可以使用，但没有效果。<ul>
+<li><code>@pets</code>：命令执行者驯养的所有实体。相当于 <code>@e[owner=@s]</code>。</li>
+<li><code>@pets[of=Alex]</code>：玩家 Alex 驯养的所有实体。相当于 <code>@e[owner=Alex]</code>。</li>
+<li><code>@vehicle</code>：命令执行者正在骑乘的实体。</li>
+<li><code>@vehicle[of=@a]</code>：任意玩家正在骑乘的实体。</li>
+<li><code>@passengers</code>：命令执行者的所有乘客。</li>
+<li><code>@passengers[passengers=@e[type=horse]]</code>：所有马的所有乘客。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/on_fire/"><code>on_fire</code></a>：测试实体是否存在着火。接一个布尔值。如果实体本身是对火免疫的，则一律视为未着火的。<ul>
+<li><code>@e[on_fire=true]</code>：选择所有正在着火（且不能免疫火）的实体。</li>
+<li><code>@e[on_fire=false]</code>：选择所有未着火（或对火免疫）的实体。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/owner/"><code>owner</code></a>：测试实体的拥有者。后面接一个<a href="../entity_predicate/">实体谓词</a>，或者不接。<ul>
+<li><code>@e[owner=]</code>：选择所有未被驯养的实体，包括无法被驯养的实体。</li>
+<li><code>@e[owner=!]</code>：选择所有被驯养的实体，不管该实体的驯养者是谁（可以是不在当前世界上的玩家）。</li>
+<li><code>@e[owner=Alice]</code>：选择被玩家 Alice 驯养的所有实体。当 Alice 不在世界上时失效。</li>
+<li><code>@e[owner=!@p]</code>：选择被世界上除了距离命令执行位置最近的玩家之外的玩家驯养的所有实体。</li>
+<li><code>@e[owner=@s]</code>：选择被命令执行者驯养的所有实体，类似于 <code>@pets</code>。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/pose/"><code>pose</code></a>：选择指定姿势的实体。<ul>
+<li><code>@e[pose=crouching]</code>：选择所有正在爬行的实体。</li>
+<li><code>@a[pose=!swimming]</code>：选择所有未在游泳的实体。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/region/"><code>region</code></a>：选择指定的<a href="../region/">区域</a>内的实体。支持使用相对坐标和局部坐标，会根据命令源的位置和朝向（而不是被选择的实体的位置和朝向）来计算。<ul>
+<li><code>@e[region=sphere(5)]</code>：选择距离命令源为中心。半径为 5 的球体范围内的实体。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/saturation/"><code>saturation</code></a>：测试实体的饱和度。可以接受浮点数范围。<ul>
+<li><code>@e[saturation=5..]</code>：选择饱和度至少为 5 的玩家。</li>
+<li><code>@e[saturation=!0]</code>：选择饱和度不为 0 的玩家。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/sneaking/"><code>sneaking</code></a>：测试实体是否正在潜行。飞行模式下玩家下降时也会被选中。此选项与战利品表中的谓词不同。<ul>
+<li><code>@e[sneaking=true]</code>：选择所有正在潜行的实体。</li>
+<li><code>@e[sneaking=false]</code>：选择所有未在潜行的实体。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/sprinting/"><code>sprinting</code></a>：测试实体是否存在疾跑。<ul>
+<li><code>@e[sprinting=true]</code>：选择正在疾跑的实体。</li>
+<li><code>@a[sprinting=false]</code>：选择未在疾跑的实体。</li>
+</ul>
+</li>
+<li><a href="../entity_predicate/swimming/"><code>swimming</code></a>：测试实体是否存在游泳。此参数可以取反。<ul>
+<li><code>@e[swimming=true]</code>：选择正在游泳的实体。</li>
+<li><code>@a[swimming=false]</code>：选择未在游泳的实体。</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据结构">数据结构<a class="headerlink" href="#数据结构" title="Permanent link">&para;</a></h2>
+<p>实体选择器支持通过本模组进行序列化与反序列化。一些模组可能会为实体选择器加入其他的属性或者实体谓词，由其他模组加入的内容，可能不会被本模组序列化。通过命令参数指定的实体选择器通常能正常序列化，但由代码直接产生的实体选择器不一定能够将所有数据完整地序列化。</p>
+<ul>
+<li><code>limit</code>：整数，可选。默认为 2<sup>31</sup> - 1。</li>
+<li><code>player_only</code>：布尔值，可选，默认为 <code>false</code>。</li>
+<li><code>local_world_only</code>：布尔值，可选，默认为 <code>false</code>。</li>
+<li><code>predicates</code>：列表，可选。通常不包括特殊类型的实体谓词。<ul>
+<li><a href="../entity_predicate/">实体谓词</a></li>
+</ul>
+</li>
+<li><code>distance</code>：双精度浮点数，或由映射指定的取值范围，可选。</li>
+<li><code>position_offset</code>：映射，可选。</li>
+<li><code>dx</code>：双精度浮点数，可选。</li>
+<li><code>dy</code>：双精度浮点数，可选。</li>
+<li><code>dz</code>：双精度浮点数，可选。</li>
+<li><code>sort</code>：字符串，可选，默认为 <code>arbitrary</code>。实体选择器所使用的排序方式。</li>
+<li><code>sender_only</code>：布尔值，可选，默认为 <code>false</code>。</li>
+<li><code>player_name</code>：字符串，可选。</li>
+<li><code>uuid</code>：UUID（通常是列表或数组），可选。</li>
+<li><code>entity_type</code>：字符串，指定一个实体类型，可选。</li>
+<li><code>uses_at</code>：布尔值，可选，默认为 <code>false</code>，表示是否使用了“@”。</li>
+<li><code>collector</code>：字符串，可选。表示使用的特殊的实体选择器的收集器。</li>
+<li><code>collector_of</code>：实体选择器，可选。对应实体选择器参数中的 <code>of</code> 参数。</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../entity_predicate/yaw/" class="md-footer__link md-footer__link--prev" aria-label="上一页: yaw">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                yaw
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--next" aria-label="下一页: 参数类型">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                参数类型
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      请注意：本网站目前仍在测试。
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "toc.integrate", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "toc.follow", "navigation.footer", "content.code.copy", "content.code.select", "content.action.view", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
