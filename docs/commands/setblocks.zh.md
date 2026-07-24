@@ -10,7 +10,7 @@ title: /setblocks
 
 ## 语法
 
-`/setblocks <区域> <方块> [关键字参数：immediately | bypass_limit | skip_light_update | notify_listeners | notify_neighbors | force_state | post_process | unloaded_pos | suppress_initial_check | suppress_replaced_check | force | undoable | seed]`
+`#!lua /setblocks <区域> <方块> [关键字参数：immediately | bypass_limit | skip_light_update | notify_listeners | notify_neighbors | force_state | post_process | unloaded_pos | suppress_initial_check | suppress_replaced_check | force | undoable | seed]`
 
 `//setblocks ...` 相当于 `/setblocks 玩家的活动区域 ...`。`/s` 是 `/setblocks` 的简写，`//s` 是 `//setblocks` 的简写。
 
@@ -28,7 +28,7 @@ title: /setblocks
 
 #### `immediately`
 
-布尔值，默认为 `false`。方块是否立即在完成执行，而不是分步骤地执行，即使预估的方块数量超过 16384 个。这意味着可能会对服务器产生短时间的卡顿。
+布尔值，默认为 `false`。如果设为 `true`，方块操作将一次性立即执行完成，而不是分步骤地执行，即使预估的方块数量超过 16384 个。这意味着可能会造成服务器卡顿一段时间。
 
 #### `bypass_limit`
 
@@ -36,7 +36,7 @@ title: /setblocks
 
 #### `skip_light_update`
 
-布尔值，默认为 `false`。如果设为 `true`，那么方块在放置时不会产生光照更新。此参数在部分情况下可能会失效，在 1.20 以上版本无效，因此 1.20 对光照进行了优化。
+布尔值，默认为 `false`。如果设为 `true`，那么方块在放置时不会产生光照更新。此参数在部分情况下可能会失效，在 1.20 以上版本无效，因为 1.20 对光照进行了优化。
 
 #### `notify_listeners`
 
@@ -73,7 +73,7 @@ title: /setblocks
 
 #### `force`
 
-布尔值，默认为 `false`。若设置 `true`，相当于设置了以下参数：`force_state=true update_neighbors=false suppress_initial_check=true suppress_replaced_check=true`。
+布尔值，默认为 `false`。若设置 `true`，相当于设置了以下参数：`#!lua force_state=true update_neighbors=false suppress_initial_check=true suppress_replaced_check=true`。
 
 #### `undoable`
 
