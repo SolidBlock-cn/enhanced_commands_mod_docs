@@ -1,18 +1,40 @@
-html[lang=zh] article > p,
-html[lang=zh] .admonition > p:not(.admonition-title) {
+html[lang=zh] article>p,
+html[lang=zh] .admonition>p:not(.admonition-title) {
     text-indent: 2em;
 }
 
-html[lang=zh] article > p > *,
-html[lang=zh] .admonition > p:not(.admonition-title) * {
+html[lang=zh] article>p>*,
+html[lang=zh] .admonition>p:not(.admonition-title) * {
     text-indent: 0;
 }
 
-:root, [data-md-color-scheme=default]  {
-    --md-code-hl-operator-color: rgb(81, 154, 103);
-    --md-code-hl-punctuation-color: rgb(69, 147, 122);
+:root,
+[data-md-color-scheme=default] {
+    --md-code-hl-operator-color: #2e7d60;
+    --md-code-hl-punctuation-color: #367793;
 }
-[data-md-color-scheme=slate]  {
-    --md-code-hl-operator-color: rgb(90, 167, 113);
-    --md-code-hl-punctuation-color: rgb(91, 171, 145);
+
+[data-md-color-scheme=slate] {
+    --md-code-hl-operator-color: #4ac094;
+    --md-code-hl-punctuation-color: #56b7e0;
+}
+
+:root {
+    --solid-header-background: linear-gradient(in oklch to right, #055c6b, #05745a, #087962, #025976);
+}
+
+@supports(not (background-image: linear-gradient(in oklch to right, black, white))) {
+    :root {
+        --solid-header-background: linear-gradient(to right, #055c6b, #05745a, #087962, #025976);
+    }
+}
+
+:root>* {
+    --md-typeset-a-color: #02766a;
+    /* 提高对比度 */
+}
+
+.md-header,
+.md-tabs {
+    background-image: var(--solid-header-background);
 }
