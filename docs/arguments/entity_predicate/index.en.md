@@ -1,15 +1,15 @@
 ---
 title: Entity predicate
-subtitle: filtering entities with a syntax basically same to selectors
+subtitle: filtering entities using a syntax basically the same as selectors
 ---
 
-# Entity predicate: filtering entities with a syntax basically same to selectors
+# Entity predicate: filtering entities using a syntax basically the same as selectors
 
-An **entity predicate** is an [argument type](index.md) playing the role of a condition to test whether the entity matches. In this mod, entity predicates are implemented with [entity selectors](../entity_selector.md), and use the syntax identical to entity selectors.
+An **entity predicate** is an [argument type](index.md) representing condition used to test whether the entity matches. In this mod, entity predicates are implemented with [entity selectors](../entity_selector.md), and use the same syntax as entity selectors.
 
 When `limit` option is not provided in the entity selector used by the entity predicate, it directly tests the entity. If the `limit` option exists, it selects entities at first, and then tests whether the entity belongs to the selected entities. Generally speaking, as for entity predicates, the option `limit` is not recommended.
 
-Besides, compared to entity selectors, entity predicates can ignore the “at-variable" before it. For example, `[type=cow]` is identical to `@E[type=cow]` (the difference between `@E` and `@e` is, `@E` can select dying entities, while `@e` only selects alive entities).
+Besides, compared to entity selectors, entity predicates can omit the preceding “at-variable”. For example, `[type=cow]` is identical to `@E[type=cow]` (the difference between `@E` and `@e` is, `@E` can select dying entities, while `@e` only selects alive entities).
 
 See [entity selectors](../entity_selector.md) for more information.
 
@@ -26,11 +26,11 @@ For entity selector types and arguments supported, see [entity selector](../enti
 
 ## Examples
 
-- `Steve`: Passes if the entity is player Steve.
+- `Steve`: Passes if the entity is the player Steve.
 - `@e`: Passes when the entity is alive.
 - `@vehicle`: Passes when the entity is the entity that the command executor is riding.
-- `[baby=true]`: Passes when the entity is baby.
-- `[type=cow]`: Passes when the entity is cow.
+- `[baby=true]`: Passes when the entity is a baby.
+- `[type=cow]`: Passes when the entity is a cow.
 
 ## Data structure
 
@@ -86,4 +86,4 @@ Each entity predicate has a type. Different types have their own fields (see the
 - [`uuid`](uuid.md)
 - [`yaw`](yaw.md)
 
-“Special type” means that it cannot be directly specified by entity selector arguments, but specified by vanilla entity selector arguments intermediately or specified by the type of entity selector.
+“Special type” means that it cannot be directly specified by entity selector arguments, but is specified by vanilla entity selector arguments or by the entity selector type itself.

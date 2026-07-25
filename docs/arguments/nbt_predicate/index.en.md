@@ -4,20 +4,20 @@ title: NBT predicate
 
 # NBT predicate
 
-**NBT predicate** is a condition used to judge whether an NBT matches. Any NBT value either matches or does not match an NBT predicate.
+**NBT predicate** is a condition used to test whether an NBT matches. Any NBT value either matches or does not match an NBT predicate.
 
-Use [`#!js /testarg nbt_predicate <NBT predicate> match <NBT>`](../../commands/testarg.md) to judge whether a specified NBT match the specified predicate.
+Use [`#!js /testarg nbt_predicate <NBT predicate> match <NBT>`](../../commands/testarg.md) to test whether a specified NBT matches the specified predicate.
 
 ## Simple value
 
-NBT predicates can directly judge any NBT value. In the NBT predicate, except list and compound, directly expressing a value means such kind of simple predicate.
+NBT predicates can directly test any NBT value. In the NBT predicate, except list and compound, directly expressing a value means such kind of simple predicate.
 
-- `#!snbt 3s`: Passes when the NBT value is a short integer 3. For example, `3s` matches this predicate, `4s` and`2d` and other types such as `"string"` and `[]` do not match.
+- `#!snbt 3s`: Passes when the NBT value is a short integer 3. For example, `3s` matches this predicate, `4s` and `2d` and other types such as `"string"` and `[]` do not match.
 - `"#!snbt str"`: Passes when the NBT value is a string `"str"`.
 
 The NBT predicate of a simple value can be prefixed with `:`. For example, `3s` is equivalent to `:3s`.
 
-Before "`:`", "`!`" can be prepended, which is "`!:`", means inverting the predicate. For example, `#!js !: 3s` means it passes when the NBT value is not a short value 3.
+Before "`:`", "`!`" can be prepended, which is "`!:`", negates the predicate. For example, `#!js !: 3s` means it passes when the NBT value is not a short value 3.
 
 Examples:
 
@@ -30,7 +30,7 @@ Examples:
 | `str` | `STR`    | `false` |
 
 !!! note
-    Same as the parsing strategy of vanilla NBT value, text not in quotation marks that can be parsed as numbers will be parsed as numbers. Text not in quotation marks which is `true` of `false` will be parsed as byte value `1b` and `0b`. In other situations, the text will be parsed as strings, for example `abs` is equivalent to `#!js "abc"`. If the text not in quotation marks contain characters that cannot be outside of quotation marks, the parsing fails. For example, `happy ghast` is not a valid NBT value (because it contains spaces), and of course it cannot be used as an NBT predicate. Quotation marks are required to represent this string, which is `#!js "happy ghast"`.
+    Same as the parsing strategy of vanilla NBT value, text not in quotation marks that can be parsed as numbers will be parsed as numbers. Text not in quotation marks `true` of `false` will be parsed as byte value `1b` and `0b`. In other situations, the text will be parsed as strings, for example `abs` is equivalent to `#!js "abc"`. If the text not in quotation marks contain characters that cannot be outside of quotation marks, the parsing fails. For example, `happy ghast` is not a valid NBT value (because it contains spaces), and of course it cannot be used as an NBT predicate. Quotation marks are required to represent this string, which is `#!js "happy ghast"`.
 
 ## Any value
 
@@ -44,10 +44,10 @@ Examples:
 
 ## Equal and comparison
 
-Using `=` (equal sign) followed by a number value to test whether an NBT equals to some value (in number values), regardless of its data type. This type of predicate only applies to any number-type nbt, and other NBT types cannot match this predicate.
+Using `=` (equal sign) followed by a number value to test whether an NBT is equal to some value (in number values), regardless of its data type. This type of predicate only applies to any number-type nbt, and other NBT types cannot match this predicate.
 
-- `= 3s`: Passes when it equals to 3 in number values. For example, `3s`, `3` and `3d` match this predicate, and `4s` and `5` and other types not.
-- `= 8.5`: Passes when it equals to 8.5. For example, `8.5` and `8.5f` match this predicate, and `9`, `10s` and other types of values not.
+- `= 3s`: Passes when it's equal to 3 in number values. For example, `3s`, `3` and `3d` match this predicate, and `4s` and `5` and other types not.
+- `= 8.5`: Passes when it's equal to 8.5. For example, `8.5` and `8.5f` match this predicate, and `9`, `10s` and other types of values not.
 
 If the equal sign is followed by a string or array, it is equivalent to simple predicates. For example, `= t` is equivalent to `: t` and `t`; `#!js = [i;1,2,3]` is equivalent to `#!js : [i;1,2,3]` and `#!js [i;1,2,3]`.
 
@@ -83,10 +83,10 @@ In specific situations, quotation marks can be omitted, some characters (includi
 |-------------|-----------------------------------|---------|
 | `~ ^abc`    | `abc`<br/> `abcd` <br/> `abcAABB` | `true`  |
 | `~ ^abc`    | `bcd` <br/>`ab`<br/>`2`<br/>`[]`  | `false` |
-| `~ "[Cc]at` | `cat`<br/>`Cat`                   | `true`  |
-| `~ "[Cc]at` | `dog`<br/>`123`                   | `false` |
+| `~ "[Cc]at"` | `cat`<br/>`Cat`                   | `true`  |
+| `~ "[Cc]at"` | `dog`<br/>`123`                   | `false` |
 | `!~ ^abc`   | `abc`<br/> `abcd` <br/> `abcAABB` | `false` |
-| `~ ^abc`    | `bcd` <br/>`ab`<br/>`2`<br/>`[]`  | `true`  |
+| `!~ ^abc`    | `bcd` <br/>`ab`<br/>`2`<br/>`[]`  | `true`  |
 
 !!! info
     This syntax is fully identical to [`regex()`](regex.md).
@@ -95,10 +95,10 @@ In specific situations, quotation marks can be omitted, some characters (includi
 
 There are two types of matching for compound tags: accurate matching and inaccurate matching. This type of predicate only matches compound tags, and other types of NBT values do not match this predicate.
 
-The syntax of compound tag predicate is similar to compound tag, which is also a pair of flower bracket and key-value pairs, but all the values are NBT predicates, and symbols other than colons may be used. If the flower bracket is prefixed by an equal sign, it means accurate matching. In accurate matching mode, the NBT compound tag to be tested cannot contain any fields that are not specified, or the matching fails.
+The syntax of a compound-tag predicate is similar to that of a compound tag, which is also a pair of curly braces and key-value pairs, but all the values are NBT predicates, and symbols other than colons may be used. If the curly braces is prefixed by an equal sign, it means accurate matching. In accurate matching mode, the NBT compound tag to be tested cannot contain any fields that are not specified, or the matching fails.
 
 - `{a: 1}`: Passes when the NBT value is a compound tag and the value of field `a` is 1. Other tags in the compound tag do not affect. For example, `{a: 1}` and `{a: 1, b: 2}` both match this predicate.
-- `= {a: 1}`: Passes when the NBT value is a compound tag and the value of field `a` is value and there are no other fields. For example, `{a: 1}` matches this predicate, but `{a: 1, b: 2}` does not.
+- `= {a: 1}`: Passes when the NBT value is a compound tag and the value of field `a` is 1 and there are no other fields. For example, `{a: 1}` matches this predicate, but `{a: 1, b: 2}` does not.
 
 | predicate         | NBT to be tested                              | whether matches    |
 |------------|---------------------------------------|---------|
@@ -128,10 +128,10 @@ Different predicates can be used for the content of compound tags. For example:
 | `{a: *}`       | `{a: 1, b: 2}`<br/>`{a: [1, 2]}`<br/>`{a: ""}`  | `true`  |
 | `{a: *}`       | `{b: 5}`                                        | `false` |
 
-If negation is used in the compound tag, the passes still requires the field to exist to pass:
+If negation is used in the compound tag, it still requires the field to exist to pass:
 
 - `{a != *}`: Passes when the value of field `a` in the compound tag exists and is not any value. This predicate is valid, but no NBT values can match in theory.
-- `{a != 3}`: Passes when the value of field `a` in the compound tag exists and is not a number value of does not equal to 3 in number values.
+- `{a != 3}`: Passes when the value of field `a` in the compound tag exists and is not a number value or does not equal to 3 in number values.
 
 | predicate         | NBT to be tested                   | whether matches    |
 |------------|----------------------------|---------|
@@ -151,7 +151,7 @@ Currently, duplicate keys are not allowed in the accurate matching NBT predicate
 
 ## List
 
-The matching of lists is classified as accurate matching and inaccurate matching. The syntax of list predicates it similar to the syntax of lists, which is a square bracket wrapping NBT predicates targeting on elements separated with commas. Accurate matching is used when an equal sign be prepended before the list. NBT values other than lists cannot match this NBT predicate.
+The matching of lists is classified as accurate matching and inaccurate matching. The syntax of list predicates is similar to the that of lists, which is a square bracket wrapping NBT predicates targeting on elements separated with commas. Accurate matching is used when an equal sign be prepended before the list. NBT values other than lists cannot match this NBT predicate.
 
 In accurate matching, the predicate passes only when the length and all elements of the list match, while in non-accurate matching, it passes as long as the predicates in the expected list can all find elements matching this predicate in the list to be tested:
 
@@ -174,7 +174,7 @@ In the list predicate of non-accurate matching, one element may be matched by mu
 - `[>3, <5]`: Passes when the list contains an element greater than 3, and contains an element lower than 5. `[4]` and `[1, 8]` both match this predicate.
 - `[3, 3]`: Passes when any element of the list is integer 3. `[3]` matches this predicate.
 
-In non-accurate matching lists, indexes can be specified for list elements, means the element at the index must exist and match this predicate. Indexes can be negative values, meaning counting from last to first:
+In non-accurate matching lists, indexes can be specified for list elements, meaning the element at the index must exist and match this predicate. Indexes can be negative values, meaning counting from last to first:
 
 - `[a, 1: b]`: Passes when the list contains an element `a`, and the value of its 2nd element is `b`.
 - `[0: a, -1: b]`: Passes when the 1st element in the list is `a` and the last element is `b`.
@@ -217,7 +217,7 @@ Currently, the following function grammars of NBT predicate are supported by thi
 
 ## Data structure
 
-- `type`: String, the [ID with default namespaces](../../glossaries.md#id-with-default-namespace) of the NBT predicate type. For predicates that can be represented as function grammars, the data structure are shown in separate pages.
+- `type`: String, the [ID with default namespaces](../../glossaries.md#id-with-default-namespace) of the NBT predicate type. For predicates that can be represented as function grammars, the data structures are shown in separate pages.
 - *(when `type` is `comparison`:)*
 - `comparator`: String, the name of the symbol, identical to what the symbol itself looks like, such as `"="` and `">"`.
 - `value`: NBT element.
