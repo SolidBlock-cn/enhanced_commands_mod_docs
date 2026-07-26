@@ -13,9 +13,9 @@ Use [`#!js /testarg nbt_predicate <NBT predicate> match <NBT>`](../../commands/t
 NBT predicates can directly test any NBT value. In the NBT predicate, except list and compound, directly expressing a value means such kind of simple predicate.
 
 - `#!snbt 3s`: Passes when the NBT value is a short integer 3. For example, `3s` matches this predicate, `4s` and `2d` and other types such as `"string"` and `[]` do not match.
-- `"#!snbt str"`: Passes when the NBT value is a string `"str"`.
+- `#snbt "str"`: Passes when the NBT value is a string `"str"`.
 
-The NBT predicate of a simple value can be prefixed with `:`. For example, `3s` is equivalent to `:3s`.
+The NBT predicate of a simple value can be prefixed with "`:`". For example, `3s` is equivalent to `:3s`.
 
 Before "`:`", "`!`" can be prepended, which is "`!:`", negates the predicate. For example, `#!js !: 3s` means it passes when the NBT value is not a short value 3.
 
@@ -155,10 +155,10 @@ The matching of lists is classified as accurate matching and inaccurate matching
 
 In accurate matching, the predicate passes only when the length and all elements of the list match, while in non-accurate matching, it passes as long as the predicates in the expected list can all find elements matching this predicate in the list to be tested:
 
-- `[1, 2, 3]`: Passes when the NBT value is a list, and the list contain the three values, regardless of the order. This predicate is equivalent to `[:1, :2, :3]`.
-- `=[1, 2, 3]`: Passes when the NBT value is a list, and the list has and only has three elements, and the three elements are 1, 2 and 3, without changing the order. As an equal sign is prepended before the list, elements inside it use equal-sign matching by default. This predicate is identical to  `= [=1, =2, =3]`.
-- `[]`: Passes when the NBT value is a list, regardless of its contents.
-- `=[]`: Passes only when the list is empty.
+- `#!js [1, 2, 3]`: Passes when the NBT value is a list, and the list contain the three values, regardless of the order. This predicate is equivalent to `[:1, :2, :3]`.
+- `#!js =[1, 2, 3]`: Passes when the NBT value is a list, and the list has and only has three elements, and the three elements are 1, 2 and 3, without changing the order. As an equal sign is prepended before the list, elements inside it use equal-sign matching by default. This predicate is identical to  `= [=1, =2, =3]`.
+- `#!js []`: Passes when the NBT value is a list, regardless of its contents.
+- `#!js =[]`: Passes only when the list is empty.
 
 | predicate           | NBT to be tested                          | whether matches    |
 |--------------|-----------------------------------|---------|
