@@ -18,7 +18,7 @@ If a selector is provided as a value, then no matter inverted or not, entities c
 - `@e[owner=!<entity predicate>]`: Selects all tamed entities whose owners don’t match the specified entity predicate.
 
 !!! note
-    `@pets` cannot be used along with [the `owner` option](#owner), or parsing error will be caused. For example, to select all pets of Steve, you may use `@pets[of=Steve]` or `@e[owner=Steve]`, but cannot use `@pets[owner=Steve]`.
+    `@pets` cannot be used along with the `owner` option or parsing error will be caused. For example, to select all pets of Steve, you may use `@pets[of=Steve]` or `@e[owner=Steve]`, but cannot use `@pets[owner=Steve]`.
 
 ## Examples
 

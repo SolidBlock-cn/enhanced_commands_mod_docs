@@ -1,9 +1,9 @@
 ---
-title: loot_table_predicate
+title: predicate
 subtitle: Tests entities through loot table predicates
 ---
 
-# `loot_table_predicate`: Tests entities through loot table predicates
+# `predicate`: Tests entities through loot table predicates
 
 This [entity predicate](index.md) tests entities using loot table predicates. Different from vanilla `predicate` argument, this mod's `predicate` argument supports directly specifying loot table predicate JSON.
 

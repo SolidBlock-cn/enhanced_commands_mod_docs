@@ -39,7 +39,7 @@
 - `@controlling_vehicle`：选择当前实体正在骑乘并控制着的实体。例如，如果玩家和村民一同坐在同一艘船上，由于只有玩家能控制船，所以当命令执行者是玩家时，该选择器能选择到船，而当命令执行者是这个村民时，则无法选择到船。
 - `@controller`：选择骑乘并控制着当前实体的实体。例如，如果玩家和村民一同坐在同一艘船上，当命令执行者是船时，该选择器将选择到玩家而不会选择到村民。
 
-上面的选择器中，`@pets` 以及后面的实体选择器类型均允许通过选项 `of` 以选择指定实体的相关实体，而非当前实体的相关实体。例如，`@pets[of=Steve]` 可以选择玩家 Steve 驯养的所有实体（效果上相当于 `@e[owner=Steve]`），`@passengers[of=@n[type=minecart]]` 可选择距离最近的矿车上的乘客。参见 [`of` 选项](#of)。
+上面的选择器中，`@pets` 以及后面的实体选择器类型均允许通过选项 `of` 以选择指定实体的相关实体，而非当前实体的相关实体。例如，`@pets[of=Steve]` 可以选择玩家 Steve 驯养的所有实体（效果上相当于 `@e[owner=Steve]`），`@passengers[of=@n[type=minecart]]` 可选择距离最近的矿车上的乘客。参见 [`of` 选项](#非原版的参数)。
 
 ### 对 `@p`、`@r` 指定 `type`
 
@@ -152,7 +152,7 @@
 
 非直接作为谓词的参数：
 
-- `limit`：限制选择到的实体的个数。对于[基于选择器的实体谓词](entity_predicate/selector.md)，如果指定了此参数，则谓词在作用时会先选择实体再判断。
+- `limit`：限制选择到的实体的个数。对于[基于选择器的实体谓词](entity_predicate/special/selector.md)，如果指定了此参数，则谓词在作用时会先选择实体再判断。
     - 别称：`c`，参见[简化的参数别称](#简化的参数别称)。
 - `x`、`y`、`z`：设置实体距离以及体积的基准点。
 - `dx`、`dy`、`dz`：指定长方体范围的大小。将影响实体选择器选择实体时选择的区块的范围。
@@ -168,7 +168,7 @@
     - 别称：`m`，参见[简化的参数别称](#简化的参数别称)。
 - [`name`](entity_predicate/name.md)：测试实体的名字。
 - [`nbt`](entity_predicate/nbt.md)：测试实体的 NBT。
-- [`predicate`](entity_predicate/loot_table_predicate.md)：使用战利品表谓词进行测试。
+- [`predicate`](entity_predicate/predicate.md)：使用战利品表谓词进行测试。
 - [`scores`](entity_predicate/scores.md)：测试实体的记分板分数。
 - [`tag`](entity_predicate/tag.md)：测试实体的记分板标签。
 - [`team`](entity_predicate/team.md)：测试实体的队伍。

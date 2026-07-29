@@ -5,7 +5,7 @@ subtitle: Tests whether the entity is alive
 
 # `alive`: Tests whether the entity is alive
 
-This [entity predicate](index.md) tests whether the entity is alive. Currently, specifying via entity selector arguments is not supported, but you can specify with different entity selector types.
+This [entity predicate](../index.md) tests whether the entity is alive. Currently, specifying via entity selector arguments is not supported, but you can specify with different entity selector types.
 
 ## Examples
 
@@ -20,4 +20,4 @@ This [entity predicate](index.md) tests whether the entity is alive. Currently, 
 
 No extra fields.
 
-- `type`: Currently `"enhanced_commands:alive"`.
+- `type`: Currently `"alive"`.

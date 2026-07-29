@@ -44,4 +44,4 @@
 
 ## 参见
 
-- [实体选择器中的 air 参数](../arguments/entity_selector.md#air)
+- [实体选择器中的 air 参数](../arguments/entity_predicate/air.md)

@@ -54,4 +54,4 @@
 
 ## 参见
 
-- [实体选择器中的 health 参数](../arguments/entity_selector.md#health)
+- [实体选择器中的 health 参数](../arguments/entity_predicate/health.md)

@@ -39,7 +39,7 @@ Besides the several entity selectors provided in vanilla, the mod provides some 
 - `@controlling_vehicle`: Selects the entity that the current entity is riding and controlling. For example, if a player and a villager sit on the same boat, as only players control boats, when the executor of the command is a player, the selector will select the boat, while when the executor is the village, the selector can’t select the boat.
 - `@controller`: Selects the entity riding and controlling the current entity. For example, if a player and a villager sit on the same boat, when the executor of the command is the boat, the selector will select the player instead of the villager.
 
-In the selectors above, entity selector type `@pets` and those after it allow to specify the relevant entities of the specified entity with the option "`of`", instead of relevant entities of the current entity. For example, `@pets[of=Steve]` can select all entities that the player Steve tames (equals to `@e[owner=Steve]` in effect). `@passengers[of=@n[type=minecart]]` can select passengers on the nearest minecart. See [the "`of`" option](#of).
+In the selectors above, entity selector type `@pets` and those after it allow to specify the relevant entities of the specified entity with the option "`of`", instead of relevant entities of the current entity. For example, `@pets[of=Steve]` can select all entities that the player Steve tames (equals to `@e[owner=Steve]` in effect). `@passengers[of=@n[type=minecart]]` can select passengers on the nearest minecart. See [the "`of`" option](#non-vanilla-parameters).
 
 ### Specifying `type` for `@p` and `@r`
 
@@ -152,7 +152,7 @@ The mod supports all vanilla parameters. Some enhancements to vanilla parameters
 
 Parameters not directly used as the predicate:
 
-- `limit`: Limits the count of entities selected. For [entity predicates based on selectors](entity_predicate/selector.md), if this argument is provided, the predicate selects entities prior to testing the entity.
+- `limit`: Limits the count of entities selected. For [entity predicates based on selectors](entity_predicate/special/selector.md), if this argument is provided, the predicate selects entities prior to testing the entity.
     - Alias: `c`, see [simplified parameter aliases](#simplified-parameter-aliases).
 - `x`, `y`, `z`: Sets the starting point of the entity distance and volume.
 - `dx`, `dy`, `dz`: Specifies the size of the cuboid range. It influences the chunk range of entity selection of the entity selector.
@@ -168,7 +168,7 @@ Parameters directly used as the predicate:
     - Alias: `m`, see [simplified parameter aliases](#simplified-parameter-aliases)。
 - [`name`](entity_predicate/name.md): Tests the entity's name.
 - [`nbt`](entity_predicate/nbt.md): Tests the entity's NBT.
-- [`predicate`](entity_predicate/loot_table_predicate.md): Tests the entity according to the loot table predicate.
+- [`predicate`](entity_predicate/predicate.md): Tests the entity according to the loot table predicate.
 - [`scores`](entity_predicate/scores.md): Tests the entity's scoreboard score.
 - [`tag`](entity_predicate/tag.md): Tests the entity's scoreboard tag.
 - [`team`](entity_predicate/team.md): Tests the entity's team.
@@ -217,11 +217,11 @@ Parameters directly used as the predicate:
     - `@e[health=!20]`: Selects living entities whose health value is not 20.
     - `@e[health=max]`: Selects living entities whose health value is the max value.
     - `@e[health=10..]`: Selects living entities whose health value is not less than 10.
-- [`is`](entity_predicate/sub_predicate.md): Specifies an [entity predicate](entity_predicate) and only passes when the entity also matches the predicate. This means filtering entities selected. The option can be inverted, which is identical to [`not`](entity_predicate/sub_predicate.md) in effect.
+- [`is`](entity_predicate/is_and_not.md): Specifies an [entity predicate](entity_predicate/index.md) and only passes when the entity also matches the predicate. This means filtering entities selected. The option can be inverted, which is identical to [`not`](entity_predicate/is_and_not.md) in effect.
     - `@p[is=@s]`: The nearest entity, and meanwhile the entity should be the executor of the command.
     - `@a[is=@e[type=cow]]`: All players that are cows. This entity selector is valid but obviously cannot select any entity.
     - `@e[is=!@s]`: All entities except the command executor. Identical to `@e[not=@s]` in effect.
-- [`not`](entity_predicate/sub_predicate.md): Specifies an [entity predicate](entity_predicate) and only passes when the entity does not match the predicate. This means excluding some entities selected. The option can be inverted, which is identical to [`is`](entity_predicate/sub_predicate.md).
+- [`not`](entity_predicate/is_and_not.md): Specifies an [entity predicate](entity_predicate/index.md) and only passes when the entity does not match the predicate. This means excluding some entities selected. The option can be inverted, which is identical to [`is`](entity_predicate/is_and_not.md).
     - `@e[not=@s]`: All entities except the command executor.
     - `@e[not=[type=cow]]`: All entities except cows. Identical to `@e[type=!cow]` in effect.
     - `@e[not=@s, not=@pets]`: All entities except the command executor and pets of the command executor. Identical to `@e[alternatives=![@s, @pets]]` in effect.

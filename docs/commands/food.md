@@ -53,4 +53,4 @@
 
 ## 参见
 
-[实体选择器](../arguments/entity_selector.md)中的 [`food`](../arguments/entity_selector.md#food)、[`saturation`](../arguments/entity_selector.md#saturation) 和 [`exhaustion`](../arguments/entity_selector.md#exhaustion) 参数。
+[实体选择器](../arguments/entity_selector.md)中的 [`food`](../arguments/entity_predicate/food.md)、[`saturation`](../arguments/entity_predicate/saturation.md) 和 [`exhaustion`](../arguments/entity_predicate/exhaustion.md) 参数。
