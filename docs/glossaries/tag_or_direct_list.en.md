@@ -1,3 +1,7 @@
+---
+title: Tag or direct list
+---
+
 # Tag or direct list
 
 A special data type of Minecraft (`#!java HolderSet`), which can specify an inline list of a series of entries, or specify with a data-pack tag (the format is a string with hash and tag ID).

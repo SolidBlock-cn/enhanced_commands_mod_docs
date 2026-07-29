@@ -1,3 +1,7 @@
+---
+title: Data structure
+---
+
 # Data structure
 
 The data structure in this mod refer to the codec of mod contents, which means the pattern where they are serialized or deserialized (or encoded and decoded) between JSON or NBT.

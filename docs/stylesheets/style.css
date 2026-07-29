@@ -20,12 +20,12 @@ html[lang=zh] .admonition>p:not(.admonition-title) * {
 }
 
 :root {
-    --solid-header-background: linear-gradient(in oklch to right, #055c6b, #05745a, #087962, #025976);
+    --solid-header-background: linear-gradient(in oklch to right, #028328, #007a6c, #0b748c, #084789);
 }
 
 @supports(not (background-image: linear-gradient(in oklch to right, black, white))) {
     :root {
-        --solid-header-background: linear-gradient(to right, #055c6b, #05745a, #087962, #025976);
+        --solid-header-background: linear-gradient(to right, #028328, #007a6c, #0b748c, #084789);
     }
 }
 
@@ -37,4 +37,5 @@ html[lang=zh] .admonition>p:not(.admonition-title) * {
 .md-header,
 .md-tabs {
     background-image: var(--solid-header-background);
+    background-attachment: fixed;
 }

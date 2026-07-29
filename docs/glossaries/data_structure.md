@@ -1,3 +1,8 @@
+---
+title: 数据结构
+subtitle: Data structure
+---
+
 # 数据结构
 
 本模组的数据结构，指的模组中的内容的 codec，即与 JSON 或 NBT 之间序列化或反序列化（或称编码和解码）的模式。

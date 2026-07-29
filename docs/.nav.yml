@@ -3,7 +3,7 @@ nav:
   - arguments
   - commands
   - mod_configs
-  - glossaries.md
+  - glossaries
 
 sort:
   sections: mixed

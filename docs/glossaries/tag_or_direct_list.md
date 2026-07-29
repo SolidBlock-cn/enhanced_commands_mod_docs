@@ -1,3 +1,8 @@
+---
+title: 标签或直接列表
+subtitle: Tag or direct list
+---
+
 # 标签或直接列表
 
 Minecraft 中的一种特殊数据类型（`#!java HolderSet`），可以内联指定一系列的项的列表，也可以通过数据包中的标签指定（格式为字符串，带有井号以及标签 ID）。
