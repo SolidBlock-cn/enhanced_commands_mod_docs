@@ -217,7 +217,7 @@ NBT 谓词支持一些函数语法。函数语法前可以像常规值那样加�
 
 ## 数据结构
 
-- `type`：字符串，NBT 谓词类型的[带有默认命名空间的 ID](../../glossaries.md#id-with-default-namespace)。可用函数语法表示的谓词，其数据结构于各个页面单独显示。
+- `type`：字符串，NBT 谓词类型的[带有默认命名空间的 ID](../../glossaries/id_with_default_namespace.md)。可用函数语法表示的谓词，其数据结构于各个页面单独显示。
 - *（当 `type` 为 `comparison`：）*
 - `comparator`：字符串，符号名称，与其符号本身的显示形式一致，如 `"="`、`">"`。
 - `value`：NBT 元素。

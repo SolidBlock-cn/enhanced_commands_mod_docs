@@ -64,7 +64,7 @@ title: 方块函数
 
 ## 数据结构
 
-- `type`：方块函数的类型 ID（[带有默认命名空间且简化](../../glossaries.md)）。
+- `type`：方块函数的类型 ID（[带有默认命名空间且简化](../../glossaries/id_with_default_namespace.md)）。
 - 各类型各自的字段。
 
 方块函数共有以下类型（均省略了 `enhanced_commands` 命名空间）：

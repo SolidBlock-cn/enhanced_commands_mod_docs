@@ -34,7 +34,7 @@ For entity selector types and arguments supported, see [entity selector](../enti
 
 ## Data structure
 
-- `type`: String, the entity predicate type, [ID with default namespace](../../glossaries.en.md#id-with-default-namespace). For the full list of types see below.
+- `type`: String, the entity predicate type, [ID with default namespace](../../glossaries/id_with_default_namespace.md). For the full list of types see below.
 
 Each entity predicate has a type. Different types have their own fields (see the page of corresponding types). The following is the ids of all entity predicate types (all namespace `enhanced_commands`, and the namespace is emitted in the list):
 

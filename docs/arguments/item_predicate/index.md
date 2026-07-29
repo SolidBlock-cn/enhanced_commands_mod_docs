@@ -64,7 +64,7 @@ title: 物品谓词
 
 ## 数据结构
 
-- `type`：[带有默认命名空间的 ID](../../glossaries.md#id-with-default-namespace)，默认命名空间为 `enhanced_commands`。
+- `type`：[带有默认命名空间的 ID](../../glossaries/id_with_default_namespace.md)，默认命名空间为 `enhanced_commands`。
 - （当 `type` 为 `component_presence`：）
 - `component_type`：ID，物品组件类型的 ID。
 - （当 `type` 为 `component_value_check`：）

@@ -217,7 +217,7 @@ Currently, the following function grammars of NBT predicate are supported by thi
 
 ## Data structure
 
-- `type`: String, the [ID with default namespaces](../../glossaries.md#id-with-default-namespace) of the NBT predicate type. For predicates that can be represented as function grammars, the data structures are shown in separate pages.
+- `type`: String, the [ID with default namespaces](../../glossaries/id_with_default_namespace.md) of the NBT predicate type. For predicates that can be represented as function grammars, the data structures are shown in separate pages.
 - *(when `type` is `comparison`:)*
 - `comparator`: String, the name of the symbol, identical to what the symbol itself looks like, such as `"="` and `">"`.
 - `value`: NBT element.
