@@ -75,7 +75,7 @@ Each entity predicate has a type. Different types have their own fields (see the
 - [`selector`](selector.md) (special type)
 - [`sneaking`](sneaking.md)
 - [`sprinting`](sprinting.md)
-- [`sub_predicate`](sub_predicate.md)
+- [`sub_predicate`](is_and_not.md)
 - [`swimming`](swimming.md)
 - [`tag`](tag.md)
 - [`team`](team.md)

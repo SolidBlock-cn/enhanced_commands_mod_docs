@@ -153,16 +153,19 @@
 非直接作为谓词的参数：
 
 - `limit`：限制选择到的实体的个数。对于[基于选择器的实体谓词](entity_predicate/selector.md)，如果指定了此参数，则谓词在作用时会先选择实体再判断。
+    - 别称：`c`，参见[简化的参数别称](#简化的参数别称)。
 - `x`、`y`、`z`：设置实体距离以及体积的基准点。
 - `dx`、`dy`、`dz`：指定长方体范围的大小。将影响实体选择器选择实体时选择的区块的范围。
 - `distance`：实体到基准点的距离。距离的最大值将影响实体选择器选择实体时选择的区块的范围。
     - 作为实体谓词时，上述两个参数均会形成特殊的实体谓词 [`box`](entity_predicate/box.md)，从而判断实体的位置。
+    - 可用 `r` 和 `rm` 替代，参见[简化的参数别称](#简化的参数别称)。
 - `sort`：排序方式。
 
 直接作为谓词的参数：
 
 - [`advancements`](entity_predicate/advancements.md)：测试实体的进度。
 - [`gamemode`](entity_predicate/game_mode.md)：测试玩家的游戏模式。
+    - 别称：`m`，参见[简化的参数别称](#简化的参数别称)。
 - [`name`](entity_predicate/name.md)：测试实体的名字。
 - [`nbt`](entity_predicate/nbt.md)：测试实体的 NBT。
 - [`predicate`](entity_predicate/loot_table_predicate.md)：使用战利品表谓词进行测试。
@@ -214,11 +217,11 @@
     - `@e[health=!20]`：选择所有生命值不为 20 的生物。
     - `@e[health=max]`：选择生命值为最大值的生物。
     - `@e[health=10..]`：选择生命值不小于 10 的生物。
-- [`is`](entity_predicate/sub_predicate.md)：指定一个[实体谓词](entity_predicate/index.md)，只有当实体同时也符合此谓词时也通过。这意味着筛选选择到的实体。此选项支持取反，效果上将相当于 [`not`](entity_predicate/sub_predicate.md)。
+- [`is`](entity_predicate/is_and_not.md)：指定一个[实体谓词](entity_predicate/index.md)，只有当实体同时也符合此谓词时也通过。这意味着筛选选择到的实体。此选项支持取反，效果上将相当于 [`not`](entity_predicate/is_and_not.md)。
     - `@p[is=@s]`：距离最近的实体，同时该实体也得是命令的执行者。
     - `@a[is=@e[type=cow]]`：所有是牛的玩家，该实体选择器有效但显然选择不到实体。
     - `@e[is=!@s]`：除了命令执行者之外的所有实体，效果上相当于 `@e[not=@s]`。
-- [`not`](entity_predicate/sub_predicate.md)：指定一个[实体谓词](entity_predicate/index.md)，只有当实体不符合此谓词时通过。这意味着排除部分选择到的实体。此选项支持取反，效果上相当于 [`is`](entity_predicate/sub_predicate.md)。
+- [`not`](entity_predicate/is_and_not.md)：指定一个[实体谓词](entity_predicate/index.md)，只有当实体不符合此谓词时通过。这意味着排除部分选择到的实体。此选项支持取反，效果上相当于 [`is`](entity_predicate/is_and_not.md)。
     - `@e[not=@s]`：除了命令执行者之外的所有实体。
     - `@e[not=[type=cow]]`：除了牛之外的所有实体，效果上相当于 `@e[type=!cow]`。
     - `@e[not=@s, not=@pets]`：除了命令执行者和命令执行者的宠物之外的所有实体，效果上相当于 `@e[alternatives=![@s, @pets]]`。

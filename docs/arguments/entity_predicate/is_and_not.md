@@ -1,9 +1,9 @@
 ---
-title: sub_predicate
+title: is 和 not
 subtitle: 在实体选择器参数中额外指定 is 和 not
 ---
 
-# `sub_predicate`：在实体选择器参数中额外指定 `is` 和 `not`
+# `is` 和 `not`：在实体选择器参数中额外指定 `is` 和 `not`
 
 此谓词需要指定一个[实体谓词](index.md)，只有当实体同时也符合或不符合此谓词时也通过。这意味着筛选或排除选择到的实体。
 

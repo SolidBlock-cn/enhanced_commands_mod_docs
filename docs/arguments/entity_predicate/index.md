@@ -75,7 +75,7 @@ subtitle: 使用和选择器基本相同的语法筛选实体
 - [`selector`](selector.md)（特殊类型）
 - [`sneaking`](sneaking.md)
 - [`sprinting`](sprinting.md)
-- [`sub_predicate`](sub_predicate.md)
+- [`sub_predicate`](is_and_not.md)
 - [`swimming`](swimming.md)
 - [`tag`](tag.md)
 - [`team`](team.md)

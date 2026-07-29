@@ -153,16 +153,19 @@ The mod supports all vanilla parameters. Some enhancements to vanilla parameters
 Parameters not directly used as the predicate:
 
 - `limit`: Limits the count of entities selected. For [entity predicates based on selectors](entity_predicate/selector.md), if this argument is provided, the predicate selects entities prior to testing the entity.
+    - Alias: `c`, see [simplified parameter aliases](#simplified-parameter-aliases).
 - `x`, `y`, `z`: Sets the starting point of the entity distance and volume.
 - `dx`, `dy`, `dz`: Specifies the size of the cuboid range. It influences the chunk range of entity selection of the entity selector.
 - `distance`: Distance from the entity to the base point. The maximum value influences the chunk range of entity selection of the entity selector.
     - When used as an entity predicate, the two parameters above form a special entity predicate "[`box`](entity_predicate/box.md)" that makes judgment on entity positions.
+    - Can be replaced with `r` and `rm`, see [simplified parameter aliases](#simplified-parameter-aliases).
 - `sort`: Sorting.
 
 Parameters directly used as the predicate:
 
 - [`advancements`](entity_predicate/advancements.md): Tests the entity's advancement.
 - [`gamemode`](entity_predicate/game_mode.md): Tests the player's game mode.
+    - Alias: `m`, see [simplified parameter aliases](#simplified-parameter-aliases)。
 - [`name`](entity_predicate/name.md): Tests the entity's name.
 - [`nbt`](entity_predicate/nbt.md): Tests the entity's NBT.
 - [`predicate`](entity_predicate/loot_table_predicate.md): Tests the entity according to the loot table predicate.
