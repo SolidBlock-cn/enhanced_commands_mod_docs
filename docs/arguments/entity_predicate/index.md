@@ -11,7 +11,8 @@ subtitle: 使用和选择器基本相同的语法筛选实体
 
 此外，与实体选择器相比，实体谓词可以忽略前面的“at-变量”，例如 `[type=cow]` 等价于 `@E[type=cow]`（`@E` 与 `@e` 的区别在于，`@E` 能够选择死亡的实体，而 `@e` 只选择存活的实体）。
 
-更多信息请见[实体选择器](../entity_selector.md)。
+!!! info
+    更多信息请见[实体选择器](../entity_selector.md)。
 
 ## 语法
 
@@ -22,7 +23,8 @@ subtitle: 使用和选择器基本相同的语法筛选实体
 - `[<选项 1>=<值 1>, <选项 2>=<值 2>, ...]`：实体谓词相比实体选择器独有的语法。
 - `<实体选择器类型>[<选项 1>=<值 1>, <选项 2>=<值 2>, ...]`
 
-关于支持的实体选择器类型和参数，请见[实体选择器](../entity_selector.md)。
+!!! info
+    关于实体谓词支持的实体选择器类型和参数，请见[**实体选择器**](../entity_selector.md)。
 
 ## 示例
 
@@ -55,7 +57,7 @@ subtitle: 使用和选择器基本相同的语法筛选实体
 - [`exhaustion`](exhaustion.md)
 - [`fire`](fire.md)
 - [`food`](food.md)
-- [`game_mode`](game_mode.md)
+- [`game_mode`](gamemode.md)
 - [`health`](health.md)
 - [`health_max`](health.md)
 - [`level`](level.md)
@@ -65,8 +67,8 @@ subtitle: 使用和选择器基本相同的语法筛选实体
 - [`nbt`](nbt.md)
 - [`owner`](owner.md)
 - [`pitch`](pitch.md)
-- [`player_name`](player_name.md)
-- [`player_only`](player_only.md)
+- [`player_name`](special/player_name.md)（特殊类型）
+- [`player_only`](special/player_only.md)（特殊类型）
 - [`pose`](pose.md)
 - [`on_fire`](on_fire.md)
 - [`region`](region.md)

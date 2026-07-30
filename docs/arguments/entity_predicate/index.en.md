@@ -11,7 +11,8 @@ When `limit` option is not provided in the entity selector used by the entity pr
 
 Besides, compared to entity selectors, entity predicates can omit the preceding “at-variable”. For example, `[type=cow]` is identical to `@E[type=cow]` (the difference between `@E` and `@e` is, `@E` can select dying entities, while `@e` only selects alive entities).
 
-See [entity selectors](../entity_selector.md) for more information.
+!!! info
+    See [entity selectors](../entity_selector.md) for more information.
 
 ## Syntax
 
@@ -22,7 +23,8 @@ The syntax of entity predicates is the same as entity selectors, but can emit "a
 - `[<option 1>=<value 1>, <option 2>=<value 2>, ...]`: unique syntax of entity predicates compared to selectors.
 - `<entity selector type>[<option 1>=<value 1>, <option 2>=<value 2>, ...]`
 
-For entity selector types and arguments supported, see [entity selector](../entity_selector.md).
+!!! info
+    For entity selector types and arguments that entity predicates support, see [entity selector](../entity_selector.md).
 
 ## Examples
 
@@ -55,7 +57,7 @@ Each entity predicate has a type. Different types have their own fields (see the
 - [`exhaustion`](exhaustion.md)
 - [`fire`](fire.md)
 - [`food`](food.md)
-- [`game_mode`](game_mode.md)
+- [`game_mode`](gamemode.md)
 - [`health`](health.md)
 - [`health_max`](health.md)
 - [`level`](level.md)
@@ -65,8 +67,8 @@ Each entity predicate has a type. Different types have their own fields (see the
 - [`nbt`](nbt.md)
 - [`owner`](owner.md)
 - [`pitch`](pitch.md)
-- [`player_name`](player_name.md)
-- [`player_only`](player_only.md)
+- [`player_name`](special/player_name.md) (special type)
+- [`player_only`](special/player_only.md) (special type)
 - [`pose`](pose.md)
 - [`on_fire`](on_fire.md)
 - [`region`](region.md)

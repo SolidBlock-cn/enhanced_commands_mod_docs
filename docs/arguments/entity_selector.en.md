@@ -12,14 +12,14 @@ We know that only the following selectors are provided in vanilla:
 - `@r`: A random player.
 - `@a`: All players.
 - `@e`: All entities, including players, but not including dead entities.
-- `@n`: The nearest entity, not including dead entities.
+- `@n`: The nearest entity, not including dead entities (aded to vanilla since 1.21).
 - `@s`: The executor of the command.
 
 Besides the several entity selectors provided in vanilla, the mod provides some extra entity selectors, which can be used very conveniently.
 
 - `@0`: No entities, which means selecting no entities. The selector is usually used on specific occasions where no entities need to be selected.
 - `@E`: All entities, including dead entities. In vanilla, `@a` can select dead players, while `@e` only selects entities not dead. The mod's `@E` can select dead entities.
-- `@n`: The nearest entity (removed since 1.21 as vanilla already supported it).
+- `@n`: The nearest entity (part of vanilla Minecraft since 1.21).
 - `@R`: A random entity.
 - `@f`: The furthest entity.
 - `@nn`: The nearest entity except players.
@@ -35,7 +35,7 @@ Besides the several entity selectors provided in vanilla, the mod provides some 
 - `@leasher`: The entity leashing the current entity. For example, if the executor of the command is a villager leashed by a player, `@leasher` will select the player leashing the entity, similar to `/execute on leasher`.
 - `@origin`: The origin of the entity. For example, if the executor of the command is a snowball, `@origin` will select the player that threw the snowball. Similar to `/execute on origin`.
 - `@attacker`: The attacker of the current entity. Similar to `/execute on attacker`.
-- `@target`: The target of the current entity. Similar to `/execute on targets`.
+- `@target`: The target of the current entity. Similar to `/execute on target`.
 - `@controlling_vehicle`: Selects the entity that the current entity is riding and controlling. For example, if a player and a villager sit on the same boat, as only players control boats, when the executor of the command is a player, the selector will select the boat, while when the executor is the village, the selector can’t select the boat.
 - `@controller`: Selects the entity riding and controlling the current entity. For example, if a player and a villager sit on the same boat, when the executor of the command is the boat, the selector will select the player instead of the villager.
 
@@ -128,12 +128,12 @@ In vanilla, some options or entity selectors can be inverted with a `!` mark, su
 
 The loot predicate is a strong functionality of Minecraft, which supports some complicated judgements on conditions. However, loot predicates are defined in datapacks, and the storage is slightly complicated. With this mod, you can specify a loot predicate directly in the command without a datapack.
 
-Compared to vanilla, for convenience, the JSON parsing here is lenient, supporting unquoted string. It is also supported to add a `!` after the `=` to invert the predicate. You can also invert by using `{condition: inverted, term: {...}}`.
+Compared to vanilla, for convenience, the JSON parsing here is lenient, supporting unquoted string. It is also supported to add a `!` after the `=` to invert the predicate. You can also invert by using `#!js {condition: inverted, term: {...}}`.
 
 Where you type loot predicates, directly type the JSON, and the command will be parsed directly during compilation, quite convenient. For example:
 
-- `@e[predicate={condition: entity_properties, entity: this, predicate: {flags: {is_sneaking: true}}}]`: Sneaking entities.
-- `@e[predicate={condition: location_check, predicate: {biome: badlands}}]`: Entities in the badlands biome.
+- `#!js @e[predicate={condition: entity_properties, entity: this, predicate: {flags: {is_sneaking: true}}}]`: Sneaking entities.
+- `#!js @e[predicate={condition: location_check, predicate: {biome: badlands}}]`: Entities in the badlands biome.
 
 !!! tip
     It's advised to avoid using direct loot predicates if other selector parameters can achieve the same effect.
