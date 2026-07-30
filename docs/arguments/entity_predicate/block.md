@@ -5,22 +5,22 @@ subtitle: 检测实体所在位置的方块
 
 # `block`：检测实体所在位置的方块
 
-此[实体谓词](index.md)可用于测试实体所在位置为基础的任意坐标（包括相对坐标和局部坐标）的方块，可以单独指定一个[方块谓词](../block_predicate/index.md)，也可以指定由[坐标](../pos.md)和[方块谓词](../block_predicate/index.md)的多个配对，用于检测指定坐标的方块。
+此[实体谓词](index.md)可用于测试以实体所在位置为基础的任意坐标（包括相对坐标和局部坐标）的方块，可以单独指定一个[方块谓词](../block_predicate/index.md)，也可以指定由[坐标](../pos.md)和[方块谓词](../block_predicate/index.md)的多个配对，用于检测指定坐标的方块。
 
 ## 语法
 
-- `[block=<方块谓词>]`：指定单个方块谓词，检测实体所在位置的方块。
-- `[block={<坐标 1> = <方块谓词 1>, <坐标 2> = <方块谓词 2>, ...}]`：指定多个坐标和方块谓词，检测指定位置的方块。
+- `#!js [block=<方块谓词>]`：指定单个方块谓词，检测实体所在位置的方块。
+- `#!js [block={<坐标 1> = <方块谓词 1>, <坐标 2> = <方块谓词 2>, ...}]`：指定多个坐标和对应的方块谓词，检测指定位置的方块。
 
 !!! note
-    如果方块谓词是 [NBT 谓词](../block_predicate/nbt.md)，请注意给 NBT 谓词加上括号或者星号，以免被解析为第二种语法。例如，`[block={Inventory: []}]` 是错误的，应当写成 `[block=({Inventory: []})]` 或 `[block=*{Inventory: []}]`。
+    如果方块谓词是 [NBT 谓词](../block_predicate/nbt.md)，请注意给 NBT 谓词加上括号或者星号，以免被解析为第二种语法。例如，`#!js [block={Inventory: []}]` 是错误的，应当写成 `#!js [block=({Inventory: []})]` 或 `#!js [block=*{Inventory: []}]`。
 
 ## 示例
 
-- `@e[block=air]`：选择所在位置为空气的实体。
-- `@e[block=water|*[waterlogged=true]]`：选择所在位置为水或任意含水方块的实体。
-- `@a[block={~~-1~=redstone_block}]`：选择下方一格位置为红石块的玩家。
-- `@e[block={~~-1~=grass_block, ~~-2~=dirt}]`：选择下方一格位置为草方块，且下方两格位置为泥土的玩家。
+- `#!js @e[block=air]`：选择所在位置为空气的实体。
+- `#!js @e[block=water|*[waterlogged=true]]`：选择所在位置为水或任意含水方块的实体。
+- `#!js @a[block={~~-1~=redstone_block}]`：选择下方一格位置为红石块的玩家。
+- `#!js @e[block={~~-1~=grass_block, ~~-2~=dirt}]`：选择下方一格位置为草方块，且下方两格位置为泥土的实体。
 
 ## 数据结构
 
@@ -29,7 +29,7 @@ subtitle: 检测实体所在位置的方块
 - `type`：此时为 `"block_predicate"`。
 - `predicate`：[方块谓词](../block_predicate/index.md)。
 
-当指定坐标与方块谓词时：
+当指定坐标与方块谓词的配对时：
 
 - `type`：此时为 `"block_predicates"`。
 - `predicates`：列表。
