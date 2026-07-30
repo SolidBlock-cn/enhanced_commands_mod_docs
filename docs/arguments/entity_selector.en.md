@@ -124,11 +124,11 @@ In vanilla, some options or entity selectors can be inverted with a `!` mark, su
     !!! note
         Even if inverted, when the score objective doesn’t exist, or the entity doesn’t have a score in this objective, the entity can’t be selected. For example, `@e[scores={a=!2}]` to be described most accurately, is when the score "a" exists, selecting players who have a value on this score objective, which does not equal to 2.
 
-### Specifying loot predicate JSONs
+### Directly specifying inline loot predicates
 
-The loot predicate is a strong functionality of Minecraft, which supports some complicated judgements on conditions. However, loot predicates are defined in datapacks, and the storage is slightly complicated. With this mod, you can specify a loot predicate directly in the command without a datapack.
+The loot predicate is a strong functionality of Minecraft, which supports some complicated judgements on conditions. In the command `/execute if predicate`, we can specify loot predicate IDs, or directly inline one as NBT, but only IDs are supported in entity selector. With this mod, you can specify an inline loot predicate directly as NBT.
 
-Compared to vanilla, for convenience, the JSON parsing here is lenient, supporting unquoted string. It is also supported to add a `!` after the `=` to invert the predicate. You can also invert by using `#!js {condition: inverted, term: {...}}`.
+It is supported to add a `!` after the `=` to invert the predicate. You can also invert by using `#!js {condition: inverted, term: {...}}`.
 
 Where you type loot predicates, directly type the JSON, and the command will be parsed directly during compilation, quite convenient. For example:
 
