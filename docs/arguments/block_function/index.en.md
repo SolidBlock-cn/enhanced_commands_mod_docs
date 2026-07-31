@@ -59,7 +59,8 @@ For example (all the examples below omitted namespace):
 - [`pick(<block function>, ...)`](pick.md): Randomly choose a block function.
 - [`postprocess<direction> ...`](postprocess.md): Postprocess blocks, such as solving connection issues of fences and walls.
 - [`random()`](random.md): Randomly chose a block state. Similar to the random block function above, but supports specifying the seed.
-- [`rotate(<方向>)`](rotate.md): Rotate the current block.
+- [`reference(<block function ID>)`](reference.md): Reference a block function defined in the data pack. Equivalent to `$<block function ID>`.
+- [`rotate(<direction>)`](rotate.md): Rotate the current block.
 - [`stonecut([block function])`](stonecut.md): Apply stonecutting on the current block or the result of the specified block function. If there are multiple stonecut results, select one stonecut result randomly.
 
 ## Data structure

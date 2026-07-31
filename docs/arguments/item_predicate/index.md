@@ -41,6 +41,7 @@ title: 物品谓词
 - [`any()`](any.md)
 - [`count()`](count.md)
 - [`probability()`](probability.md)
+- [`reference()`](reference.md)：从数据包中引用物品谓词，也可以直接使用 `$<物品函数 ID>` 来引用 。
 
 ## 物品组件列表
 
