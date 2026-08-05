@@ -104,9 +104,9 @@ subtitle: 随心所欲修改物品魔咒
 ## 数据结构
 
 - `type`：此时为 `"enchant"`。
-- `modifications`：列表。
+- `modifiers`：列表。
     - 复合标签。
-        - `type`：ID，魔咒修改的类型，默认命名空间为 `enhanced_commands`，以下均省略命名空间。
+        - `type`：ID，魔咒函数的类型，默认命名空间为 `enhanced_commands`，以下均省略命名空间。
         - （当 `type` 为 `add` 或 `remove`：）
         - `enchantment`：魔咒修改目标。字符串或复合标签。若为字符串，则为魔咒的 ID。若为复合标签，则有以下字段：
             - `type`：字符串（无命名空间），支持的值是 `single`、`tag` 或 `special`。
