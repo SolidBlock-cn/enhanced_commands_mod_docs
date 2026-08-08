@@ -13,8 +13,8 @@ This [command](index.md) can be used to query or modify NBT data, including NBT 
 - `/nbt set <target> <path> <NBT function>`: Set the NBT at a specified target to the result of the specified NBT function.
 - `/nbt merge <target> <NBT function>`: Merge the result of the specified NBT into the specified target's NBT.
 - `/nbt replace <target> <path> <NBT predicate> <NBT function>`: Apply function to any part that match the predicate of the NBT at the specified path of the specified targets.
-- `/nbt string_replace <target> <path> <target string> <replacement string> [keyword args: lenient | recursive | affect_only]`: Apply string replacement on the NBT at the specified path of the specified targets.
-- `/nbt regex_replace <target> <path> <regex> <replacement> [keyword args: lenient | recursive | affect_only]`: Apply regular expression replacement on the NBT at the specified path of the specified targets.
+- `/nbt string-replace <target> <path> <target string> <replacement string> [keyword args: lenient | recursive | affect_only]`: Apply string replacement on the NBT at the specified path of the specified targets.
+- `/nbt regex-replace <target> <path> <regex> <replacement> [keyword args: lenient | recursive | affect_only]`: Apply regular expression replacement on the NBT at the specified path of the specified targets.
 - `/nbt substring <target> <path> <start index> [end index] [keyword args: lenient | affect_only]`: Cut a substring from the NBT at the specified path of the specified target. Both the start index and the end index are integers. If the end index is not provided, it is by default cut until the end of the string.
 - `/nbt remove <target> <path>`: Remove the part of the specified path from the specified target's NBT.
 
@@ -52,12 +52,12 @@ NBT path, same as vanilla usage.
 - `/nbt set entity @e[type=sheep] Age -1000`: Set all sheep to baby entities.
 - `/nbt merge entity @e[r=5] {CustomName:'"Dinnerbone"'}`: Name all entities within the range 5 blocks to Dinnerbone。
 - `/nbt replace entity @s Inventory {id:"minecraft:diamond"} {count:64}`: Set the count of all diamonds in my inventory to 64.
-- `/nbt string_replace block sphere(20) Items red blue recursive=true`: Within the block entity data of all block entities within 20 blocks, replace string `red` with `blue` (for example, red wool in the chest will be replaced with blue wool).
+- `/nbt string-replace block sphere(20) Items red blue recursive=true`: Within the block entity data of all block entities within 20 blocks, replace string `red` with `blue` (for example, red wool in the chest will be replaced with blue wool).
 - `/nbt remove entity @s Inventory`: Clear my own inventory.
 
 ## See also
 
 - [NBT function `replace()`](../arguments/nbt_function/replace.md)
-- [NBT function `string_replace()`](../arguments/nbt_function/string_replace.md)
-- [NBT function `regex_replace()`](../arguments/nbt_function/regex_replace.md)
+- [NBT function `string-replace()`](../arguments/nbt_function/string-replace.md)
+- [NBT function `regex-replace()`](../arguments/nbt_function/regex-replace.md)
 - [NBT function `substring()`](../arguments/nbt_function/substring.md)

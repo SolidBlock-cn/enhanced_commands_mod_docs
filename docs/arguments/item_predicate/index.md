@@ -37,10 +37,11 @@ title: 物品谓词
 
 物品谓词支持使用函数语法。目前支持的函数包括：
 
-- [`all()`](all.md)
-- [`any()`](any.md)
-- [`count()`](count.md)
-- [`probability()`](probability.md)
+- [`all()`](all.md)：多个物品谓词的交集，相当于用“且”连接。
+- [`any()`](any.md)：多个物品谓词的并集，相当于用“或”连接。
+- [`count()`](count.md)：测试物品的数量。
+- [`not()`](not.md)：反转一个物品谓词，相当于“非”。
+- [`probability()`](probability.md)：在特定的概率下通过。
 - [`reference()`](reference.md)：从数据包中引用物品谓词，也可以直接使用 `$<物品函数 ID>` 来引用 。
 
 ## 物品组件列表

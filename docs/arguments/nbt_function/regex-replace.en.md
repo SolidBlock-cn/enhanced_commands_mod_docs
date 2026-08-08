@@ -1,9 +1,9 @@
 ---
-title: regex_replace()
+title: regex-replace()
 subtitle: replacing regex in the NBT
 ---
 
-# `regex_replace()`: replacing regex in the NBT
+# `regex-replace()`: replacing regex in the NBT
 
 The [NBT function](index.md) replaced regular expressions in the NBT.
 
@@ -12,8 +12,8 @@ The [NBT function](index.md) replaced regular expressions in the NBT.
 
 ## Syntax
 
-- `regex_replace(<pattern>, <replacement>)`
-- `regex_replace(<pattern>, <replacement>, [keyword args: recursive | lenient | original])`
+- `regex-replace(<pattern>, <replacement>)`
+- `regex-replace(<pattern>, <replacement>, [keyword args: recursive | lenient | original])`
 
 ## Parameters
 
@@ -52,29 +52,29 @@ NBT function, optional. Indicating the original value before replacement.
 
 ## Examples
 
-- `regex_replace("[ab]", "<$1>")`:
+- `regex-replace("[ab]", "<$1>")`:
     - Applied to `"cat"`: Returns `"c<a>t"`.
     - Applied to `"sky"`: Returns `"sky"` (unchanged).
     - Applied to `1b`: Error.
     - Applied to `[cat, sky]`: Error.
     - Applied to `{a: cat, b: sky, c: [bat, chat]}`: Error.
-- `regex_replace("[ab]", "<$1>", recursive = true)`:
+- `regex-replace("[ab]", "<$1>", recursive = true)`:
     - Applied to `"cat"`: Returns `"c<a>t"`.
     - Applied to `"sky"`: Returns `"sky"` (unchanged).
     - Applied to `1b`: Error.
     - Applied to `[cat, sky]`: Returns `['c<a>t', sky]`.
     - Applied to `{a: cat, b: sky, c: [bat, chat]}`: Returns `{a: 'c<a>t', b: sky, c: ['<b><a>t', 'ch<a>t']}`.
-- `regex_replace("[ab]", "<$1>", lenient = true)`:
+- `regex-replace("[ab]", "<$1>", lenient = true)`:
     - Applied to `"cat"`: Returns `"c<a>t"`.
     - Applied to `"sky"`: Returns `"sky"` (unchanged).
     - Applied to `1b`: Unchanged.
     - Applied to `[cat, sky]`: Unchanged.
     - Applied to `{a: cat, b: sky, c: [bat, chat]}`: Unchanged.
-- `regex_replace("[mn]", '$1')`:
+- `regex-replace("[mn]", '$1')`:
     - Applied to `"mine"`: Error, because group 1 does not exist in the regular expression.
-- `regex_replace("[mn]", '$1', lenient = true)`:
+- `regex-replace("[mn]", '$1', lenient = true)`:
     - Applied to `"mine"`: Unchanged (group 1 does not exist in the regular expression, so the replacement does not happen).
-- `regex_replace("[oe]", "<$1>", original = "fromage")`:
+- `regex-replace("[oe]", "<$1>", original = "fromage")`:
     - Applied to any NBT: Returns `"fr<o>m<a>ge"`.
 
 ## Data format
@@ -88,4 +88,4 @@ NBT function, optional. Indicating the original value before replacement.
 ## 参见
 
 - [`replace()` function](replace.md): Replacing NBTs that match the predicate.
-- [`string_replace()` function](string_replace.md): Replacing texts simply.
+- [`string-replace()` function](string-replace.md): Replacing texts simply.

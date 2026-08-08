@@ -1,9 +1,9 @@
 ---
-title: string_replace()
+title: string-replace()
 subtitle: Replacing strings in the NBT
 ---
 
-# `string_replace()` function: Replacing strings in the NBT
+# `string-replace()` function: Replacing strings in the NBT
 
 The [NBT function](index.md) replaces strings in the NBT.
 
@@ -12,8 +12,8 @@ The [NBT function](index.md) replaces strings in the NBT.
 
 ## Syntax
 
-- `string_replace(<targetString>, <replacement>)`
-- `string_replace(<targetString>, <replacement>, [keyword_args: recursive | lenient | original])`
+- `string-replace(<targetString>, <replacement>)`
+- `string-replace(<targetString>, <replacement>, [keyword_args: recursive | lenient | original])`
 
 ## Parameters
 
@@ -52,32 +52,32 @@ NBT function, optional. Indicating the original value before replacement.
 
 ## Examples
 
-- `string_replace("a", "u")`:
+- `string-replace("a", "u")`:
     - Applied to `"cat"`: Returns `"cut"`.
     - Applied to `"sky"`: Returns `"sky"` (unchanged).
     - Applied to `1b`: Error.
     - Applied to `[cat, sky]`: Error.
     - Applied to `{a: cat, b: sky, c: [bat, chat]}`: Error.
-- `string_replace("a", "u", recursive = true)`:
+- `string-replace("a", "u", recursive = true)`:
     - Applied to `"cat"`: Returns `"cut"`.
     - Applied to `"sky"`: Returns `"sky"` (unchanged).
     - Applied to `1b`: Error.
     - Applied to `[cat, sky]`: Returns `['cut', sky]`.
     - Applied to `{a: cat, b: sky, c: [bat, chat]}`: Returns `{a: 'cut', b: sky, c: ['but', 'chut']}`.
-- `string_replace("a", "u", lenient = true)`:
+- `string-replace("a", "u", lenient = true)`:
     - Applied to `"cat"`: Returns `"cut"`.
     - Applied to `"sky"`: Returns `"sky"` (unchanged).
     - Applied to `1b`: Unchanged.
     - Applied to `[cat, sky]`: Unchanged.
     - Applied to `{a: cat, b: sky, c: [bat, chat]}`: Unchanged.
-- `string_replace("e", "es", original = "fromage")`:
+- `string-replace("e", "es", original = "fromage")`:
     - Applied to any NBT: Returns `"fromages"`.
 
 The following are some examples in actual commands:
 
-- `/nbt set block ~ ~ ~ {} string_replace(red, blue, recursive = true)`: Replace world "red" with "blue" within the NBT of the current place. For example, if it is a sign, and the sign has a text that reads "This is a red text", and died red, the replaced text will be blue, and the content is replaced with "This is a blue text".
-- `/nbt set block ~ ~-1 ~ Command string_replace(player, zombie)`: Replaced the word "player" in the value of `Command` of the NBT of the block below with "zombie". For example, if the block is a command block with command `/testfor entity @e[type=player]`, it will be replaced with `/testfor entity @e[type=zombie]`.
-- `/nbt set entity @s Inventory string_replace(cherry, oak, recursive = true)`: Replace cherry-related items in the player itself's inventory to oak-related items.
+- `/nbt set block ~ ~ ~ {} string-replace(red, blue, recursive = true)`: Replace world "red" with "blue" within the NBT of the current place. For example, if it is a sign, and the sign has a text that reads "This is a red text", and died red, the replaced text will be blue, and the content is replaced with "This is a blue text".
+- `/nbt set block ~ ~-1 ~ Command string-replace(player, zombie)`: Replaced the word "player" in the value of `Command` of the NBT of the block below with "zombie". For example, if the block is a command block with command `/testfor entity @e[type=player]`, it will be replaced with `/testfor entity @e[type=zombie]`.
+- `/nbt set entity @s Inventory string-replace(cherry, oak, recursive = true)`: Replace cherry-related items in the player itself's inventory to oak-related items.
 
 ## Data format
 
@@ -90,4 +90,4 @@ The following are some examples in actual commands:
 ## See also
 
 - [`replace()` function](replace.md): Replacing NBTs that match the predicate.
-- [`regex_replace()` function](regex_replace.md): Replacing regular expressions.
+- [`regex-replace()` function](regex-replace.md): Replacing regular expressions.

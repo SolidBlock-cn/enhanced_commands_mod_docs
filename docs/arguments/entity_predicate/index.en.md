@@ -18,10 +18,11 @@ Besides, compared to entity selectors, entity predicates can omit the preceding 
 
 The syntax of entity predicates is the same as entity selectors, but can emit "at-variables".
 
-- `<player id>`
+- `<player ID>`
 - `<UUID>`
 - `[<option 1>=<value 1>, <option 2>=<value 2>, ...]`: unique syntax of entity predicates compared to selectors.
 - `<entity selector type>[<option 1>=<value 1>, <option 2>=<value 2>, ...]`
+- `$<entity predicate ID>`: Reference an entity predicate defined in data packs.
 
 !!! info
     For entity selector types and arguments that entity predicates support, see [entity selector](../entity_selector.md).
@@ -71,6 +72,7 @@ Each entity predicate has a type. Different types have their own fields (see the
 - [`player_only`](special/player_only.md) (special type)
 - [`pose`](pose.md)
 - [`on_fire`](on_fire.md)
+- [`reference`](reference.md): Reference an entity predicate defined in data packs.
 - [`region`](region.md)
 - [`saturation`](saturation.md)
 - [`sender_only`](special/sender_only.md) (special type)

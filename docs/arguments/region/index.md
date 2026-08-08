@@ -32,3 +32,8 @@ title: 区域
 
 - [`intersect()`](intersect.md)：多个区域的交集。
 - [`union()`](union.md)：多个区域的并集。
+
+### 特殊类型
+
+- [`$`](active_region.md)：引用当前玩家的活动区域。
+- [`reference()`](reference.md)：引用定义于数据包中的区域提供器。

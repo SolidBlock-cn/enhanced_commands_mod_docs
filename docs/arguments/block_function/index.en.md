@@ -50,7 +50,7 @@ For example (all the examples below omitted namespace):
 - [`dry([block function])`](dry.md): Remove water from the current block, or apply the block function and then remove water.
 - [`filter(<block function 1>, <block predicate>, [block function 2])`](filter.md): Calculate the result of block function 1 first, and if the result of block function 1 matchest the block predicate, then it is applied directly, or block function 2 will be calculated, or do nothing.
 - [`idcontain(<regex>)`](idcontain.md): Randomly pick a block whose ID matches the specified regular expression.
-- [`idreplace(<regex>)`](idreplace.md): Replace the block ID. If the replaced block ID still exists, it will be applied.
+- [`idreplace(<regex>)`](id-replace.md): Replace the block ID. If the replaced block ID still exists, it will be applied.
 - [`if(<block predicate>, <block function 1>, [block function 2])`](if.md): Test which the former block match the block predicate, and if so, use block function 1, or use block function 2 to do nothing.
 - [`ifs(<block predicate 1>, <block function 1a>, [block function 1b]; ...)`](ifs.md): Test multiple block predicates.
 - [`mirror(<方向>)`](mirror.md): Mirror the current block.
@@ -85,7 +85,7 @@ There are following types of block functions (the namespace `enhanced_commands` 
 - [`dry`](dry.md)
 - [`filter`](filter.md)
 - [`id_contain`](idcontain.md)
-- [`id_replace`](idreplace.md)
+- [`id_replace`](id-replace.md)
 - [`mirror`](mirror.md)
 - [`noise`](noise.md)
 - [`overlay`](overlay.md)

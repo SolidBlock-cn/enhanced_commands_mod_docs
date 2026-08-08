@@ -49,8 +49,8 @@ title: 方块函数
 - [`checkerboard-tag(<方块函数> [权重] ...)`](checkerboard-tag.md)：以拥有方块标签的方块为内容的棋盘格图案。
 - [`dry([方块函数])`](dry.md)：除去当前方块的水，或者先应用方块函数然后再除去水。
 - [`filter(<方块函数 1>, <方块谓词>, [方块函数 2])`](filter.md)：先计算出方块函数 1 的结果，如果方块函数 1 的结果符合方块谓词，那么直接应用，否则计算方块函数 2 或者不操作。
-- [`idcontain(<正则表达式>)`](idcontain.md)：随机选择一个 ID 符合指定的正则表达式的方块。
-- [`idreplace(<正则表达式>)`](idreplace.md)：对方块 ID 进行替换，如果替换后的方块 ID 存在，则应用它。
+- [`id-contain(<正则表达式>)`](id-contain.md)：随机选择一个 ID 符合指定的正则表达式的方块。
+- [`id-replace(<正则表达式>)`](id-replace.md)：对方块 ID 进行替换，如果替换后的方块 ID 存在，则应用它。
 - [`if(<方块谓词>, <方块函数 1>, [方块函数 2])`](if.md)：检测原先的方块是否符合指定的方块谓词，如果符合，则使用方块函数 1，否则使用方块函数 2 或者不操作。
 - [`ifs(<方块谓词 1>, <方块函数 1a>, [方块函数 1b]; ...)`](ifs.md)：检测多个方块谓词。
 - [`mirror(<方向>)`](mirror.md)：对当前方块进行镜像。
@@ -85,7 +85,7 @@ title: 方块函数
 - [`dry`](dry.md)
 - [`filter`](filter.md)
 - [`id_contain`](idcontain.md)
-- [`id_replace`](idreplace.md)
+- [`id_replace`](id-replace.md)
 - [`mirror`](mirror.md)
 - [`noise`](noise.md)
 - [`overlay`](overlay.md)

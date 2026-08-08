@@ -18,10 +18,11 @@ subtitle: 使用和选择器基本相同的语法筛选实体
 
 实体谓词的语法和实体选择器一致，但可以省略“at-变量”。
 
-- `<玩家 id>`
+- `<玩家 ID>`
 - `<UUID>`
 - `[<选项 1>=<值 1>, <选项 2>=<值 2>, ...]`：实体谓词相比实体选择器独有的语法。
 - `<实体选择器类型>[<选项 1>=<值 1>, <选项 2>=<值 2>, ...]`
+- `$<实体谓词 ID>`：引用定义于数据包中的实体谓词。
 
 !!! info
     关于实体谓词支持的实体选择器类型和参数，请见[**实体选择器**](../entity_selector.md)。
@@ -71,6 +72,7 @@ subtitle: 使用和选择器基本相同的语法筛选实体
 - [`player_only`](special/player_only.md)（特殊类型）
 - [`pose`](pose.md)
 - [`on_fire`](on_fire.md)
+- [`reference`](reference.md)：引用定义于数据包中的实体谓词。
 - [`region`](region.md)
 - [`saturation`](saturation.md)
 - [`sender_only`](special/sender_only.md)（特殊类型）

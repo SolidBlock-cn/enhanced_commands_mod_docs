@@ -60,10 +60,12 @@ title: 方块谓词
 
 - [`all([方块谓词], ...)`](all.md)：只有当多个方块谓词通过时，这个方块谓词才会通过。
 - [`any([方块谓词], ...)`](any.md)：多个方块谓词只要有一个通过，这个方块谓词就会通过。
+- [`block-function-result(<方块函数>, <方块谓词>)`](block-function-result.md)：检测指定的方块函数运行的结果是否符合指定的方块谓词，但不实际影响方块。
 - [`checkerboard([方块谓词], ...)`](checkerboard.md)：按照棋盘格计算的方块谓词。
 - [`expose(<暴露类型>, <方向> ...)`](expose.md)：检测方块是否在指定的方向上以指定的方式暴露。
-- [`idcontain(<正则表达式>)`](idcontain.md)：检测方块的 ID 是否含有特定的正则表达式。
+- [`idcontain(<正则表达式>)`](id-contain.md)：检测方块的 ID 是否含有特定的正则表达式。
 - [`noise(<方块谓词> [权重], ...; ...)`](noise.md)：噪声。
+- [`not(<方块谓词>)`](not.md)：反转一个方块谓词，即一个方块谓词的否定。
 - [`predicate(<战利品表谓词>|<战利品表 json>)`](predicate.md)：检测方块是否符合指定的战利品表谓词。
 - [`probability(<概率>, [方块谓词])`](probability.md)：只有在指定的概率下通过。
 - [`reference(<方块谓词 ID>)`](reference.md)：引用数据包中定义的方块谓词，等价于 `$<方块谓词 ID>`。
