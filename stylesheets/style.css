@@ -1,0 +1,41 @@
+html[lang=zh] article>p,
+html[lang=zh] .admonition>p:not(.admonition-title) {
+    text-indent: 2em;
+}
+
+html[lang=zh] article>p>*,
+html[lang=zh] .admonition>p:not(.admonition-title) * {
+    text-indent: 0;
+}
+
+:root,
+[data-md-color-scheme=default] {
+    --md-code-hl-operator-color: #2e7d60;
+    --md-code-hl-punctuation-color: #367793;
+}
+
+[data-md-color-scheme=slate] {
+    --md-code-hl-operator-color: #4ac094;
+    --md-code-hl-punctuation-color: #56b7e0;
+}
+
+:root {
+    --solid-header-background: linear-gradient(in oklch to right, #028328, #007a6c, #0b748c, #084789);
+}
+
+@supports(not (background-image: linear-gradient(in oklch to right, black, white))) {
+    :root {
+        --solid-header-background: linear-gradient(to right, #028328, #007a6c, #0b748c, #084789);
+    }
+}
+
+:root>* {
+    --md-typeset-a-color: #02766a;
+    /* 提高对比度 */
+}
+
+.md-header,
+.md-tabs {
+    background-image: var(--solid-header-background);
+    background-attachment: fixed;
+}
